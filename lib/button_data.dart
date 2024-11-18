@@ -1,8 +1,8 @@
-import 'package:openboard_parser/image_data.dart';
-import 'dart:ui'
+import 'package:openboard_searlizer/color_data.dart';
+import 'package:openboard_searlizer/image_data.dart';
 class ButtonData {
-    int id;
-    String label;
-    ImagesData image;
-    Color background_color;
+    int? id;
+    String? label;
+    ImagesData? image;
+    ColorData? background_color;
 }

@@ -1,6 +1,6 @@
-import 'package:openboard_parser/button_data.dart';
-import 'package:openboard_parser/image_data.dart';
-import 'package:openboard_parser/grid_data.dart';
+import 'package:openboard_searlizer/button_data.dart';
+import 'package:openboard_searlizer/image_data.dart';
+import 'package:openboard_searlizer/grid_data.dart';
 
 class Obf {
     String format;
