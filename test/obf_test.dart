@@ -15,6 +15,9 @@ void main(){
   test('inline data',(){
     expect(Obf.fromJsonString(inlineImages).toJson(),jsonDecode(inlineImages));
   });
+  test('url image', (){
+    expect(Obf.fromJsonString(urlImage).toJson(),jsonDecode(urlImage));
+  });
 }
 
   Obf getSimpleBoard(){

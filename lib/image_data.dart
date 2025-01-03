@@ -6,6 +6,7 @@ class ImageData {
     static const String heightKey = 'height';
     static const String pathKey = 'path';
     static const String inlineDataKey = 'data';
+    static const String urlKey = 'url';
 
     String id = "i0";
     String contentType = '';
@@ -26,12 +27,14 @@ class ImageData {
       if(json[inlineDataKey]!=null){
         inlineData = ImageInlineData.decode(json[inlineDataKey]);
       }
+      url = json[urlKey];
     } 
 
     Map<String,dynamic> toJson(){
      Map<String,dynamic> out = {idKey:id,widthKey:width,heightKey:height,contentTypeKey:contentType}; 
      addToMapIfNotNull(out, pathKey, path);
      addToMapIfNotNull(out,inlineDataKey,inlineData?.encode(contentType));
+     addToMapIfNotNull(out, urlKey, url);
      return out; 
     }
     List<ImageRepresentation> getImagesInPrecedenceOrder(){
