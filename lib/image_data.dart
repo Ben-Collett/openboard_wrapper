@@ -15,7 +15,7 @@ class ImageData {
     
     //three ways to represent image
     String? path;
-    ImageInlineData? inlineData;
+    InlineData? inlineData;
     String? url;
     String? symbol;
     ImageData.decodeJson(Map<String,dynamic> json){
@@ -25,7 +25,7 @@ class ImageData {
       height = json[heightKey];
       path = json[pathKey];
       if(json[inlineDataKey]!=null){
-        inlineData = ImageInlineData.decode(json[inlineDataKey]);
+        inlineData = InlineData.decode(json[inlineDataKey]);
       }
       url = json[urlKey];
     } 
@@ -57,27 +57,7 @@ class ImageData {
    
 }
 
-class ImageInlineData{
-  int encodingBase = 64;
-  String data ='';
-  ImageInlineData.decode(String inline){
-    String base = 'base';
-    int indexOfBase = inline.indexOf(base);
 
-    if(indexOfBase == -1){
-      throw('inline data doesn\'t contain $base');
-    }
-
-    int moveForward = indexOfBase+base.length;
-    inline = inline.substring(moveForward); 
-    encodingBase = int.parse(inline.substring(0,inline.indexOf(',')));
-
-    data = inline.substring(inline.indexOf(',')+1);
-  }
-  String encode(String dataType){
-    return "data:$dataType;base$encodingBase,$data";
-  }
-}
 
   enum ImageRepresentation{
     inline,path,url,symbol

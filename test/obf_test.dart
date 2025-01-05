@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:test/test.dart';
 import 'package:openboard_searlizer/obf.dart';
@@ -18,8 +19,10 @@ void main(){
   test('url image', (){
     expect(Obf.fromJsonString(urlImage).toJson(),jsonDecode(urlImage));
   });
+  test('image and sound',(){
+    expect(Obf.fromJsonString(imagesAndSounds).toJson(),jsonDecode(imagesAndSounds));
+  });
 }
-
   Obf getSimpleBoard(){
     return Obf.fromJsonString(simpleBoard);
   }

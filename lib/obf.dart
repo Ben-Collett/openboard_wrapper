@@ -46,7 +46,7 @@ class Obf extends Searlizable{
     sounds = sounds ?? [],
     _grid = grid ?? GridData();
    
- 
+//TODO not writing sound list 
     factory Obf.fromJsonMap(Map<String,dynamic> json){
       String format = json[formatKey] is String ? json[formatKey].toString(): defaultFormat;
       String id = json[idKey] is String ? json[idKey].toString() : defaultID;
@@ -56,16 +56,19 @@ class Obf extends Searlizable{
       String? url = json[urlKey] is String ? json[urlKey].toString() : null;
 
       List<ImageData> imageData = getImageDataFromJson(json);
+      List<SoundData> soundData = getSoundDataFromJson(json);
       
       Map<String,ImageData> imageDataMap = {for(ImageData image in imageData) image.id:image};
-      List<ButtonData> buttonData = getButtonsDataFromJson(json,imageDataMap);
+      Map<String,SoundData> soundDataMap = {for(SoundData sound in soundData) sound.id:sound};
+
+      List<ButtonData> buttonData = getButtonsDataFromJson(json,imageDataMap,soundDataMap);
 
       Map<String,ButtonData> buttonDataMap = {for(ButtonData b in buttonData) b.id:b}; 
 
       GridData grid = getGridDataFromJson(json, buttonDataMap);
       //TODO implement fromJsonMap for buttons and grid and images and sounds
 
-      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,buttons:buttonData,grid:grid);
+      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid);
     }
     static List<ImageData> getImageDataFromJson(Map<String,dynamic> json){
       var imageVals = json[imagesKey];
@@ -76,15 +79,24 @@ class Obf extends Searlizable{
       
       return out.map((json) => ImageData.decodeJson(json)).toList();
     }
-    
-    static List<ButtonData> getButtonsDataFromJson(Map<String,dynamic> json,Map<String,ImageData> imageMap){
+    static List<SoundData> getSoundDataFromJson(Map<String,dynamic> json){
+      var soundVals = json[soundKey];
+      List? out = [];
+      if(soundVals is List){
+        out = soundVals;
+      }
+      
+      return out.map((json) => SoundData.decode(json)).toList();
+    }
+  
+    static List<ButtonData> getButtonsDataFromJson(Map<String,dynamic> json,Map<String,ImageData> imageMap, Map<String,SoundData> soundMap){
       var buttonVal = json[buttonsKey];
       List out = [];
       if(buttonVal is List){
         out = buttonVal;
       }
       
-      return out.map((jsonMap) => ButtonData.decode(json: jsonMap,imageSource:imageMap)).toList();
+      return out.map((jsonMap) => ButtonData.decode(json: jsonMap,imageSource:imageMap,soundSource:soundMap)).toList();
     }
     static GridData getGridDataFromJson(Map<String,dynamic> json,Map<String,ButtonData> source){
       var gridData = json['grid'];
@@ -106,7 +118,10 @@ class Obf extends Searlizable{
       out[buttonsKey] = buttons.map((ButtonData bt) => bt.toJson()).toList();
       out['grid'] = _grid.toJson();
       out['images'] = images.map((ImageData data) => data.toJson()).toList();
-      out['sounds'] = [];
+      if(sounds.isNotEmpty){
+        print('l');
+      }
+      out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
          
       return out;
     }
