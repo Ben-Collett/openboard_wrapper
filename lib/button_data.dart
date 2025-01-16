@@ -3,7 +3,7 @@ import 'package:openboard_searlizer/color_data.dart';
 import 'package:openboard_searlizer/image_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 import 'package:openboard_searlizer/sound_data.dart';
-class ButtonData extends Searlizable{
+class ButtonData extends Searlizable implements HasId{
     static const String idKey = "id";
     static const String labelKey = "label";
     static const String imageKey = "image_id";
@@ -11,7 +11,7 @@ class ButtonData extends Searlizable{
     static const String bgColorKey = "background_color";
     static const String borderColorKey = 'border_color';
     static const String defultId = 'default id';
-    String id;
+    @override String id;
     String? label;
     ImageData? image;
     SoundData? sound;

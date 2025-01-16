@@ -5,7 +5,7 @@ import 'package:openboard_searlizer/image_data.dart';
 import 'package:openboard_searlizer/grid_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 import 'package:openboard_searlizer/sound_data.dart';
-class Obf extends Searlizable{
+class Obf extends Searlizable implements HasId{
     static const String defaultFormat = "open-board-0.1";
     static const String defaultID = "default id";
     static const String defaultLocale = "en";
@@ -20,7 +20,7 @@ class Obf extends Searlizable{
     static const String imagesKey = 'images';
     static const String soundKey = 'sounds';
     String format;
-    String id;
+    @override String id;
     String locale;
     String name;
     String? url;
@@ -32,7 +32,7 @@ class Obf extends Searlizable{
     
     Obf({this.format=defaultFormat,
     List<ButtonData>? buttons, 
-    List<ImageData>?images, 
+    List<ImageData>? images, 
     List<SoundData>? sounds,
     GridData? grid,
     this.descriptionHTML,
@@ -70,6 +70,7 @@ class Obf extends Searlizable{
 
       return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid);
     }
+
     static List<ImageData> getImageDataFromJson(Map<String,dynamic> json){
       var imageVals = json[imagesKey];
       List? out = [];
@@ -105,7 +106,28 @@ class Obf extends Searlizable{
       }
       return GridData();
     }
-    
+    Obf autoResolveAllIdCollisions({String Function(String)? onCollision}){
+      autoResolveIdCollisions(_allHasIdsInFile(),onCollision: onCollision);
+      return this;
+    }
+    List<HasId> _allHasIdsInFile(){
+      List<HasId> ids = [this];
+      ids.addAll(buttons);
+      ids.addAll(images);
+      ids.addAll(sounds);
+
+      return ids;
+    }
+    Obf autoResolveButtonIdCollisions(){
+     return this; 
+    }
+    Obf autoResolveImageIdCollisions(){
+     return this; 
+    }
+    Obf autoResolveAudioIdCollisions(){
+      return this;
+    }
+        
     @override
       String toString() {
         return super.toJsonString();
@@ -113,58 +135,19 @@ class Obf extends Searlizable{
     @override
     Map<String,dynamic> toJson(){
       Map<String,dynamic> out = {idKey:id,formatKey:format,localeKey:locale,nameKey:name};
+
       addToMapIfNotNull(out, descriptionHTMLKey, descriptionHTML);
       addToMapIfNotNull(out, urlKey, url);
+
       out[buttonsKey] = buttons.map((ButtonData bt) => bt.toJson()).toList();
       out['grid'] = _grid.toJson();
       out['images'] = images.map((ImageData data) => data.toJson()).toList();
-      if(sounds.isNotEmpty){
-        print('l');
-      }
       out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
-         
       return out;
     }
 
     factory Obf.fromJsonString(String json){
       return Obf.fromJsonMap(jsonDecode(json));
     }
-
-    //add's button to list of buttons and adds to grid if row and col are specified
-    bool setButton({ButtonData? button, int? row, int? col}){
-      if(button != null &&!buttons.contains(button)){
-        addButton(button);
-      }
-      if(row != null && col!= null){
-        _grid[row][col] = button;
-      }
-      return true;
-    }
-    void addButton(ButtonData button){
-      //TODO: I need to make this handle if new audio and images are introduced in button
-      buttons.add(button); 
-    }
-    ButtonData? getButton(int row, int col){
-      return _grid[row][col];
-    }
-    bool addImage(ImageData imageData){
-      return true;
-    }
-    bool addSound(SoundData soundData){
-      return true;
-    }
-    bool removeButton(ButtonData button){
-      return false;
-    }
-    void addRow(ButtonData buttons){
-      
-    }
-    void addCol(){
-      
-    }
-
-
-
-   
 }
 

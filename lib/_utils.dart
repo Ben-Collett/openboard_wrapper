@@ -25,3 +25,44 @@ class InlineData{
     return "data:$dataType;base$encodingBase,$data";
   }
 }
+class HasId{
+  String id = '';
+}
+void autoResolveIdCollisions(List<HasId> toResolve,{String Function(String)? onCollision}){
+  Map<String,int> frequency = idFrequency(toResolve);
+  String Function(String) function = onCollision ?? _autoIncrement;
+  for(HasId current in toResolve){
+    if(!frequency.containsKey(current.id)){
+      throw Exception('id: ${current.id} is not in $frequency'); 
+    }
+    //TODO: it might be wise to add a hashset that keeps track fo the seen id's in a given loop and throw an error if a duplicate or a loop appears
+    while(frequency[current.id]! > 1){
+      String newId = function(current.id);       
+      frequency[current.id] = frequency[current.id]!-1;
+      current.id = newId;
+      frequency.update(current.id, (val)=> val+1,ifAbsent: ()=>1);
+    }
+  }
+  
+
+}
+Map<String,int> idFrequency(List<HasId> toCount){
+   Map<String,int> out = {};
+   for(HasId current in toCount){
+        String id = current.id;
+        out.update(id, (value)=>value+1,ifAbsent: () => 1);
+      }
+    return out;
+}
+String _autoIncrement(String val){
+        final RegExp numberPattern = RegExp(r'(\d+)$');
+        final match = numberPattern.firstMatch(val);
+  
+        if (match != null) {
+        final number = int.parse(match.group(0)!);
+        return '${val.substring(0, val.length - match.group(0)!.length)}${(number + 1)}';
+      } 
+      else {
+        return '${val}1';
+      }
+    }

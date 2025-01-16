@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 
 import 'package:test/test.dart';
 import 'package:openboard_searlizer/obf.dart';

@@ -3,14 +3,14 @@ import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/obf.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 
-class SoundData extends Searlizable{
+class SoundData extends Searlizable implements HasId{
   static const String durationKey = 'duration';
   static const String pathKey = 'path';
   static const String dataKey = 'data';
   static const String contentTypeKey = 'content_type';
   static const String urlKey = 'url';
   int duration; 
-  String id;
+  @override String id;
   String? path;
   InlineData? data;
   String? url;

@@ -1,5 +1,5 @@
 import '_utils.dart';
-class ImageData {
+class ImageData implements HasId{
     static const String idKey = 'id';
     static const String contentTypeKey = 'content_type';
     static const String widthKey =  'width';
@@ -8,7 +8,7 @@ class ImageData {
     static const String inlineDataKey = 'data';
     static const String urlKey = 'url';
 
-    String id = "i0";
+    @override String id = "i0";
     String contentType = '';
     int width = 0;
     int height = 0;
