@@ -12,12 +12,21 @@ class ImageData implements HasId{
     String contentType = '';
     int width = 0;
     int height = 0;
-    
-    //three ways to represent image
     String? path;
     InlineData? inlineData;
     String? url;
     String? symbol;
+    Map<String,dynamic> extendedProperties = {};
+
+    ImageData({Map<String,dynamic>? extendedProperties, String? contentType,String? id,int? width, int? height,this.path,this.inlineData,this.url,this.symbol}): 
+    extendedProperties = extendedProperties ?? {},
+    contentType = contentType ??'', 
+    id = id??'i0', 
+    width = width??0,
+    height=height??0;
+
+    
+    
     ImageData.decodeJson(Map<String,dynamic> json){
       id = json[idKey].toString();
       contentType = json[contentTypeKey];
@@ -28,15 +37,20 @@ class ImageData implements HasId{
         inlineData = InlineData.decode(json[inlineDataKey]);
       }
       url = json[urlKey];
-    } 
+      extendedProperties = getExtendedPropertiesFromJson(json);
+     } 
 
     Map<String,dynamic> toJson(){
      Map<String,dynamic> out = {idKey:id,widthKey:width,heightKey:height,contentTypeKey:contentType}; 
+
      addToMapIfNotNull(out, pathKey, path);
      addToMapIfNotNull(out,inlineDataKey,inlineData?.encode(contentType));
      addToMapIfNotNull(out, urlKey, url);
+
+     out.addAll(extendedProperties);
      return out; 
     }
+
     List<ImageRepresentation> getImagesInPrecedenceOrder(){
       List<ImageRepresentation> out = [];
       if(inlineData  != null){
@@ -51,7 +65,6 @@ class ImageData implements HasId{
       if(symbol != null){
         out.add(ImageRepresentation.symbol);
       }
-
       return out;
     }
    

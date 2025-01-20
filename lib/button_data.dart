@@ -17,7 +17,8 @@ class ButtonData extends Searlizable implements HasId{
     SoundData? sound;
     ColorData? backgroundColor;
     ColorData? borderColor;
-    ButtonData({this.id=defultId,this.label,this.image,this.sound,this.backgroundColor,this.borderColor});
+    Map<String,dynamic> extendedProperties;
+    ButtonData({this.id=defultId,Map<String,dynamic>? extendedProperties,this.label,this.image,this.sound,this.backgroundColor,this.borderColor}): extendedProperties = extendedProperties ??{};
 
     
     factory ButtonData.decode({required Map<String,dynamic> json,Map<String,ImageData>? imageSource, Map<String,SoundData>? soundSource}){
@@ -44,8 +45,8 @@ class ButtonData extends Searlizable implements HasId{
         sound = soundSource[soundId];
       }
     }
-
-    return ButtonData(id:id,label:label,backgroundColor:backgroundColor,image:image,borderColor:borderColor,sound:sound);
+    
+    return ButtonData(id:id,label:label,backgroundColor:backgroundColor,image:image,borderColor:borderColor,sound:sound,extendedProperties: getExtendedPropertiesFromJson(json));
    } 
     @override 
     Map<String,dynamic> toJson(){
@@ -53,9 +54,10 @@ class ButtonData extends Searlizable implements HasId{
       addToMapIfNotNull(json,bgColorKey,backgroundColor?.toString());
       addToMapIfNotNull(json,borderColorKey,borderColor?.toString());
       addToMapIfNotNull(json, labelKey, label); 
-      //TODO: finish this after I can encodee images, sound's  
       addToMapIfNotNull(json,imageKey,image?.id);
       addToMapIfNotNull(json,soundKey,sound?.id);
+
+      json.addAll(extendedProperties);
       return json; 
     }
 

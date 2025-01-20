@@ -28,6 +28,13 @@ class InlineData{
 class HasId{
   String id = '';
 }
+Map<String,dynamic> getExtendedPropertiesFromJson(Map<String,dynamic> json){
+  Map<String,dynamic> out = {};
+  for(String key in json.keys.where((k)=>k.startsWith('ext_'))){
+    out[key]  = json[key];
+  }
+  return out;
+}
 void autoResolveIdCollisions(List<HasId> toResolve,{String Function(String)? onCollision}){
   Map<String,int> frequency = idFrequency(toResolve);
   String Function(String) function = onCollision ?? _autoIncrement;

@@ -27,14 +27,19 @@ class Obf extends Searlizable implements HasId{
     String? descriptionHTML;
     GridData _grid;
     List<ButtonData> buttons;
-    List<ImageData> images;
+    List<ImageData> unusedImages = [];
+    List<ImageData> get images{
+      return buttons.map((b)=>b.image).nonNulls.toSet().toList();
+    }
     List<SoundData> sounds;
-    
+    Map<String,dynamic> extendedProperties;
+    Set<String>? allExtendedPropertiesInFile; 
     Obf({this.format=defaultFormat,
     List<ButtonData>? buttons, 
     List<ImageData>? images, 
     List<SoundData>? sounds,
     GridData? grid,
+    Map<String,dynamic>? extendedProperties,
     this.descriptionHTML,
     this.url,
     required this.locale,
@@ -42,11 +47,10 @@ class Obf extends Searlizable implements HasId{
     required this.id,
     }):
     buttons = buttons??[],
-    images = images ?? [],
     sounds = sounds ?? [],
-    _grid = grid ?? GridData();
+    _grid = grid ?? GridData(),
+    extendedProperties = extendedProperties??{};
    
-//TODO not writing sound list 
     factory Obf.fromJsonMap(Map<String,dynamic> json){
       String format = json[formatKey] is String ? json[formatKey].toString(): defaultFormat;
       String id = json[idKey] is String ? json[idKey].toString() : defaultID;
@@ -66,9 +70,8 @@ class Obf extends Searlizable implements HasId{
       Map<String,ButtonData> buttonDataMap = {for(ButtonData b in buttonData) b.id:b}; 
 
       GridData grid = getGridDataFromJson(json, buttonDataMap);
-      //TODO implement fromJsonMap for buttons and grid and images and sounds
 
-      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid);
+      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid,extendedProperties: getExtendedPropertiesFromJson(json));
     }
 
     static List<ImageData> getImageDataFromJson(Map<String,dynamic> json){
@@ -106,7 +109,7 @@ class Obf extends Searlizable implements HasId{
       }
       return GridData();
     }
-    Obf autoResolveAllIdCollisions({String Function(String)? onCollision}){
+    Obf autoResolveAllIdCollisionsInFile({String Function(String)? onCollision}){
       autoResolveIdCollisions(_allHasIdsInFile(),onCollision: onCollision);
       return this;
     }
@@ -115,17 +118,7 @@ class Obf extends Searlizable implements HasId{
       ids.addAll(buttons);
       ids.addAll(images);
       ids.addAll(sounds);
-
       return ids;
-    }
-    Obf autoResolveButtonIdCollisions(){
-     return this; 
-    }
-    Obf autoResolveImageIdCollisions(){
-     return this; 
-    }
-    Obf autoResolveAudioIdCollisions(){
-      return this;
     }
         
     @override
@@ -143,6 +136,8 @@ class Obf extends Searlizable implements HasId{
       out['grid'] = _grid.toJson();
       out['images'] = images.map((ImageData data) => data.toJson()).toList();
       out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
+
+      out.addAll(extendedProperties);
       return out;
     }
 

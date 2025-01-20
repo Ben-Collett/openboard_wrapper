@@ -14,8 +14,9 @@ class SoundData extends Searlizable implements HasId{
   String? path;
   InlineData? data;
   String? url;
-  String contentType = '';
-  SoundData({required this.duration, String? id, this.path, String? contentType,this.url,this.data}): id = id ?? 'default id', contentType = contentType ?? '';
+  String contentType;
+  Map<String,dynamic> extendedProperties;
+  SoundData({required this.duration,Map<String,dynamic>? extendedProperties,this.id='defaultid', this.path, this.contentType = '', this.url,this.data}):extendedProperties = extendedProperties??{};
   factory SoundData.decode(Map<String,dynamic> json){
     int duration = json[durationKey];
     String id = json[Obf.idKey]??'';
@@ -25,7 +26,7 @@ class SoundData extends Searlizable implements HasId{
     if(json.containsKey(dataKey)){
       inline = InlineData.decode(json[dataKey]);
     }
-    return SoundData(duration:duration,id:id,contentType:contentType,data:inline,url:url);
+    return SoundData(duration:duration,id:id,contentType:contentType,data:inline,url:url,extendedProperties: getExtendedPropertiesFromJson(json));
   }
   @override
   Map<String, dynamic> toJson() {
@@ -36,6 +37,8 @@ class SoundData extends Searlizable implements HasId{
     if(data != null){
       out[dataKey] = data?.encode(contentType);//TODO: figure otu why the ?. is beign required
     }
+    
+    out.addAll(extendedProperties);
     return out;
   }
 }
