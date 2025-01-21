@@ -31,6 +31,103 @@ String simpleBoardWithErrors = """
   "sounds": []
 }
 """;
+
+String simpleBoard = """
+{
+  "format": "open-board-0.1",
+    "id": "simple",
+    "locale": "en",
+    "name": "Simple Board",
+    "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
+    "grid": {
+      "rows": 2,
+      "columns": 2,
+      "order": [
+        ["1", "2"],
+        [null, null]
+      ]
+    },
+    "buttons": [
+    {
+      "id": "1",
+      "label": "happy"
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+    ],
+    "images": [],
+    "sounds": []
+}
+""";
+String vocilizationBoard= """
+{
+  "format": "open-board-0.1",
+    "id": "simple",
+    "locale": "en",
+    "name": "voclization",
+    "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
+    "grid": {
+      "rows": 2,
+      "columns": 2,
+      "order": [
+        ["1", "2"],
+        [null, null]
+      ]
+    },
+    "buttons": [
+    {
+      "id": "1",
+      "label": "happy",
+      "voclization": "jim bob"
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+    ],
+    "images": [],
+    "sounds": []
+}
+""";
+
+String absoluteBoard= """
+{
+  "format": "open-board-0.1",
+    "id": "simple",
+    "locale": "en",
+    "name": "Simple Board",
+    "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
+    "grid": {
+      "rows": 2,
+      "columns": 2,
+      "order": [
+        ["1", "2"],
+        [null, null]
+      ]
+    },
+    "buttons": [
+    {
+      "id": "1",
+      "label": "happy",
+      "width": 0.5,
+      "height": 0.2,
+      "left": 0,
+      "top": 1
+
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+    ],
+    "images": [],
+    "sounds": []
+}
+""";
+
+
 String licenseBoard = """
 {
   "format": "open-board-0.1",
@@ -70,35 +167,6 @@ String licenseBoard = """
 """;
 
 //the original example had some errors so here is a corrected version
-String simpleBoard = """
-{
-  "format": "open-board-0.1",
-  "id": "simple",
-  "locale": "en",
-  "name": "Simple Board",
-  "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
-  "grid": {
-    "rows": 2,
-    "columns": 2,
-    "order": [
-      ["1", "2"],
-      [null, null]
-    ]
-  },
-  "buttons": [
-    {
-      "id": "1",
-      "label": "happy"
-    },
-    {
-      "id": "2",
-      "label": "sad"
-    }
-  ],
-  "images": [],
-  "sounds": []
-}
-""";
 
 String urlImage = """
 {
