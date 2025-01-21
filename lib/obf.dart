@@ -3,28 +3,31 @@ import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/button_data.dart';
 import 'package:openboard_searlizer/image_data.dart';
 import 'package:openboard_searlizer/grid_data.dart';
+import 'package:openboard_searlizer/license_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 import 'package:openboard_searlizer/sound_data.dart';
 class Obf extends Searlizable implements HasId{
-    static const String defaultFormat = "open-board-0.1";
-    static const String defaultID = "default id";
-    static const String defaultLocale = "en";
-    static const String defaultName = "default name";
-    static const String localeKey = "locale";
-    static const String nameKey = "name";
-    static const String idKey = "id";
-    static const String formatKey = "format";
-    static const String urlKey = "url" ;
-    static const String descriptionHTMLKey = "description_html";
-    static const String buttonsKey = 'buttons';
-    static const String imagesKey = 'images';
-    static const String soundKey = 'sounds';
+    static const defaultFormat = "open-board-0.1";
+    static const defaultID = "default id";
+    static const defaultLocale = "en";
+    static const defaultName = "default name";
+    static const localeKey = "locale";
+    static const nameKey = "name";
+    static const idKey = "id";
+    static const formatKey = "format";
+    static const licenseKey = 'license';
+    static const urlKey = "url" ;
+    static const descriptionHTMLKey = "description_html";
+    static const buttonsKey = 'buttons';
+    static const imagesKey = 'images';
+    static const soundKey = 'sounds';
     String format;
     @override String id;
     String locale;
     String name;
     String? url;
     String? descriptionHTML;
+    LicenseData? licenseData;
     GridData _grid;
     List<ButtonData> buttons;
     List<ImageData> unusedImages = [];
@@ -41,6 +44,7 @@ class Obf extends Searlizable implements HasId{
     GridData? grid,
     Map<String,dynamic>? extendedProperties,
     this.descriptionHTML,
+    this.licenseData,
     this.url,
     required this.locale,
     required this.name,
@@ -58,7 +62,7 @@ class Obf extends Searlizable implements HasId{
       String locale = json[localeKey] is String ? json[localeKey].toString():defaultName;
       String? descriptionHTML= json[descriptionHTMLKey] is String ? json[descriptionHTMLKey].toString() : null;
       String? url = json[urlKey] is String ? json[urlKey].toString() : null;
-
+      LicenseData? licenseData = json[licenseKey] is Map ? LicenseData.fromJson(json[licenseKey]):null;
       List<ImageData> imageData = getImageDataFromJson(json);
       List<SoundData> soundData = getSoundDataFromJson(json);
       
@@ -71,7 +75,7 @@ class Obf extends Searlizable implements HasId{
 
       GridData grid = getGridDataFromJson(json, buttonDataMap);
 
-      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid,extendedProperties: getExtendedPropertiesFromJson(json));
+      return Obf(format: format,id:id,locale:locale,name: name,descriptionHTML:descriptionHTML,url:url,images:imageData,sounds:soundData,buttons:buttonData,grid:grid,licenseData: licenseData,extendedProperties: getExtendedPropertiesFromJson(json));
     }
 
     static List<ImageData> getImageDataFromJson(Map<String,dynamic> json){
@@ -131,6 +135,8 @@ class Obf extends Searlizable implements HasId{
 
       addToMapIfNotNull(out, descriptionHTMLKey, descriptionHTML);
       addToMapIfNotNull(out, urlKey, url);
+
+      addToMapIfNotNull(out, licenseKey, licenseData?.toJson());
 
       out[buttonsKey] = buttons.map((ButtonData bt) => bt.toJson()).toList();
       out['grid'] = _grid.toJson();

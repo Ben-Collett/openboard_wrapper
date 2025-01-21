@@ -31,6 +31,43 @@ String simpleBoardWithErrors = """
   "sounds": []
 }
 """;
+String licenseBoard = """
+{
+  "format": "open-board-0.1",
+  "id": "license",
+  "locale": "en",
+  "name": "licenseBoard",
+  "license": {
+    "type": "type",
+    "copyright_notice_url": "url",
+    "source_url": "urlssource",
+    "author_name": "name",
+    "author_url": "autor/url",
+    "author_email": "email@email.com"
+  },
+  "grid": {
+    "rows": 2,
+    "columns": 2,
+    "order": [
+      ["a", "b"],
+      [null, null]
+    ]
+  },
+  "buttons": [
+    {
+      "id": "a",
+      "label": "jim"
+    },
+    {
+      "id": "b",
+      "label": "joe"
+    }
+  ],
+  "images": [],
+  "sounds": []
+
+}
+""";
 
 //the original example had some errors so here is a corrected version
 String simpleBoard = """

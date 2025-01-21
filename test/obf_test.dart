@@ -26,6 +26,9 @@ void main(){
   test('ext_properties',(){
     expect(Obf.fromJsonString(extProperties).toJson(), jsonDecode(extProperties));
   });
+  test('license',(){
+    expect(Obf.fromJsonString(licenseBoard).toJson(), jsonDecode(licenseBoard));
+  });
   test('auto resolve id collisions', (){
     ButtonData b1 = ButtonData(id:'b1');
     ButtonData b2 = ButtonData(id:'b2');
