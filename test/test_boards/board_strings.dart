@@ -61,7 +61,7 @@ String simpleBoard = """
     "sounds": []
 }
 """;
-String vocilizationBoard= """
+String vocilizationBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -92,7 +92,7 @@ String vocilizationBoard= """
 }
 """;
 
-String absoluteBoard= """
+String absoluteBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -126,7 +126,6 @@ String absoluteBoard= """
     "sounds": []
 }
 """;
-
 
 String licenseBoard = """
 {
@@ -333,7 +332,6 @@ String inlineImages = """
   ],
   "sounds": []
 }""";
-
 
 String extProperties = """
 {

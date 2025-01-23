@@ -1,43 +1,61 @@
-
 import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/obf.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 
-class SoundData extends Searlizable implements HasId{
+class SoundData extends Searlizable implements HasId {
   static const String durationKey = 'duration';
   static const String pathKey = 'path';
   static const String dataKey = 'data';
   static const String contentTypeKey = 'content_type';
   static const String urlKey = 'url';
-  int duration; 
-  @override String id;
+  int duration;
+  @override
+  String id;
   String? path;
   InlineData? data;
   String? url;
   String contentType;
-  Map<String,dynamic> extendedProperties;
-  SoundData({required this.duration,Map<String,dynamic>? extendedProperties,this.id='defaultid', this.path, this.contentType = '', this.url,this.data}):extendedProperties = extendedProperties??{};
-  factory SoundData.decode(Map<String,dynamic> json){
+  Map<String, dynamic> extendedProperties;
+  SoundData(
+      {required this.duration,
+      Map<String, dynamic>? extendedProperties,
+      this.id = 'defaultid',
+      this.path,
+      this.contentType = '',
+      this.url,
+      this.data})
+      : extendedProperties = extendedProperties ?? {};
+  factory SoundData.decode(Map<String, dynamic> json) {
     int duration = json[durationKey];
-    String id = json[Obf.idKey]??'';
-    String contentType  = json[contentTypeKey];
+    String id = json[Obf.idKey] ?? '';
+    String contentType = json[contentTypeKey];
     String? url = json[urlKey];
     InlineData? inline;
-    if(json.containsKey(dataKey)){
+    if (json.containsKey(dataKey)) {
       inline = InlineData.decode(json[dataKey]);
     }
-    return SoundData(duration:duration,id:id,contentType:contentType,data:inline,url:url,extendedProperties: getExtendedPropertiesFromJson(json));
+    return SoundData(
+        duration: duration,
+        id: id,
+        contentType: contentType,
+        data: inline,
+        url: url,
+        extendedProperties: getExtendedPropertiesFromJson(json));
   }
   @override
   Map<String, dynamic> toJson() {
-    
-    Map<String,dynamic> out = {"id":id,durationKey:duration,contentTypeKey:contentType};
+    Map<String, dynamic> out = {
+      "id": id,
+      durationKey: duration,
+      contentTypeKey: contentType
+    };
     addToMapIfNotNull(out, pathKey, path);
-    addToMapIfNotNull(out,urlKey,url);
-    if(data != null){
-      out[dataKey] = data?.encode(contentType);//TODO: figure otu why the ?. is beign required
+    addToMapIfNotNull(out, urlKey, url);
+    if (data != null) {
+      out[dataKey] = data
+          ?.encode(contentType); //TODO: figure otu why the ?. is beign required
     }
-    
+
     out.addAll(extendedProperties);
     return out;
   }
