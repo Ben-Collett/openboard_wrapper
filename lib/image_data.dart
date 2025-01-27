@@ -8,6 +8,7 @@ class ImageData implements HasId {
   static const String pathKey = 'path';
   static const String inlineDataKey = 'data';
   static const String urlKey = 'url';
+  static const String dataUrlKey = 'data_url';
 
   @override
   String id = "i0";
@@ -17,6 +18,7 @@ class ImageData implements HasId {
   String? path;
   InlineData? inlineData;
   String? url;
+  String? dataUrl;
   String? symbol;
   Map<String, dynamic> extendedProperties = {};
 
@@ -29,6 +31,7 @@ class ImageData implements HasId {
       this.path,
       this.inlineData,
       this.url,
+      this.dataUrl,
       this.symbol})
       : extendedProperties = extendedProperties ?? {},
         contentType = contentType ?? '',
@@ -42,6 +45,7 @@ class ImageData implements HasId {
     width = json[widthKey];
     height = json[heightKey];
     path = json[pathKey];
+    dataUrl = json[dataUrlKey];
     if (json[inlineDataKey] != null) {
       inlineData = InlineData.decode(json[inlineDataKey]);
     }
@@ -60,6 +64,7 @@ class ImageData implements HasId {
     addToMapIfNotNull(out, pathKey, path);
     addToMapIfNotNull(out, inlineDataKey, inlineData?.encode(contentType));
     addToMapIfNotNull(out, urlKey, url);
+    addToMapIfNotNull(out, dataUrlKey, dataUrl);
 
     out.addAll(extendedProperties);
     return out;
@@ -76,6 +81,9 @@ class ImageData implements HasId {
     if (url != null) {
       out.add(ImageRepresentation.url);
     }
+    if (dataUrl != null) {
+      out.add(ImageRepresentation.dataUrl);
+    }
     if (symbol != null) {
       out.add(ImageRepresentation.symbol);
     }
@@ -83,4 +91,4 @@ class ImageData implements HasId {
   }
 }
 
-enum ImageRepresentation { inline, path, url, symbol }
+enum ImageRepresentation { inline, path, url, dataUrl, symbol }

@@ -32,9 +32,11 @@ class Obf extends Searlizable implements HasId {
   LicenseData? licenseData;
   GridData _grid;
   List<ButtonData> buttons;
-  List<ImageData> unusedImages = [];
+  List<ImageData> _images;
   List<ImageData> get images {
-    return buttons.map((b) => b.image).nonNulls.toSet().toList();
+    List<ImageData> temp = buttons.map((b) => b.image).nonNulls.toList();
+    temp.addAll(_images);
+    return temp.toSet().toList();
   }
 
   List<SoundData> sounds;
@@ -56,7 +58,8 @@ class Obf extends Searlizable implements HasId {
   })  : buttons = buttons ?? [],
         sounds = sounds ?? [],
         _grid = grid ?? GridData(),
-        extendedProperties = extendedProperties ?? {};
+        extendedProperties = extendedProperties ?? {},
+        _images = images ?? [];
 
   factory Obf.fromJsonMap(Map<String, dynamic> json) {
     String format =

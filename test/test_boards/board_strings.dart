@@ -217,6 +217,35 @@ String urlImage = """
   "sounds": []
 }
 """;
+String dataUrlBoard = """
+{
+  "format": "open-boeard-0.1",
+  "locale": "en",
+  "id": "board",
+  "name": "dataurl",
+  "grid": {
+    "rows": 1,
+    "columns": 2,
+    "order": [[null,null]]
+  },
+  "buttons": [],
+  "images": [{
+  "content_type": "type",
+  "id": "i",
+  "width": 100,
+  "height": 100,
+  "url":"url",
+  "data_url":"data url"
+  }],
+  "sounds":[{
+    "id": "s1",
+    "content_type": "type",
+    "duration": 3,
+    "url": "hello",
+    "data_url": "joe"
+  }]
+  }
+""";
 String imagesAndSounds = """
 {
   "format": "open-board-0.1",

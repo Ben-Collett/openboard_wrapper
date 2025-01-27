@@ -39,6 +39,9 @@ void main() {
     expect(
         Obf.fromJsonString(absoluteBoard).toJson(), jsonDecode(absoluteBoard));
   });
+  test('data url', () {
+    expect(Obf.fromJsonString(dataUrlBoard).toJson(), jsonDecode(dataUrlBoard));
+  });
   test('auto resolve id collisions', () {
     ButtonData b1 = ButtonData(id: 'b1');
     ButtonData b2 = ButtonData(id: 'b2');
