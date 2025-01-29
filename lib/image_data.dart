@@ -9,6 +9,7 @@ class ImageData implements HasId {
   static const String inlineDataKey = 'data';
   static const String urlKey = 'url';
   static const String dataUrlKey = 'data_url';
+  static const String symbolKey = 'symbol';
 
   @override
   String id = "i0";
@@ -19,7 +20,7 @@ class ImageData implements HasId {
   InlineData? inlineData;
   String? url;
   String? dataUrl;
-  String? symbol;
+  Symbol? symbol;
   Map<String, dynamic> extendedProperties = {};
 
   ImageData(
@@ -50,6 +51,9 @@ class ImageData implements HasId {
       inlineData = InlineData.decode(json[inlineDataKey]);
     }
     url = json[urlKey];
+    if (json.containsKey(symbolKey)) {
+      symbol = Symbol.fromJson(json[symbolKey]);
+    }
     extendedProperties = getExtendedPropertiesFromJson(json);
   }
 
@@ -65,6 +69,10 @@ class ImageData implements HasId {
     addToMapIfNotNull(out, inlineDataKey, inlineData?.encode(contentType));
     addToMapIfNotNull(out, urlKey, url);
     addToMapIfNotNull(out, dataUrlKey, dataUrl);
+
+    if (symbol != null) {
+      out[symbolKey] = symbol!.toJson();
+    }
 
     out.addAll(extendedProperties);
     return out;
@@ -87,6 +95,25 @@ class ImageData implements HasId {
     if (symbol != null) {
       out.add(ImageRepresentation.symbol);
     }
+    return out;
+  }
+}
+
+class Symbol {
+  static const String fileNameKey = "filename";
+  static const String setKey = "set";
+  String? fileName;
+  String? set;
+  Symbol.fromJson(Map<String, dynamic> json) {
+    fileName = json[fileNameKey];
+    set = json[setKey];
+  }
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> out = {};
+
+    addToMapIfNotNull(out, fileNameKey, fileName);
+    addToMapIfNotNull(out, setKey, set);
+
     return out;
   }
 }

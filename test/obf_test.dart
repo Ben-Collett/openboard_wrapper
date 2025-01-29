@@ -20,6 +20,9 @@ void main() {
   test('url image', () {
     expect(Obf.fromJsonString(urlImage).toJson(), jsonDecode(urlImage));
   });
+  test('symbol image', () {
+    expect(Obf.fromJsonString(symbolImage).toJson(), jsonDecode(symbolImage));
+  });
   test('image and sound', () {
     expect(Obf.fromJsonString(imagesAndSounds).toJson(),
         jsonDecode(imagesAndSounds));

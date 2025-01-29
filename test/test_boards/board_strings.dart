@@ -246,6 +246,32 @@ String dataUrlBoard = """
   }]
   }
 """;
+String symbolImage = """
+{
+  "format": "open-boeard-0.1",
+  "locale": "en",
+  "id": "board",
+  "name": "dataurl",
+  "grid": {
+    "rows": 1,
+    "columns": 2,
+    "order": [[null,null]]
+  },
+  "buttons": [],
+  "images": [{
+  "content_type": "type",
+  "id": "i",
+  "width": 100,
+  "height": 100,
+  "symbol": {
+    "set": "library",
+    "filename": "hi.png" 
+  }
+  }],
+  "sounds":[]
+  }
+""";
+
 String imagesAndSounds = """
 {
   "format": "open-board-0.1",
