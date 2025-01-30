@@ -13,6 +13,8 @@ class ButtonData extends Searlizable implements HasId {
   static const String bgColorKey = "background_color";
   static const String borderColorKey = 'border_color';
   static const String defultId = 'default id';
+  static const String actionKey = 'action';
+  static const String actionsKey = 'actions';
   @override
   String id;
   String? label;
@@ -23,8 +25,11 @@ class ButtonData extends Searlizable implements HasId {
   ColorData? borderColor;
   AbsoluteDimensionData? absoluteDimension;
   Map<String, dynamic> extendedProperties;
+  String? action;
+  List<String> actions;
   ButtonData(
       {this.id = defultId,
+      List<String>? actions,
       Map<String, dynamic>? extendedProperties,
       this.label,
       this.image,
@@ -32,8 +37,10 @@ class ButtonData extends Searlizable implements HasId {
       this.backgroundColor,
       this.borderColor,
       this.absoluteDimension,
+      this.action,
       this.voclization})
-      : extendedProperties = extendedProperties ?? {};
+      : extendedProperties = extendedProperties ?? {},
+        actions = actions ?? [];
 
   factory ButtonData.decode(
       {required Map<String, dynamic> json,
@@ -80,6 +87,9 @@ class ButtonData extends Searlizable implements HasId {
       }
     }
 
+    String? action = json[actionKey];
+    List<String>? actions = json[actionsKey];
+
     AbsoluteDimensionData? absoluteDimensionData;
     if (absoluteJson.isNotEmpty) {
       absoluteDimensionData = AbsoluteDimensionData.fromJson(json);
@@ -92,9 +102,21 @@ class ButtonData extends Searlizable implements HasId {
         image: image,
         borderColor: borderColor,
         sound: sound,
+        action: action,
+        actions: actions,
         absoluteDimension: absoluteDimensionData,
         extendedProperties: getExtendedPropertiesFromJson(json));
   }
+  ButtonData addAction(String action) {
+    actions.add(action);
+    return this;
+  }
+
+  ButtonData addActionFromPredefined(PredefinedSpecialtyAction action) {
+    actions.add(action.asString);
+    return this;
+  }
+
   @override
   Map<String, dynamic> toJson() {
     Map<String, dynamic> json = {idKey: id};
@@ -104,10 +126,15 @@ class ButtonData extends Searlizable implements HasId {
     addToMapIfNotNull(json, imageKey, image?.id);
     addToMapIfNotNull(json, soundKey, sound?.id);
     addToMapIfNotNull(json, voclizationKey, voclization);
+    addToMapIfNotNull(json, actionKey, action);
 
     json.addAll(absoluteDimension?.toJson() ?? {});
-
     json.addAll(extendedProperties);
+
+    if (actions.isNotEmpty) {
+      json[actionsKey] = actions;
+    }
+
     return json;
   }
 
@@ -118,6 +145,18 @@ class ButtonData extends Searlizable implements HasId {
   void unsafeSetImage(ImageData data) {
     image = data;
   }
+}
+
+enum PredefinedSpecialtyAction {
+  backSpace(':backspace'),
+  space(':space'),
+  clear(':clear'),
+  appendSomething('+something'),
+  home(':home'),
+  speak(':speak');
+
+  final String asString;
+  const PredefinedSpecialtyAction(this.asString);
 }
 
 class AbsoluteDimensionData extends Searlizable {

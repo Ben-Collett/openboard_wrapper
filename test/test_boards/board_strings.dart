@@ -21,10 +21,13 @@ String simpleBoardWithErrors = """
     {
       "id": 1,
       "label": "happy"
+      "action": ":clear"
     },
     {
       "id": 2,
       "label": "sad"
+      "action": ":backspace"
+      "actions": [":clear","+something",":backspace",":space",":speak",":home",":ext_increment"]
     }
   ],
   "images": [],
@@ -61,6 +64,36 @@ String simpleBoard = """
     "sounds": []
 }
 """;
+String actionAndActionsBoard = """
+{
+  "format": "open-board-0.1",
+    "id": "simple",
+    "locale": "en",
+    "name": "Simple Board",
+    "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
+    "grid": {
+      "rows": 2,
+      "columns": 2,
+      "order": [
+        ["1", "2"],
+        [null, null]
+      ]
+    },
+    "buttons": [
+    {
+      "id": "1",
+      "label": "happy"
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+    ],
+    "images": [],
+    "sounds": []
+}
+""";
+
 String vocilizationBoard = """
 {
   "format": "open-board-0.1",

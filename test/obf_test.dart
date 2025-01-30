@@ -23,6 +23,10 @@ void main() {
   test('symbol image', () {
     expect(Obf.fromJsonString(symbolImage).toJson(), jsonDecode(symbolImage));
   });
+  test('action/actions', () {
+    expect(Obf.fromJsonString(actionAndActionsBoard).toJson(),
+        jsonDecode(actionAndActionsBoard));
+  });
   test('image and sound', () {
     expect(Obf.fromJsonString(imagesAndSounds).toJson(),
         jsonDecode(imagesAndSounds));
