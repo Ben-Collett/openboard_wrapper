@@ -88,7 +88,7 @@ class ButtonData extends Searlizable implements HasId {
     }
 
     String? action = json[actionKey];
-    List<String>? actions = json[actionsKey];
+    List<String>? actions = json[actionsKey]?.cast<String>();
 
     AbsoluteDimensionData? absoluteDimensionData;
     if (absoluteJson.isNotEmpty) {
@@ -136,14 +136,6 @@ class ButtonData extends Searlizable implements HasId {
     }
 
     return json;
-  }
-
-  bool safeSetImage(ImageData data, List<ImageData> imagesFromObf) {
-    return true;
-  }
-
-  void unsafeSetImage(ImageData data) {
-    image = data;
   }
 }
 

@@ -27,6 +27,10 @@ void main() {
     expect(Obf.fromJsonString(actionAndActionsBoard).toJson(),
         jsonDecode(actionAndActionsBoard));
   });
+  test('locales board test', () {
+    expect(Obf.fromJsonString(stringsLocaleBoard).toJson(),
+        jsonDecode(stringsLocaleBoard));
+  });
   test('image and sound', () {
     expect(Obf.fromJsonString(imagesAndSounds).toJson(),
         jsonDecode(imagesAndSounds));

@@ -33,6 +33,7 @@ class Obf extends Searlizable implements HasId {
   GridData _grid;
   List<ButtonData> buttons;
   List<ImageData> _images;
+  Map<String, Map<String, String>> _localeStrings;
   List<ImageData> get images {
     List<ImageData> temp = buttons.map((b) => b.image).nonNulls.toList();
     temp.addAll(_images);
@@ -48,6 +49,7 @@ class Obf extends Searlizable implements HasId {
     List<ImageData>? images,
     List<SoundData>? sounds,
     GridData? grid,
+    Map<String, Map<String, String>>? localeStrings,
     Map<String, dynamic>? extendedProperties,
     this.descriptionHTML,
     this.licenseData,
@@ -59,7 +61,8 @@ class Obf extends Searlizable implements HasId {
         sounds = sounds ?? [],
         _grid = grid ?? GridData(),
         extendedProperties = extendedProperties ?? {},
-        _images = images ?? [];
+        _images = images ?? [],
+        _localeStrings = localeStrings ?? {};
 
   factory Obf.fromJsonMap(Map<String, dynamic> json) {
     String format =
@@ -93,7 +96,20 @@ class Obf extends Searlizable implements HasId {
     };
 
     GridData grid = getGridDataFromJson(json, buttonDataMap);
-
+    Map<String, Map<String, String>> localeStrings = {};
+    if (json.containsKey('strings') && json['strings'] is Map) {
+      for (var entry in json['strings'].entries) {
+        if (entry.value is Map) {
+          String locale = entry.key;
+          localeStrings[locale] = {};
+          for (var nestedEntry in entry.value.entries) {
+            String wordInDefaultLocale = nestedEntry.key;
+            String wordInLocale = nestedEntry.value;
+            localeStrings[locale]![wordInDefaultLocale] = wordInLocale;
+          }
+        }
+      }
+    }
     return Obf(
         format: format,
         id: id,
@@ -101,6 +117,7 @@ class Obf extends Searlizable implements HasId {
         name: name,
         descriptionHTML: descriptionHTML,
         url: url,
+        localeStrings: localeStrings,
         images: imageData,
         sounds: soundData,
         buttons: buttonData,
@@ -153,6 +170,33 @@ class Obf extends Searlizable implements HasId {
     return GridData();
   }
 
+  Obf addWordInLocale(
+      {required String locale,
+      required String wordInDefaultLocal,
+      required String wordInLocale}) {
+    _localeStrings.putIfAbsent(locale, () => {})[wordInDefaultLocal] =
+        wordInLocale;
+    return this;
+  }
+
+  Obf removeWordInLocaleFromDefault(
+      {required String locale, required String wordInDefaultLocale}) {
+    _localeStrings[locale]?.remove(wordInDefaultLocale);
+    return this;
+  }
+
+  Obf removeWordInLocaleFromWordInLocale(
+      {required String locale, required String wordInlocale}) {
+    _localeStrings[locale]?.removeWhere((key, value) => value == wordInlocale);
+    return this;
+  }
+
+  Obf removeWordInLocaleFromDefaultLocale(
+      {required String word, required String locale}) {
+    _localeStrings[locale]?.removeWhere((key, value) => key == word);
+    return this;
+  }
+
   Obf autoResolveAllIdCollisionsInFile({String Function(String)? onCollision}) {
     autoResolveIdCollisions(_allHasIdsInFile(), onCollision: onCollision);
     return this;
@@ -189,8 +233,9 @@ class Obf extends Searlizable implements HasId {
     out['grid'] = _grid.toJson();
     out['images'] = images.map((ImageData data) => data.toJson()).toList();
     out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
-
-    out.addAll(extendedProperties);
+    if (_localeStrings.isNotEmpty) {
+      out['strings'] = _localeStrings;
+    }
     return out;
   }
 
