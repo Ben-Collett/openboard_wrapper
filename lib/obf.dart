@@ -35,12 +35,18 @@ class Obf extends Searlizable implements HasId {
   List<ImageData> _images;
   Map<String, Map<String, String>> _localeStrings;
   List<ImageData> get images {
-    List<ImageData> temp = buttons.map((b) => b.image).nonNulls.toList();
-    temp.addAll(_images);
+    List<ImageData> temp = List.of(_images);
+    temp.addAll(buttons.map((b) => b.image).nonNulls.toList());
     return temp.toSet().toList();
   }
 
-  List<SoundData> sounds;
+  List<SoundData> _sounds;
+  List<SoundData> get sounds {
+    List<SoundData> temp = List.of(_sounds);
+    temp.addAll(buttons.map((b) => b.sound).nonNulls.toList());
+    return temp.toSet().toList();
+  }
+
   Map<String, dynamic> extendedProperties;
   Set<String>? allExtendedPropertiesInFile;
   Obf({
@@ -58,7 +64,7 @@ class Obf extends Searlizable implements HasId {
     required this.name,
     required this.id,
   })  : buttons = buttons ?? [],
-        sounds = sounds ?? [],
+        _sounds = sounds ?? [],
         _grid = grid ?? GridData(),
         extendedProperties = extendedProperties ?? {},
         _images = images ?? [],
@@ -124,6 +130,16 @@ class Obf extends Searlizable implements HasId {
         grid: grid,
         licenseData: licenseData,
         extendedProperties: getExtendedPropertiesFromJson(json));
+  }
+
+  Obf addImage(ImageData image) {
+    _images.add(image);
+    return this;
+  }
+
+  Obf addSound(SoundData sound) {
+    _sounds.add(sound);
+    return this;
   }
 
   static List<ImageData> getImageDataFromJson(Map<String, dynamic> json) {
