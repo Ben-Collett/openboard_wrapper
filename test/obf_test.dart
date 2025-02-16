@@ -39,6 +39,20 @@ void main() {
     expect(
         Obf.fromJsonString(extProperties).toJson(), jsonDecode(extProperties));
   });
+  test('all ext properties in board', () {
+    Set<String> expected = {
+      'ext_text_color',
+      'ext_sound',
+      'ext_hidden',
+      'ext_animated',
+      'ext_duration',
+      'ext_playback_speed',
+      'ext_theme',
+    };
+
+    expect(Obf.fromJsonString(extProperties).allExtendedPropertiesInFile,
+        expected);
+  });
   test('license', () {
     expect(Obf.fromJsonString(licenseBoard).toJson(), jsonDecode(licenseBoard));
   });

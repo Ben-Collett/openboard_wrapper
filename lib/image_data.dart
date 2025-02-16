@@ -1,6 +1,8 @@
+import 'package:openboard_searlizer/searlizable.dart';
+
 import '_utils.dart';
 
-class ImageData implements HasId {
+class ImageData extends HasIdAndPath with Searlizable {
   static const String idKey = 'id';
   static const String contentTypeKey = 'content_type';
   static const String widthKey = 'width';
@@ -16,6 +18,7 @@ class ImageData implements HasId {
   String contentType = '';
   int width = 0;
   int height = 0;
+  @override
   String? path;
   InlineData? inlineData;
   String? url;

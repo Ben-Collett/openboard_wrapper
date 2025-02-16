@@ -1,7 +1,7 @@
 import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 
-class LicenseData extends Searlizable {
+class LicenseData with Searlizable {
   static const typeKey = 'type';
   static const authorNameKey = 'author_name';
   static const authorEmailKey = 'author_email';

@@ -3,8 +3,9 @@ import 'package:openboard_searlizer/color_data.dart';
 import 'package:openboard_searlizer/image_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 import 'package:openboard_searlizer/sound_data.dart';
+import 'package:openboard_searlizer/obf.dart';
 
-class ButtonData extends Searlizable implements HasId {
+class ButtonData with Searlizable implements HasId {
   static const String idKey = "id";
   static const String labelKey = "label";
   static const String voclizationKey = 'voclization';
@@ -27,6 +28,8 @@ class ButtonData extends Searlizable implements HasId {
   Map<String, dynamic> extendedProperties;
   String? action;
   List<String> actions;
+  Obf? linkedBoard;
+
   ButtonData(
       {this.id = defultId,
       List<String>? actions,
@@ -38,6 +41,7 @@ class ButtonData extends Searlizable implements HasId {
       this.borderColor,
       this.absoluteDimension,
       this.action,
+      this.linkedBoard,
       this.voclization})
       : extendedProperties = extendedProperties ?? {},
         actions = actions ?? [];
@@ -151,7 +155,7 @@ enum PredefinedSpecialtyAction {
   const PredefinedSpecialtyAction(this.asString);
 }
 
-class AbsoluteDimensionData extends Searlizable {
+class AbsoluteDimensionData with Searlizable {
   static const String widthKey = 'width';
   static const String heightKey = 'height';
   static const String leftKey = 'left';
@@ -224,4 +228,12 @@ class AbsoluteDimensionData extends Searlizable {
 
     return json;
   }
+}
+
+class LinkedBoard {
+  String name;
+  String? path;
+  String? url;
+  String? dataUrl;
+  LinkedBoard({required this.name, this.path, this.url, this.dataUrl});
 }

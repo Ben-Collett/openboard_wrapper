@@ -26,8 +26,27 @@ class InlineData {
   }
 }
 
-class HasId {
-  String id = '';
+abstract class HasId {
+  abstract String id;
+}
+
+abstract class HasFilePath {
+  abstract String? path;
+}
+
+abstract class HasIdAndPath implements HasId, HasFilePath {
+  @override
+  abstract String id;
+  @override
+  abstract String? path;
+  MapEntry<String, String>? get idMapedToPath {
+    if (path == null) {
+      return null;
+    }
+    return MapEntry(id, path!);
+  }
+
+  //MapEntry<String, String>? mapIdToPath() {}
 }
 
 Map<String, dynamic> getExtendedPropertiesFromJson(Map<String, dynamic> json) {
@@ -38,7 +57,7 @@ Map<String, dynamic> getExtendedPropertiesFromJson(Map<String, dynamic> json) {
   return out;
 }
 
-void autoResolveIdCollisions(List<HasId> toResolve,
+void autoResolveIdCollisions(Iterable<HasId> toResolve,
     {String Function(String)? onCollision}) {
   Map<String, int> frequency = idFrequency(toResolve);
   String Function(String) function = onCollision ?? _autoIncrement;
@@ -56,7 +75,7 @@ void autoResolveIdCollisions(List<HasId> toResolve,
   }
 }
 
-Map<String, int> idFrequency(List<HasId> toCount) {
+Map<String, int> idFrequency(Iterable<HasId> toCount) {
   Map<String, int> out = {};
   for (HasId current in toCount) {
     String id = current.id;

@@ -61,6 +61,35 @@ String simpleBoard = """
     "sounds": []
 }
 """;
+String loadingBoard = """
+{
+  "format": "open-board-0.1",
+    "id": "simple",
+    "locale": "en",
+    "name": "Simple Board",
+    "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
+    "grid": {
+      "rows": 2,
+      "columns": 2,
+      "order": [
+        ["1", "2"],
+        [null, null]
+      ]
+    },
+    "buttons": [
+    {
+      "id": "1",
+      "label": "happy"
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+    ],
+    "images": [],
+    "sounds": []
+}
+""";
 
 String stringsLocaleBoard = """
 {
@@ -154,7 +183,7 @@ String actionAndActionsBoard = """
 String vocilizationBoard = """
 {
   "format": "open-board-0.1",
-    "id": "simple",
+    "id": "voclization",
     "locale": "en",
     "name": "voclization",
     "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
@@ -185,7 +214,7 @@ String vocilizationBoard = """
 String absoluteBoard = """
 {
   "format": "open-board-0.1",
-    "id": "simple",
+    "id": "absolute",
     "locale": "en",
     "name": "Simple Board",
     "description_html": "This is a very basic .obf file, it contains no images or sounds, and assumes default styling.",
@@ -481,10 +510,11 @@ String inlineImages = """
 String extProperties = """
 {
   "format": "open-board-0.1",
-  "id": "images_and_sounds",
+  "id": "ext",
   "locale": "en",
   "name": "ext",
   "description_html": "This is an .obf file with images and sounds included both as data attributes within the file, and as external URLs. It also includes some simple styling.",
+  "ext_theme": "dracula" ,
   "grid": {
     "rows": 2,
     "columns": 2,

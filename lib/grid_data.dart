@@ -1,7 +1,7 @@
 import 'package:openboard_searlizer/button_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 
-class GridData extends Searlizable {
+class GridData with Searlizable {
   List<List<ButtonData?>> _order;
   int get numberOfRows => _order.length;
   int get numberOfColumns => _order.isEmpty ? 0 : _order[0].length;

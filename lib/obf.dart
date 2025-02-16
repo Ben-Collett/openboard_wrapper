@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:convert';
 import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/button_data.dart';
@@ -7,7 +8,7 @@ import 'package:openboard_searlizer/license_data.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 import 'package:openboard_searlizer/sound_data.dart';
 
-class Obf extends Searlizable implements HasId {
+class Obf extends HasIdAndPath with Searlizable {
   static const defaultFormat = "open-board-0.1";
   static const defaultID = "default id";
   static const defaultLocale = "en";
@@ -33,6 +34,8 @@ class Obf extends Searlizable implements HasId {
   GridData _grid;
   List<ButtonData> buttons;
   List<ImageData> _images;
+  @override
+  String? path;
   Map<String, Map<String, String>> _localeStrings;
   List<ImageData> get images {
     List<ImageData> temp = List.of(_images);
@@ -48,7 +51,20 @@ class Obf extends Searlizable implements HasId {
   }
 
   Map<String, dynamic> extendedProperties;
-  Set<String>? allExtendedPropertiesInFile;
+  UnmodifiableSetView<String> get allExtendedPropertiesInFile {
+    Set<String> out = Set.of(extendedProperties.keys);
+    for (ButtonData button in buttons) {
+      out.addAll(button.extendedProperties.keys);
+    }
+    for (ImageData image in images) {
+      out.addAll(image.extendedProperties.keys);
+    }
+    for (SoundData sound in sounds) {
+      out.addAll(sound.extendedProperties.keys);
+    }
+    return UnmodifiableSetView(out);
+  }
+
   Obf({
     this.format = defaultFormat,
     List<ButtonData>? buttons,
@@ -60,6 +76,7 @@ class Obf extends Searlizable implements HasId {
     this.descriptionHTML,
     this.licenseData,
     this.url,
+    this.path,
     required this.locale,
     required this.name,
     required this.id,
@@ -244,14 +261,17 @@ class Obf extends Searlizable implements HasId {
     addToMapIfNotNull(out, urlKey, url);
 
     addToMapIfNotNull(out, licenseKey, licenseData?.toJson());
+    out.addAll(extendedProperties);
 
     out[buttonsKey] = buttons.map((ButtonData bt) => bt.toJson()).toList();
     out['grid'] = _grid.toJson();
-    out['images'] = images.map((ImageData data) => data.toJson()).toList();
-    out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
     if (_localeStrings.isNotEmpty) {
       out['strings'] = _localeStrings;
     }
+
+    out['images'] = images.map((ImageData data) => data.toJson()).toList();
+    out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
+
     return out;
   }
 

@@ -2,7 +2,7 @@ import 'package:openboard_searlizer/_utils.dart';
 import 'package:openboard_searlizer/obf.dart';
 import 'package:openboard_searlizer/searlizable.dart';
 
-class SoundData extends Searlizable implements HasId {
+class SoundData extends HasIdAndPath with Searlizable {
   static const String durationKey = 'duration';
   static const String pathKey = 'path';
   static const String dataKey = 'data';
@@ -12,6 +12,7 @@ class SoundData extends Searlizable implements HasId {
   int duration;
   @override
   String id;
+  @override
   String? path;
   InlineData? data;
   String? url;

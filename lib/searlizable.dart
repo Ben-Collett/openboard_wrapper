@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-class Searlizable {
+mixin Searlizable {
   String toJsonString() {
     return jsonEncode(toJson());
   }

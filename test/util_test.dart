@@ -31,12 +31,12 @@ void main() {
     ];
 
     List<HasId> hasIDs = ids.map((e) {
-      HasId id = HasId();
+      HasId id = HasIdImp();
       id.id = e;
       return id;
     }).toList();
     List<HasId> expectedHasIDs = expectedIds.map((e) {
-      HasId id = HasId();
+      HasId id = HasIdImp();
       id.id = e;
       return id;
     }).toList();
@@ -45,4 +45,9 @@ void main() {
 
     expect(hasIDs.map((e) => e.id), expectedHasIDs.map((e) => e.id));
   });
+}
+
+class HasIdImp extends HasId {
+  @override
+  String id = '';
 }
