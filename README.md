@@ -1,1 +1,1 @@
-A libary that provides an OOP wraper around the open boad format in dart. Primarly intended for ParrotAAC but is avaliable for any one to use. 
+A library that provides an OOP wrapper around the open board format in dart. Primarily intended for ParrotAAC but is available for anyone to use. 
