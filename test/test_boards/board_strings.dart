@@ -2,7 +2,7 @@
 //this is to avoid issues when trying to read a file creating problems in testing
 
 //sources: https://www.openboardformat.org/examples
-String simpleBoardWithErrors = """
+const String simpleBoardWithErrors = """
 {
   "format": "open-board-0.1",
   "id": "simple",
@@ -32,7 +32,7 @@ String simpleBoardWithErrors = """
 }
 """;
 
-String simpleBoard = """
+const String simpleBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -61,7 +61,7 @@ String simpleBoard = """
     "sounds": []
 }
 """;
-String loadingBoard = """
+const String loadingBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -91,7 +91,7 @@ String loadingBoard = """
 }
 """;
 
-String stringsLocaleBoard = """
+const String stringsLocaleBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -147,7 +147,7 @@ String stringsLocaleBoard = """
 
 
 """;
-String actionAndActionsBoard = """
+const String actionAndActionsBoard = """
 {
   "format": "open-board-0.1",
     "id": "simple",
@@ -180,7 +180,7 @@ String actionAndActionsBoard = """
 }
 """;
 
-String vocilizationBoard = """
+const String vocilizationBoard = """
 {
   "format": "open-board-0.1",
     "id": "voclization",
@@ -211,7 +211,7 @@ String vocilizationBoard = """
 }
 """;
 
-String absoluteBoard = """
+const String absoluteBoard = """
 {
   "format": "open-board-0.1",
     "id": "absolute",
@@ -246,7 +246,7 @@ String absoluteBoard = """
 }
 """;
 
-String licenseBoard = """
+const String licenseBoard = """
 {
   "format": "open-board-0.1",
   "id": "license",
@@ -286,7 +286,7 @@ String licenseBoard = """
 
 //the original example had some errors so here is a corrected version
 
-String urlImage = """
+const String urlImage = """
 {
   "format": "open-board-0.1",
   "id": "url_images",
@@ -336,7 +336,7 @@ String urlImage = """
   "sounds": []
 }
 """;
-String dataUrlBoard = """
+const String dataUrlBoard = """
 {
   "format": "open-boeard-0.1",
   "locale": "en",
@@ -365,7 +365,7 @@ String dataUrlBoard = """
   }]
   }
 """;
-String symbolImage = """
+const String symbolImage = """
 {
   "format": "open-boeard-0.1",
   "locale": "en",
@@ -391,7 +391,7 @@ String symbolImage = """
   }
 """;
 
-String imagesAndSounds = """
+const String imagesAndSounds = """
 {
   "format": "open-board-0.1",
   "id": "images_and_sounds",
@@ -457,7 +457,7 @@ String imagesAndSounds = """
   ]
 }
 """;
-String inlineImages = """
+const String inlineImages = """
 {
   "format": "open-board-0.1",
   "id": "inline_images",
@@ -507,7 +507,7 @@ String inlineImages = """
   "sounds": []
 }""";
 
-String extProperties = """
+const String extProperties = """
 {
   "format": "open-board-0.1",
   "id": "ext",
