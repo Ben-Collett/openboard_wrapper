@@ -1,5 +1,5 @@
-import 'package:openboard_searlizer/button_data.dart';
-import 'package:openboard_searlizer/grid_data.dart';
+import 'package:openboard_wrapper/button_data.dart';
+import 'package:openboard_wrapper/grid_data.dart';
 import 'package:test/test.dart';
 
 final ButtonData b1 = ButtonData(id: 'b1', label: 'hi');

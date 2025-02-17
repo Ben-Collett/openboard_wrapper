@@ -1,5 +1,5 @@
-import 'package:openboard_searlizer/_utils.dart';
-import 'package:openboard_searlizer/searlizable.dart';
+import 'package:openboard_wrapper/_utils.dart';
+import 'package:openboard_wrapper/searlizable.dart';
 
 class LicenseData with Searlizable {
   static const typeKey = 'type';

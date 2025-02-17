@@ -1,4 +1,4 @@
-import 'package:openboard_searlizer/searlizable.dart';
+import 'package:openboard_wrapper/searlizable.dart';
 
 import '_utils.dart';
 

@@ -1,5 +1,5 @@
-import 'package:openboard_searlizer/button_data.dart';
-import 'package:openboard_searlizer/searlizable.dart';
+import 'package:openboard_wrapper/button_data.dart';
+import 'package:openboard_wrapper/searlizable.dart';
 
 class GridData with Searlizable {
   List<List<ButtonData?>> _order;

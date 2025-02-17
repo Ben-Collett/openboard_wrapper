@@ -1,4 +1,4 @@
-import 'package:openboard_searlizer/_utils.dart';
+import 'package:openboard_wrapper/_utils.dart';
 import 'package:test/test.dart';
 
 void main() {

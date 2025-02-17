@@ -1,9 +1,9 @@
-import 'package:openboard_searlizer/_utils.dart';
-import 'package:openboard_searlizer/color_data.dart';
-import 'package:openboard_searlizer/image_data.dart';
-import 'package:openboard_searlizer/searlizable.dart';
-import 'package:openboard_searlizer/sound_data.dart';
-import 'package:openboard_searlizer/obf.dart';
+import 'package:openboard_wrapper/_utils.dart';
+import 'package:openboard_wrapper/color_data.dart';
+import 'package:openboard_wrapper/image_data.dart';
+import 'package:openboard_wrapper/searlizable.dart';
+import 'package:openboard_wrapper/sound_data.dart';
+import 'package:openboard_wrapper/obf.dart';
 
 class ButtonData with Searlizable implements HasId {
   static const String idKey = "id";

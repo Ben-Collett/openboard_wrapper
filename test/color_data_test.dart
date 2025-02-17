@@ -1,4 +1,4 @@
-import 'package:openboard_searlizer/color_data.dart';
+import 'package:openboard_wrapper/color_data.dart';
 import 'package:test/test.dart';
 
 void main() {

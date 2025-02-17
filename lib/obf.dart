@@ -1,12 +1,12 @@
 import 'dart:collection';
 import 'dart:convert';
-import 'package:openboard_searlizer/_utils.dart';
-import 'package:openboard_searlizer/button_data.dart';
-import 'package:openboard_searlizer/image_data.dart';
-import 'package:openboard_searlizer/grid_data.dart';
-import 'package:openboard_searlizer/license_data.dart';
-import 'package:openboard_searlizer/searlizable.dart';
-import 'package:openboard_searlizer/sound_data.dart';
+import 'package:openboard_wrapper/_utils.dart';
+import 'package:openboard_wrapper/button_data.dart';
+import 'package:openboard_wrapper/image_data.dart';
+import 'package:openboard_wrapper/grid_data.dart';
+import 'package:openboard_wrapper/license_data.dart';
+import 'package:openboard_wrapper/searlizable.dart';
+import 'package:openboard_wrapper/sound_data.dart';
 
 class Obf extends HasIdAndPath with Searlizable {
   static const defaultFormat = "open-board-0.1";

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:openboard_searlizer/_utils.dart';
-import 'package:openboard_searlizer/obz.dart';
-import 'package:openboard_searlizer/obf.dart';
+import 'package:openboard_wrapper/_utils.dart';
+import 'package:openboard_wrapper/obz.dart';
+import 'package:openboard_wrapper/obf.dart';
 import 'package:test/test.dart';
 import './test_boards/board_strings.dart';
 import './test_boards/manifest_stings.dart';

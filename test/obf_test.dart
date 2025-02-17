@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:openboard_searlizer/button_data.dart';
-import 'package:openboard_searlizer/image_data.dart';
+import 'package:openboard_wrapper/button_data.dart';
+import 'package:openboard_wrapper/image_data.dart';
 import 'package:test/test.dart';
-import 'package:openboard_searlizer/obf.dart';
+import 'package:openboard_wrapper/obf.dart';
 import './test_boards/board_strings.dart';
 
 void main() {
