@@ -85,6 +85,19 @@ void main() {
     }
     expect(b1.image, b2.image);
   });
+  test('to simple obz', () {
+    Obf simpleBoard = getSimpleBoard();
+    simpleBoard.path = "board/simpole";
+    Map<String, dynamic> expectedManifest = {
+      "root": simpleBoard.path,
+      "paths": {
+        "boards": {simpleBoard.id: simpleBoard.path}
+      },
+      "format": "open-board-0.1",
+    };
+
+    expect(expectedManifest, simpleBoard.toSimpleObz().manifestJson);
+  });
 }
 
 Obf getSimpleBoard() {

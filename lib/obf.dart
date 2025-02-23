@@ -5,6 +5,7 @@ import 'package:openboard_wrapper/button_data.dart';
 import 'package:openboard_wrapper/image_data.dart';
 import 'package:openboard_wrapper/grid_data.dart';
 import 'package:openboard_wrapper/license_data.dart';
+import 'package:openboard_wrapper/obz.dart';
 import 'package:openboard_wrapper/searlizable.dart';
 import 'package:openboard_wrapper/sound_data.dart';
 
@@ -273,6 +274,12 @@ class Obf extends HasIdAndPath with Searlizable {
     out['sounds'] = sounds.map((SoundData data) => data.toJson()).toList();
 
     return out;
+  }
+
+  ///Converts a single obf into an obz with just that board which is set as the root board.
+  Obz toSimpleObz() {
+    Obz obz = Obz(root: this);
+    return obz;
   }
 
   factory Obf.fromJsonString(String json) {
