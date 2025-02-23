@@ -39,7 +39,7 @@ abstract class HasIdAndPath implements HasId, HasFilePath {
   abstract String id;
   @override
   abstract String? path;
-  MapEntry<String, String>? get idMapedToPath {
+  MapEntry<String, String>? get idMappedToPath {
     if (path == null) {
       return null;
     }

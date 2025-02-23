@@ -256,7 +256,7 @@ class Obz {
     list.addAll(soundsWithPaths);
 
     Map<String, String> out = {};
-    out.addEntries(list.map((entry) => entry.idMapedToPath).nonNulls);
+    out.addEntries(list.map((entry) => entry.idMappedToPath).nonNulls);
     return UnmodifiableMapView(out);
   }
 
