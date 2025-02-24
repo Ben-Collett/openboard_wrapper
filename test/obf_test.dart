@@ -5,6 +5,7 @@ import 'package:openboard_wrapper/image_data.dart';
 import 'package:test/test.dart';
 import 'package:openboard_wrapper/obf.dart';
 import './test_boards/board_strings.dart';
+import 'file_system_mock.dart';
 
 void main() {
   test('simple board to json', () {
@@ -97,6 +98,13 @@ void main() {
     };
 
     expect(expectedManifest, simpleBoard.toSimpleObz().manifestJson);
+  });
+  test('from file', () {
+    Obf board = Obf.fromJsonString(extProperties);
+    Map<String, dynamic> expected = board.toJson();
+    board.path = "/ext.obf";
+    Map<String, dynamic> actual = Obf.fromFile(MyFile.fromObf(board)).toJson();
+    expect(expected, actual);
   });
 }
 

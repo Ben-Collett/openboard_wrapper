@@ -2,7 +2,7 @@ import 'package:openboard_wrapper/button_data.dart';
 import 'package:openboard_wrapper/searlizable.dart';
 
 class GridData with Searlizable {
-  List<List<ButtonData?>> _order;
+  final List<List<ButtonData?>> _order;
   int get numberOfRows => _order.length;
   int get numberOfColumns => _order.isEmpty ? 0 : _order[0].length;
   GridData({List<List<ButtonData?>>? order}) : _order = order ?? [];
@@ -39,6 +39,7 @@ class GridData with Searlizable {
 
     return GridData(order: order);
   }
+
   @override
   Map<String, dynamic> toJson() {
     Map<String, dynamic> out = {

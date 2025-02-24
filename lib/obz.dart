@@ -1,5 +1,6 @@
 import 'dart:collection';
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:openboard_wrapper/button_data.dart';
 import 'package:openboard_wrapper/obf.dart';
@@ -71,6 +72,10 @@ class Obz {
     return UnmodifiableSetView(out);
   }
 
+  String get manifestString {
+    return jsonEncode(manifestJson);
+  }
+
   Map<String, dynamic> get manifestJson {
     if (root == null) {
       throw NoRootBoardException();
@@ -127,6 +132,25 @@ class Obz {
   })  : _boards = boards?.toSet() ?? {},
         manifestExtendedProperties = manifestExtensions ?? {},
         pathExtendedProperties = pathExtensions ?? {};
+
+  factory Obz.fromDirectory(Directory dir) {
+    List<Obf> boards = [];
+    File? manifest;
+    for (FileSystemEntity entry in dir.listSync(recursive: true)) {
+      if (entry is File) {
+        if (entry.path.endsWith('.obf')) {
+          boards.add(Obf.fromFile(entry));
+        } else if (entry.path.endsWith("manifest.json")) {
+          manifest = entry;
+        }
+      }
+    }
+    Obz out = Obz(boards: boards);
+    if (manifest != null) {
+      out.parseManifestString(manifest.readAsStringSync());
+    }
+    return out;
+  }
 
   Obf? getBoard({required String id}) {
     return boards.where((board) => board.id == id).firstOrNull;

@@ -1,5 +1,6 @@
 import 'dart:collection';
 import 'dart:convert';
+import 'dart:io';
 import 'package:openboard_wrapper/_utils.dart';
 import 'package:openboard_wrapper/button_data.dart';
 import 'package:openboard_wrapper/image_data.dart';
@@ -88,6 +89,9 @@ class Obf extends HasIdAndPath with Searlizable {
         _images = images ?? [],
         _localeStrings = localeStrings ?? {};
 
+  factory Obf.fromFile(File file) {
+    return Obf.fromJsonString(file.readAsStringSync());
+  }
   factory Obf.fromJsonMap(Map<String, dynamic> json) {
     String format =
         json[formatKey] is String ? json[formatKey].toString() : defaultFormat;

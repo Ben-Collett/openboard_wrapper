@@ -13,7 +13,7 @@ class ButtonData with Searlizable implements HasId {
   static const String soundKey = 'sound_id';
   static const String bgColorKey = "background_color";
   static const String borderColorKey = 'border_color';
-  static const String defultId = 'default id';
+  static const String defaultId = 'default id';
   static const String actionKey = 'action';
   static const String actionsKey = 'actions';
   @override
@@ -31,7 +31,7 @@ class ButtonData with Searlizable implements HasId {
   Obf? linkedBoard;
 
   ButtonData(
-      {this.id = defultId,
+      {this.id = defaultId,
       List<String>? actions,
       Map<String, dynamic>? extendedProperties,
       this.label,
@@ -50,7 +50,7 @@ class ButtonData with Searlizable implements HasId {
       {required Map<String, dynamic> json,
       Map<String, ImageData>? imageSource,
       Map<String, SoundData>? soundSource}) {
-    String id = json[idKey]?.toString() ?? defultId;
+    String id = json[idKey]?.toString() ?? defaultId;
     String label = json[labelKey];
     ColorData? backgroundColor = json[bgColorKey] != null
         ? ColorData.fromString(json[bgColorKey])
@@ -196,6 +196,7 @@ class AbsoluteDimensionData with Searlizable {
   }
 
   double get left => _left;
+
   AbsoluteDimensionData(
       {double width = 0, double height = 0, double left = 0, double top = 0}) {
     height = height;
