@@ -12,6 +12,7 @@ class Obz {
   Obf? root;
   Map<String, dynamic> manifestExtendedProperties;
   Map<String, dynamic> pathExtendedProperties;
+  static const String defaultFormat = 'open-board-0.1';
   String format;
   final Set<Obf> _boards;
   UnmodifiableSetView<Obf> get boards {
@@ -124,7 +125,7 @@ class Obz {
   }
 
   Obz({
-    this.format = 'open-board-0.1',
+    this.format = defaultFormat,
     Iterable<Obf>? boards,
     Map<String, dynamic>? manifestExtensions,
     Map<String, dynamic>? pathExtensions,
@@ -133,23 +134,24 @@ class Obz {
         manifestExtendedProperties = manifestExtensions ?? {},
         pathExtendedProperties = pathExtensions ?? {};
 
-  factory Obz.fromDirectory(Directory dir) {
-    List<Obf> boards = [];
+  Obz.fromDirectory(Directory dir)
+      : _boards = {},
+        format = defaultFormat,
+        manifestExtendedProperties = {},
+        pathExtendedProperties = {} {
     File? manifest;
     for (FileSystemEntity entry in dir.listSync(recursive: true)) {
       if (entry is File) {
         if (entry.path.endsWith('.obf')) {
-          boards.add(Obf.fromFile(entry));
+          _boards.add(Obf.fromFile(entry));
         } else if (entry.path.endsWith("manifest.json")) {
           manifest = entry;
         }
       }
     }
-    Obz out = Obz(boards: boards);
     if (manifest != null) {
-      out.parseManifestString(manifest.readAsStringSync());
+      parseManifestString(manifest.readAsStringSync());
     }
-    return out;
   }
 
   Obf? getBoard({required String id}) {
