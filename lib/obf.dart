@@ -33,8 +33,8 @@ class Obf extends HasIdAndPath with Searlizable {
   String? url;
   String? descriptionHTML;
   LicenseData? licenseData;
-  GridData _grid;
-  List<ButtonData> buttons;
+  late GridData _grid;
+  late List<ButtonData> buttons;
   List<ImageData> _images;
   @override
   String? path;
@@ -89,41 +89,51 @@ class Obf extends HasIdAndPath with Searlizable {
         _images = images ?? [],
         _localeStrings = localeStrings ?? {};
 
-  factory Obf.fromFile(File file) {
-    return Obf.fromJsonString(file.readAsStringSync());
-  }
-  factory Obf.fromJsonMap(Map<String, dynamic> json) {
-    String format =
-        json[formatKey] is String ? json[formatKey].toString() : defaultFormat;
-    String id = json[idKey] is String ? json[idKey].toString() : defaultID;
-    String name =
-        json[nameKey] is String ? json[nameKey].toString() : defaultName;
-    String locale =
-        json[localeKey] is String ? json[localeKey].toString() : defaultName;
-    String? descriptionHTML = json[descriptionHTMLKey] is String
-        ? json[descriptionHTMLKey].toString()
-        : null;
-    String? url = json[urlKey] is String ? json[urlKey].toString() : null;
-    LicenseData? licenseData =
-        json[licenseKey] is Map ? LicenseData.fromJson(json[licenseKey]) : null;
-    List<ImageData> imageData = getImageDataFromJson(json);
-    List<SoundData> soundData = getSoundDataFromJson(json);
+  Obf.fromFile(File file) : this.fromJsonString(file.readAsStringSync());
 
+  Obf.fromJsonMap(Map<String, dynamic> json)
+      : _localeStrings = _parseLocaleStrings(json),
+        _sounds = getSoundDataFromJson(json),
+        extendedProperties = getExtendedPropertiesFromJson(json),
+        format = _isStringElse(json[formatKey], defaultFormat),
+        id = _isStringElse(json[idKey], defaultID),
+        name = _isStringElse(json[nameKey], defaultName),
+        locale = _isStringElse(json[localeKey], defaultLocale),
+        descriptionHTML = _isStringElseNull(json[descriptionHTMLKey]),
+        url = _isStringElseNull(json[urlKey]),
+        licenseData = _parseLicenseData(json),
+        _images = getImageDataFromJson(json) {
     Map<String, ImageData> imageDataMap = {
-      for (ImageData image in imageData) image.id: image
+      for (ImageData image in _images) image.id: image
     };
     Map<String, SoundData> soundDataMap = {
-      for (SoundData sound in soundData) sound.id: sound
+      for (SoundData sound in _sounds) sound.id: sound
     };
 
-    List<ButtonData> buttonData =
-        getButtonsDataFromJson(json, imageDataMap, soundDataMap);
+    buttons = getButtonsDataFromJson(json, imageDataMap, soundDataMap);
 
     Map<String, ButtonData> buttonDataMap = {
-      for (ButtonData b in buttonData) b.id: b
+      for (ButtonData b in buttons) b.id: b
     };
 
-    GridData grid = getGridDataFromJson(json, buttonDataMap);
+    _grid = getGridDataFromJson(json, buttonDataMap);
+  }
+  static String _isStringElse(dynamic val, String defaultValue) {
+    return val is String ? val : defaultValue;
+  }
+
+  static String? _isStringElseNull(dynamic val) {
+    return val is String ? val : null;
+  }
+
+  static LicenseData? _parseLicenseData(Map<String, dynamic> json) {
+    return json[licenseKey] is Map
+        ? LicenseData.fromJson(json[licenseKey])
+        : null;
+  }
+
+  static Map<String, Map<String, String>> _parseLocaleStrings(
+      Map<String, dynamic> json) {
     Map<String, Map<String, String>> localeStrings = {};
     if (json.containsKey('strings') && json['strings'] is Map) {
       for (var entry in json['strings'].entries) {
@@ -138,20 +148,7 @@ class Obf extends HasIdAndPath with Searlizable {
         }
       }
     }
-    return Obf(
-        format: format,
-        id: id,
-        locale: locale,
-        name: name,
-        descriptionHTML: descriptionHTML,
-        url: url,
-        localeStrings: localeStrings,
-        images: imageData,
-        sounds: soundData,
-        buttons: buttonData,
-        grid: grid,
-        licenseData: licenseData,
-        extendedProperties: getExtendedPropertiesFromJson(json));
+    return localeStrings;
   }
 
   Obf addImage(ImageData image) {
@@ -286,7 +283,5 @@ class Obf extends HasIdAndPath with Searlizable {
     return obz;
   }
 
-  factory Obf.fromJsonString(String json) {
-    return Obf.fromJsonMap(jsonDecode(json));
-  }
+  Obf.fromJsonString(String json) : this.fromJsonMap(jsonDecode(json));
 }
