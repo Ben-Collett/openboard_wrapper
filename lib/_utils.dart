@@ -6,8 +6,15 @@ void addToMapIfNotNull(Map<String, dynamic> out, String key, dynamic value) {
 
 class InlineData {
   int encodingBase = 64;
-  String data = '';
+  late String data;
+  late String dataType;
+  InlineData({
+    required this.data,
+    required this.dataType,
+    this.encodingBase = 64,
+  });
   InlineData.decode(String inline) {
+    dataType = inline.substring('data:'.length, inline.indexOf(';'));
     String base = 'base';
     int indexOfBase = inline.indexOf(base);
 
@@ -21,7 +28,7 @@ class InlineData {
 
     data = inline.substring(inline.indexOf(',') + 1);
   }
-  String encode(String dataType) {
+  String encode() {
     return "data:$dataType;base$encodingBase,$data";
   }
 }
@@ -65,7 +72,7 @@ void autoResolveIdCollisions(Iterable<HasId> toResolve,
     if (!frequency.containsKey(current.id)) {
       throw Exception('id: ${current.id} is not in $frequency');
     }
-    //TODO: it might be wise to add a hashset that keeps track fo the seen id's in a given loop and throw an error if a duplicate or a loop appears
+    //TODO: it might be wise to add a hashset that keeps track of the seen id's in a given loop and throw an error if a duplicate or a loop appears
     while (frequency[current.id]! > 1) {
       String newId = function(current.id);
       frequency[current.id] = frequency[current.id]! - 1;

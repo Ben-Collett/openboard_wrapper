@@ -112,7 +112,6 @@ class Obz {
 
     if (pathExtendedProperties.isNotEmpty) {
       for (MapEntry<String, dynamic> entry in pathExtendedProperties.entries) {
-        print(entry);
         paths[entry.key] = entry.value;
       }
     }

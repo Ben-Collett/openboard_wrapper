@@ -69,7 +69,7 @@ class ImageData extends HasIdAndPath with Searlizable {
     };
 
     addToMapIfNotNull(out, pathKey, path);
-    addToMapIfNotNull(out, inlineDataKey, inlineData?.encode(contentType));
+    addToMapIfNotNull(out, inlineDataKey, inlineData?.encode());
     addToMapIfNotNull(out, urlKey, url);
     addToMapIfNotNull(out, dataUrlKey, dataUrl);
 

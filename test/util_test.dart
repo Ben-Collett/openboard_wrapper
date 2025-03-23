@@ -45,6 +45,23 @@ void main() {
 
     expect(hasIDs.map((e) => e.id), expectedHasIDs.map((e) => e.id));
   });
+
+  const String inlineData = 'data:image/png;base32,THISISDATA';
+  test('decode inline data test', () {
+    InlineData inline = InlineData.decode(inlineData);
+    expect(inline.data, 'THISISDATA');
+    expect(inline.encodingBase, 32);
+    expect(inline.dataType, 'image/png');
+  });
+  test('encode inline data', () {
+    InlineData inline = InlineData(
+      dataType: 'image/png',
+      encodingBase: 32,
+      data: 'THISISDATA',
+    );
+
+    expect(inline.encode(), inlineData);
+  });
 }
 
 class HasIdImp extends HasId {

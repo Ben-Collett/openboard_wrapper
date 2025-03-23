@@ -59,7 +59,7 @@ class SoundData extends HasIdAndPath with Searlizable {
     addToMapIfNotNull(out, urlKey, url);
     addToMapIfNotNull(out, dataUrlKey, dataUrl);
     if (data != null) {
-      out[dataKey] = data!.encode(contentType);
+      out[dataKey] = data!.encode();
     }
 
     out.addAll(extendedProperties);
