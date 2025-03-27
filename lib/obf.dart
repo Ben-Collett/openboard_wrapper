@@ -33,7 +33,7 @@ class Obf extends HasIdAndPath with Searlizable {
   String? url;
   String? descriptionHTML;
   LicenseData? licenseData;
-  late GridData _grid;
+  late GridData grid;
   late List<ButtonData> buttons;
   List<ImageData> _images;
   @override
@@ -84,7 +84,7 @@ class Obf extends HasIdAndPath with Searlizable {
     required this.id,
   })  : buttons = buttons ?? [],
         _sounds = sounds ?? [],
-        _grid = grid ?? GridData(),
+        grid = grid ?? GridData(),
         extendedProperties = extendedProperties ?? {},
         _images = images ?? [],
         _localeStrings = localeStrings ?? {};
@@ -116,7 +116,7 @@ class Obf extends HasIdAndPath with Searlizable {
       for (ButtonData b in buttons) b.id: b
     };
 
-    _grid = getGridDataFromJson(json, buttonDataMap);
+    grid = getGridDataFromJson(json, buttonDataMap);
   }
   static String _isStringElse(dynamic val, String defaultValue) {
     return val is String ? val : defaultValue;
@@ -266,7 +266,7 @@ class Obf extends HasIdAndPath with Searlizable {
     out.addAll(extendedProperties);
 
     out[buttonsKey] = buttons.map((ButtonData bt) => bt.toJson()).toList();
-    out['grid'] = _grid.toJson();
+    out['grid'] = grid.toJson();
     if (_localeStrings.isNotEmpty) {
       out['strings'] = _localeStrings;
     }
