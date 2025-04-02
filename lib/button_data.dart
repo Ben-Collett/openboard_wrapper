@@ -276,16 +276,13 @@ class AbsoluteDimensionData with Searlizable {
 }
 
 class LinkedBoard {
-  late String name;
+  String? name;
   String? id;
   String? path;
   String? url;
   String? dataUrl;
   LinkedBoard({required this.name, this.id, this.path, this.url, this.dataUrl});
   LinkedBoard.fromJson(Map<String, dynamic> json) {
-    if (json['name'] == null) {
-      throw Exception('name must be set in linkedboard');
-    }
     name = json['name'];
     id = json['id'];
     path = json['path'];
