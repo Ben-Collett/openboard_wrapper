@@ -106,6 +106,10 @@ void main() {
     Map<String, dynamic> actual = Obf.fromFile(MyFile.fromObf(board)).toJson();
     expect(expected, actual);
   });
+  test('load board obf', () {
+    Obf board = Obf.fromJsonString(linkedBoard2);
+    expect(board.toJson(), jsonDecode(linkedBoard2));
+  });
 }
 
 Obf getSimpleBoard() {

@@ -152,6 +152,18 @@ class Obz {
       parseManifestString(manifest.readAsStringSync());
     }
   }
+  Obz updateLinkedBoardsFromLoadData() {
+    Map<String, Obf> paths = {
+      for (var board in boards.where((board) => board.path != null))
+        board.path!: board
+    };
+
+    updateLinkedBoard(ButtonData b) =>
+        b.linkedBoard = paths[b.loadBoardData?.path];
+
+    buttons.forEach(updateLinkedBoard);
+    return this;
+  }
 
   Obf? getBoard({required String id}) {
     return boards.where((board) => board.id == id).firstOrNull;
@@ -165,13 +177,19 @@ class Obz {
     return sounds.where((sound) => sound.path == path).firstOrNull;
   }
 
-  Obz parseManifestString(String json, {bool fullOverride = false}) {
-    return parseManifestJson(jsonDecode(json), fullOverride: fullOverride);
+  Obz parseManifestString(
+    String json, {
+    bool fullOverride = false,
+    updateLinkedBoards = true,
+  }) {
+    return parseManifestJson(jsonDecode(json),
+        fullOverride: fullOverride, updateLinkedBoards: updateLinkedBoards);
   }
 
   Obz parseManifestJson(
     Map<String, dynamic> manifestJson, {
     bool fullOverride = false,
+    bool updateLinkedBoards = true,
   }) {
     if (fullOverride) {
       removeAllPaths();
@@ -183,7 +201,9 @@ class Obz {
     _updateFormatFromManifestJson(manifestJson);
     _updatePathsFromManifest(manifestJson);
     _attemptToUpdateRootFromManifest(manifestJson);
-
+    if (updateLinkedBoards) {
+      updateLinkedBoardsFromLoadData();
+    }
     for (MapEntry<String, dynamic> entry in manifestJson.entries) {
       if (entry.key.startsWith('ext_')) {
         manifestExtendedProperties[entry.key] = entry.value;

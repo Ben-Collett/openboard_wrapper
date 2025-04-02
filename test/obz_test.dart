@@ -69,7 +69,7 @@ void main() {
   });
   test('all ext in project test', () {
     Obz obz = getTestObzWithoutManifest()
-        .parseManifestString(fullExtendedPorpertiesManfiest)
+        .parseManifestString(fullExtendedPropertiesManifest)
         .addBoard(Obf.fromJsonString(extProperties));
 
     Set<String> expected = {
@@ -111,6 +111,17 @@ void main() {
 
     expect(obzBoardJsons, fromDirJsons);
     expect(fromDir.manifestJson, obz.manifestJson);
+  });
+
+  test('load-board', () {
+    List<Obf> boards = [
+      Obf.fromJsonString(linkedBoard1),
+      Obf.fromJsonString(linkedBoard2)
+    ];
+    Obz obz = Obz(boards: boards).parseManifestString(linkedManifest);
+    Obf? actual =
+        obz.getBoard(id: 'ob1')?.grid.getButtonData(0, 0)?.linkedBoard;
+    expect(actual, boards[1]);
   });
 }
 

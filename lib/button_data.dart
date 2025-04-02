@@ -28,7 +28,23 @@ class ButtonData with Searlizable implements HasId {
   Map<String, dynamic> extendedProperties;
   String? action;
   List<String> actions;
+
+  ///used as a fall back for loadBoardData and is useful for importing programs to avoid having to user loadBoardData directly
   Obf? linkedBoard;
+  LinkedBoard? _loadBoardData;
+
+  ///returns the loadBoardData that was set, you can invoke the updateLoadBoard to override the name, id, and path from the data in the linked board if the linked board is not null
+  LinkedBoard? get loadBoardData {
+    LinkedBoard? out = _loadBoardData;
+    if (out == null && linkedBoard != null) {
+      out = LinkedBoard.fromObf(linkedBoard!);
+    }
+    return out;
+  }
+
+  set loadBoardData(LinkedBoard? data) {
+    _loadBoardData = data;
+  }
 
   ButtonData(
       {this.id = defaultId,
@@ -42,8 +58,10 @@ class ButtonData with Searlizable implements HasId {
       this.absoluteDimension,
       this.action,
       this.linkedBoard,
+      LinkedBoard? linkedBoardData,
       this.voclization})
       : extendedProperties = extendedProperties ?? {},
+        _loadBoardData = linkedBoardData,
         actions = actions ?? [];
 
   factory ButtonData.decode(
@@ -68,6 +86,11 @@ class ButtonData with Searlizable implements HasId {
       } else {
         throw Exception('invalid image id ${json[imageKey]} in $imageSource');
       }
+    }
+    LinkedBoard? linkedBoard;
+    if (json['load_board'] is Map) {
+      Map<String, dynamic> linked = json['load_board'];
+      linkedBoard = LinkedBoard.fromJson(linked);
     }
 
     SoundData? sound;
@@ -108,9 +131,24 @@ class ButtonData with Searlizable implements HasId {
         sound: sound,
         action: action,
         actions: actions,
+        linkedBoardData: linkedBoard,
         absoluteDimension: absoluteDimensionData,
         extendedProperties: getExtendedPropertiesFromJson(json));
   }
+
+  ButtonData updateLoadBoardData() {
+    if (linkedBoard == null) return this;
+    LinkedBoard temp = LinkedBoard.fromObf(linkedBoard!);
+    if (_loadBoardData == null) {
+      _loadBoardData = temp;
+      return this;
+    }
+    _loadBoardData?.id = temp.id;
+    _loadBoardData?.name = temp.name;
+    _loadBoardData?.path = temp.path;
+    return this;
+  }
+
   ButtonData addAction(String action) {
     actions.add(action);
     return this;
@@ -122,7 +160,10 @@ class ButtonData with Searlizable implements HasId {
   }
 
   @override
-  Map<String, dynamic> toJson() {
+  Map<String, dynamic> toJson({bool updateLoadBoard = true}) {
+    if (updateLoadBoard) {
+      updateLoadBoardData();
+    }
     Map<String, dynamic> json = {idKey: id};
     addToMapIfNotNull(json, bgColorKey, backgroundColor?.toString());
     addToMapIfNotNull(json, borderColorKey, borderColor?.toString());
@@ -137,6 +178,9 @@ class ButtonData with Searlizable implements HasId {
 
     if (actions.isNotEmpty) {
       json[actionsKey] = actions;
+    }
+    if (loadBoardData != null) {
+      json['load_board'] = loadBoardData?.toJson();
     }
 
     return json;
@@ -232,9 +276,32 @@ class AbsoluteDimensionData with Searlizable {
 }
 
 class LinkedBoard {
-  String name;
+  late String name;
+  String? id;
   String? path;
   String? url;
   String? dataUrl;
-  LinkedBoard({required this.name, this.path, this.url, this.dataUrl});
+  LinkedBoard({required this.name, this.id, this.path, this.url, this.dataUrl});
+  LinkedBoard.fromJson(Map<String, dynamic> json) {
+    if (json['name'] == null) {
+      throw Exception('name must be set in linkedboard');
+    }
+    name = json['name'];
+    id = json['id'];
+    path = json['path'];
+    url = json['url'];
+    dataUrl = json['data_url'];
+  }
+  LinkedBoard.fromObf(Obf obf)
+      : name = obf.name,
+        id = obf.id,
+        path = obf.path;
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> out = {'name': name};
+    addToMapIfNotNull(out, 'id', id);
+    addToMapIfNotNull(out, 'path', path);
+    addToMapIfNotNull(out, 'url', url);
+    addToMapIfNotNull(out, 'data_url', dataUrl);
+    return out;
+  }
 }

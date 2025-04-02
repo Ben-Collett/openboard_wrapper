@@ -164,7 +164,7 @@ const String idCollision = """
   }
 }
 """;
-const String fullExtendedPorpertiesManfiest = """
+const String fullExtendedPropertiesManifest = """
 {
   "format": "open-board-0.1",
   "root": "boards/root_board.obf",
@@ -178,6 +178,26 @@ const String fullExtendedPorpertiesManfiest = """
       "inline_images": "boards/inline_images.obf",
       "images_and_sounds": "boards/path_images.obf",
       "voclization": "boards/link.obf"
+    },
+    "images": {
+      "9": "images/happy.png",
+      "11": "images/sad.png"
+    },
+    "sounds": {
+      "s1": "sounds/sigh.mp3",
+      "s2": "sounds/sigh.mp3"
+    }
+  }
+}
+""";
+const String linkedManifest = """
+{
+  "format": "open-board-0.1",
+  "root": "boards/root_board.obf",
+  "paths": {
+    "boards": {
+      "ob1": "ob1.obf",
+      "ob2": "ob2.obf"
     },
     "images": {
       "9": "images/happy.png",

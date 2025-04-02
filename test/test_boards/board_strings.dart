@@ -580,3 +580,75 @@ const String extProperties = """
   ]
 }
 """;
+
+const String linkedBoard1 = """
+{
+  "format": "open-board-0.1",
+  "id": "ob1",
+  "locale": "en",
+  "name": "Simple Board",
+  "grid": {
+    "rows": 2,
+    "columns": 2,
+    "order": [
+      ["1", "2"],
+      [null, null]
+    ]
+  },
+  "buttons": [
+    {
+      "id": "1",
+      "label": "happy",
+    "load_board": {
+        "name": "ob2",
+        "path": "ob2.obf"
+      }
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+  ],
+  "images": [],
+  "sounds": []
+  
+}
+
+""";
+const String linkedBoard2 = """
+{
+  "format": "open-board-0.1",
+  "id": "ob2",
+  "locale": "en",
+  "name": "scary board",
+  "grid": {
+    "rows": 2,
+    "columns": 2,
+    "order": [
+      ["1", "2"],
+      [null, null]
+    ]
+  },
+  "buttons": [
+    {
+      "id": "1",
+      "label": "sag",
+    "load_board": {
+      "name": "jim justice",
+      "id":"ignored",
+      "path": "ob1.obf",
+      "url": "jim",
+      "data_url": "bob"
+      }
+    },
+    {
+      "id": "2",
+      "label": "sad"
+    }
+  ],
+  "images": [],
+  "sounds": []
+  
+}
+
+""";
