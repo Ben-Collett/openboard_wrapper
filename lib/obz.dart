@@ -180,7 +180,7 @@ class Obz {
   Obz parseManifestString(
     String json, {
     bool fullOverride = false,
-    updateLinkedBoards = true,
+    bool updateLinkedBoards = true,
   }) {
     return parseManifestJson(jsonDecode(json),
         fullOverride: fullOverride, updateLinkedBoards: updateLinkedBoards);
