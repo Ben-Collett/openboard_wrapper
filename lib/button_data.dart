@@ -69,7 +69,7 @@ class ButtonData with Searlizable implements HasId {
       Map<String, ImageData>? imageSource,
       Map<String, SoundData>? soundSource}) {
     String id = json[idKey]?.toString() ?? defaultId;
-    String label = json[labelKey];
+    String? label = json[labelKey];
     ColorData? backgroundColor = json[bgColorKey] != null
         ? ColorData.fromString(json[bgColorKey])
         : null;
