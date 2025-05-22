@@ -38,6 +38,7 @@ class Obf extends HasIdAndPath with Searlizable {
   List<ImageData> _images;
   @override
   String? path;
+
   Map<String, Map<String, String>> _localeStrings;
   List<ImageData> get images {
     List<ImageData> temp = List.of(_images);

@@ -11,6 +11,7 @@ void main() {
   test('simple board to json', () {
     expect(Obf.fromJsonString(simpleBoard).toJson(), jsonDecode(simpleBoard));
   });
+
   test('simble board with errors json', () {
     expect(Obf.fromJsonString(simpleBoardWithErrors).toJson(),
         jsonDecode(simpleBoard));

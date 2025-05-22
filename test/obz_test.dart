@@ -16,6 +16,21 @@ void main() {
 
     expect(obz.manifestJson, jsonDecode(manifestString));
   });
+
+  test('sanatize path', () {
+    Obf root = Obf(
+      locale: "en",
+      name: "nobody",
+      id: "id",
+      path: "non\\posix\\path",
+    );
+    Obz obz = Obz(root: root);
+    obz.sanatizeFilePathForManifest = (s) => s.replaceAll("\\", "/");
+
+    Map<String, dynamic> manifest = obz.manifestJson;
+
+    expect(manifest['root'], "non/posix/path");
+  });
   test('parse second manifest to update path data', () {
     Obz obz = getTestObzWithoutManifest()
         .parseManifestString(manifestString)

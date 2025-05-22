@@ -14,6 +14,9 @@ class Obz {
   Map<String, dynamic> pathExtendedProperties;
   static const String defaultFormat = 'open-board-0.1';
   String format;
+  ///this function is run on every path, it takes an input path and maps it to a sanatized output path
+  ///the main use case for this function is converting windows paths using \\ to posix ones using /
+  String Function(String)? sanatizeFilePathForManifest;
   final Set<Obf> _boards;
   UnmodifiableSetView<Obf> get boards {
     Set<Obf> out = Set.from(_boards);
@@ -88,14 +91,27 @@ class Obz {
       throw NoRootPathException(root: rootBoard, boardPaths: boardPaths);
     }
 
-    Map<String, dynamic> json = {'root': root!.path, 'format': format};
+    String sanatizePath(String s) {
+      if (sanatizeFilePathForManifest != null) {
+        return sanatizeFilePathForManifest!(s);
+      }
+      return s;
+    }
+
+    Map<String, dynamic> json = {
+      'root': sanatizePath(root!.path!),
+      'format': format
+    };
     for (MapEntry<String, dynamic> entry
         in manifestExtendedProperties.entries) {
       json[entry.key] = entry.value;
     }
     Map<String, dynamic> paths = {};
 
-    idToPath(HasId hasId, String path) => MapEntry(hasId.id, path);
+    idToPath(HasId hasId, String path) => MapEntry(
+          hasId.id,
+          sanatizePath(path),
+        );
     Map<ImageData, String> imagePaths = _imagePaths;
     Map<SoundData, String> soundPaths = _soundPaths;
     if (imagePaths.isNotEmpty) {
