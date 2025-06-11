@@ -7,6 +7,40 @@ final ButtonData b2 = ButtonData(id: 'b2', label: 'bye');
 final b3 = ButtonData(id: 'b3', label: 'weird');
 
 void main() {
+  test('empty grid creation', () {
+    List<List<ButtonData?>> grid = order(
+      GridData.empty(
+        rowCount: 3,
+        colCount: 3,
+      ),
+    );
+
+    expect(
+      grid,
+      [
+        [null, null, null],
+        [null, null, null],
+        [null, null, null]
+      ],
+    );
+  });
+
+  test('insert into empty grid', () {
+    GridData data = GridData.empty(rowCount: 2, colCount: 2);
+    data.addRowToTheBottom();
+    data.setButtonData(row: 2, col: 1, data: b1);
+    data.addColumnToTheRight();
+    data.setButtonData(row: 2, col: 2, data: b2);
+
+    final expected = [
+      [null, null, null],
+      [null, null, null],
+      [null, b1, b2]
+    ];
+    List<List<ButtonData?>> grid = order(data);
+
+    expect(grid, expected);
+  });
   test('insert column middle', () {
     var expected = [
       [b1, null, b2],

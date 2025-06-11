@@ -6,9 +6,19 @@ class GridData with Searlizable {
   int get numberOfRows => _order.length;
   int get numberOfColumns => _order.isEmpty ? 0 : _order[0].length;
   GridData({List<List<ButtonData?>>? order}) : _order = order ?? [];
-  factory GridData.fromStringList(
-      {required List<dynamic>? orderAsStrings,
-      required Map<String, ButtonData> source}) {
+
+  GridData.empty({
+    int rowCount = 0,
+    int colCount = 0,
+  }) : _order = List.generate(
+          rowCount,
+          (_) => List<ButtonData?>.filled(colCount, null, growable: true),
+        );
+
+  factory GridData.fromStringList({
+    required List<dynamic>? orderAsStrings,
+    required Map<String, ButtonData> source,
+  }) {
     if (orderAsStrings == null || orderAsStrings.isEmpty) {
       return GridData();
     }
