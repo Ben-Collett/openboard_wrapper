@@ -25,6 +25,22 @@ class Obf extends HasIdAndPath with Searlizable {
   static const buttonsKey = 'buttons';
   static const imagesKey = 'images';
   static const soundKey = 'sounds';
+  Set<String> get jsonKeys {
+    return {
+      localeKey,
+      'strings',
+      nameKey,
+      idKey,
+      formatKey,
+      urlKey,
+      descriptionHTMLKey,
+      buttonsKey,
+      imagesKey,
+      soundKey,
+      ...extendedProperties.keys,
+    };
+  }
+
   String format;
   @override
   String id;

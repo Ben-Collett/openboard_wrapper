@@ -16,6 +16,21 @@ class ButtonData with Searlizable implements HasId {
   static const String defaultId = 'default id';
   static const String actionKey = 'action';
   static const String actionsKey = 'actions';
+  Set<String> get jsonKeys {
+    return {
+      idKey,
+      labelKey,
+      voclizationKey,
+      imageKey,
+      soundKey,
+      bgColorKey,
+      borderColorKey,
+      actionsKey,
+      actionKey,
+      ...extendedProperties.keys
+    };
+  }
+
   @override
   String id;
   String? label;
