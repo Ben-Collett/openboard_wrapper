@@ -1,6 +1,7 @@
 import 'dart:collection';
 import 'dart:convert';
 import 'dart:io';
+import 'dart:math';
 
 import 'package:openboard_wrapper/button_data.dart';
 import 'package:openboard_wrapper/obf.dart';
@@ -14,6 +15,7 @@ class Obz {
   Map<String, dynamic> pathExtendedProperties;
   static const String defaultFormat = 'open-board-0.1';
   String format;
+
   ///this function is run on every path, it takes an input path and maps it to a sanatized output path
   ///the main use case for this function is converting windows paths using \\ to posix ones using /
   String Function(String)? sanatizeFilePathForManifest;
@@ -137,6 +139,30 @@ class Obz {
     }
 
     return json;
+  }
+
+  Obf? findBoardById(String id) {
+    return _boards.where((b) => b.id == id).firstOrNull;
+  }
+
+  String generateGloballyUniqueId({String? prefix}) {
+    String out = prefix ?? "";
+    int suffix = 0;
+    Set<String> used = allIds;
+    while (used.contains(out)) {
+      suffix++;
+      out = "${(prefix ?? "")}$suffix";
+    }
+    return out;
+  }
+
+  Set<String> get allIds {
+    Set<HasId> ids = {};
+    ids.addAll(_boards);
+    ids.addAll(buttons);
+    ids.addAll(images);
+    ids.addAll(sounds);
+    return ids.map((b) => b.id).toSet();
   }
 
   Obz({

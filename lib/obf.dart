@@ -249,6 +249,10 @@ class Obf extends HasIdAndPath with Searlizable {
     return this;
   }
 
+  ButtonData? findButtonById(String id) {
+    return buttons.where((b) => b.id == id).firstOrNull;
+  }
+
   Obf autoResolveAllIdCollisionsInFile({String Function(String)? onCollision}) {
     autoResolveIdCollisions(_allHasIdsInFile(), onCollision: onCollision);
     return this;
