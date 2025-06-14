@@ -313,6 +313,13 @@ class Obz {
     return this;
   }
 
+  void removeBoard(Obf board) {
+    if (root == board) {
+      root == null;
+    }
+    _boards.remove(board);
+  }
+
   /// returns if the root path was set
   bool _attemptToSetRootFromPath(String path) {
     Obf? newRoot = getBoardFromPath(path);
