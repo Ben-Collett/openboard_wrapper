@@ -84,24 +84,24 @@ class GridData with Searlizable {
     return insertColumnAt(0);
   }
 
-  GridData insertRowAt(int rowIndex) {
+  GridData insertRowAt(int rowIndex, {List<ButtonData?>? newRow}) {
     if (rowIndex < 0 || rowIndex > _order.length) {
       throw RangeError("Row index out of range");
     }
 
-    List<ButtonData?> newRow =
-        List<ButtonData?>.generate(_order[0].length, (index) => null);
+    newRow =
+        newRow ?? List<ButtonData?>.generate(_order[0].length, (index) => null);
     _order.insert(rowIndex, newRow);
     return this;
   }
 
-  GridData insertColumnAt(int columnIndex) {
+  GridData insertColumnAt(int columnIndex, {List<ButtonData?>? newCol}) {
     if (columnIndex < 0 || columnIndex > _order[0].length) {
       throw RangeError("Column index out of range");
     }
-
-    for (var row in _order) {
-      row.insert(columnIndex, null);
+    newCol = newCol ?? List<ButtonData?>.generate(_order.length, (_) => null);
+    for (int i = 0; i < newCol.length; i++) {
+      _order[i].insert(columnIndex, newCol[i]);
     }
     return this;
   }

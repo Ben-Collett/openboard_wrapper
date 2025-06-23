@@ -60,6 +60,15 @@ void main() {
     ];
     expect(order(getSimpleGrid().insertColumnAt(1)), expected);
   });
+  test('insert column values', () {
+    var expected = [
+      [b1, b2, b2],
+      [null, b3, null]
+    ];
+    expect(
+        order(getSimpleGrid().insertColumnAt(1, newCol: [b2, b3])), expected);
+  });
+
   test('insert row middle', () {
     var expected = [
       [b1, b2],
@@ -72,6 +81,19 @@ void main() {
             .insertRowAt(1)),
         expected);
   });
+  test('insert row values', () {
+    var expected = [
+      [b1, b2],
+      [b3, b2],
+      [b3, null]
+    ];
+    expect(
+        order(getSimpleGrid()
+            .setButtonData(row: 1, col: 0, data: b3)
+            .insertRowAt(1, newRow: [b3, b2])),
+        expected);
+  });
+
   test('add row bottom', () {
     var expected = [
       [b1, b2],
