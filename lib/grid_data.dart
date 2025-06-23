@@ -95,7 +95,7 @@ class GridData with Searlizable {
     return this;
   }
 
-  GridData insertColumnAt(columnIndex) {
+  GridData insertColumnAt(int columnIndex) {
     if (columnIndex < 0 || columnIndex > _order[0].length) {
       throw RangeError("Column index out of range");
     }
@@ -128,6 +128,28 @@ class GridData with Searlizable {
 
   ButtonData? getButtonData(int row, int col) {
     return _order[row][col];
+  }
+
+  List<ButtonData?> getRow(int row) {
+    if (row < 0 || row > _order.length) {
+      throw Exception(
+        "out of bounds, range = (0, ${_order.length}) row is $row",
+      );
+    }
+    return _order[row];
+  }
+
+  List<ButtonData?> getCol(int col) {
+    if (col < 0 || col > _order.length) {
+      throw Exception(
+        "out of bounds, range = (0, $col)  colis $numberOfColumns",
+      );
+    }
+    List<ButtonData?> out = [];
+    for (int i = 0; i < numberOfColumns; i++) {
+      out.add(_order[i][col]);
+    }
+    return out;
   }
 
   Set<ButtonData> getButtons() {

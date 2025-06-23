@@ -25,6 +25,18 @@ void main() {
     );
   });
 
+  test('get col', () {
+    GridData gridData = GridData(
+      order: [
+        [b1, b2],
+        [b3, null],
+      ],
+    );
+
+    expect(gridData.getCol(0), [b1, b3]);
+    expect(gridData.getCol(1), [b2, null]);
+  });
+
   test('insert into empty grid', () {
     GridData data = GridData.empty(rowCount: 2, colCount: 2);
     data.addRowToTheBottom();
