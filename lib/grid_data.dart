@@ -140,9 +140,9 @@ class GridData with Searlizable {
   }
 
   List<ButtonData?> getCol(int col) {
-    if (col < 0 || col > _order.length) {
+    if (col < 0 || col > numberOfColumns) {
       throw Exception(
-        "out of bounds, range = (0, $col)  col is $numberOfColumns",
+        "out of bounds, range = (0, $numberOfColumns)  col is $col",
       );
     }
     List<ButtonData?> out = [];
