@@ -53,6 +53,25 @@ void main() {
 
     expect(grid, expected);
   });
+  test('add row to zero size grid', () {
+    GridData data = GridData.empty();
+    data.addRowToTheBottom();
+    List<List<ButtonData?>> grid = order(data);
+
+    expect(grid, [
+      [null]
+    ]);
+  });
+  test('add col to zero size grid', () {
+    GridData data = GridData.empty();
+    data.addColumnToTheRight();
+    List<List<ButtonData?>> grid = order(data);
+
+    expect(grid, [
+      [null]
+    ]);
+  });
+
   test('insert column middle', () {
     var expected = [
       [b1, null, b2],

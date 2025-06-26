@@ -69,18 +69,34 @@ class GridData with Searlizable {
   }
 
   GridData addRowToTheBottom() {
+    if (numberOfRows == 0) {
+      _order.add([null]);
+      return this;
+    }
     return insertRowAt(numberOfRows);
   }
 
   GridData addColumnToTheRight() {
+    if (numberOfRows == 0) {
+      _order.add([null]);
+      return this;
+    }
     return insertColumnAt(numberOfColumns);
   }
 
   GridData addRowToTheTop() {
+    if (numberOfRows == 0) {
+      _order.add([null]);
+      return this;
+    }
     return insertRowAt(0);
   }
 
   GridData addColumnToTheLeft() {
+    if (numberOfRows == 0) {
+      _order.add([null]);
+      return this;
+    }
     return insertColumnAt(0);
   }
 
