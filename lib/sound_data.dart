@@ -35,6 +35,7 @@ class SoundData extends HasIdAndPath with Searlizable {
     String contentType = json[contentTypeKey];
     String? url = json[urlKey];
     String? dataUrl = json[dataUrlKey];
+    String? path = json[pathKey];
     InlineData? inline;
     if (json.containsKey(dataKey)) {
       inline = InlineData.decode(json[dataKey]);
@@ -45,6 +46,7 @@ class SoundData extends HasIdAndPath with Searlizable {
         contentType: contentType,
         data: inline,
         url: url,
+        path: path,
         dataUrl: dataUrl,
         extendedProperties: getExtendedPropertiesFromJson(json));
   }
