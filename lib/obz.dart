@@ -14,6 +14,7 @@ class Obz {
   Map<String, dynamic> manifestExtendedProperties;
   Map<String, dynamic> pathExtendedProperties;
   static const String defaultFormat = 'open-board-0.1';
+  static const _defaultRandomLetterIdCount = 3;
   String format;
 
   ///this function is run on every path, it takes an input path and maps it to a sanatized output path
@@ -318,6 +319,72 @@ class Obz {
       root == null;
     }
     _boards.remove(board);
+  }
+
+  static String generateRandomBoardId(
+    Obz? obz, {
+    int randomLetterCount = _defaultRandomLetterIdCount,
+    Random? random,
+  }) =>
+      _generateRandomId(
+        prefix: "board",
+        randomLetterCount: randomLetterCount,
+        obz: obz,
+        random: random,
+      );
+  static String generateButtonId(
+    Obz? obz, {
+    int randomLetterCount = _defaultRandomLetterIdCount,
+    Random? random,
+  }) =>
+      _generateRandomId(
+        prefix: "btn",
+        randomLetterCount: randomLetterCount,
+        obz: obz,
+        random: random,
+      );
+  static String generateImageId(
+    Obz? obz, {
+    int randomLetterCount = _defaultRandomLetterIdCount,
+    Random? random,
+  }) =>
+      _generateRandomId(
+        prefix: "img",
+        randomLetterCount: randomLetterCount,
+        obz: obz,
+        random: random,
+      );
+  static String generateSoundId(
+    Obz? obz, {
+    int randomLetterCount = _defaultRandomLetterIdCount,
+    Random? random,
+  }) =>
+      _generateRandomId(
+        prefix: "sound",
+        randomLetterCount: randomLetterCount,
+        obz: obz,
+        random: random,
+      );
+
+  static String _generateRandomId({
+    required String prefix,
+    required int randomLetterCount,
+    Obz? obz,
+    Random? random,
+  }) {
+    String out = prefix;
+    if (randomLetterCount > 0) {
+      out += "_${generateRandomLetters(
+        letterCount: randomLetterCount,
+        random: random,
+      )}";
+    }
+
+    if (obz != null) {
+      out = obz.generateGloballyUniqueId(prefix: out);
+    }
+
+    return out;
   }
 
   /// returns if the root path was set
