@@ -46,6 +46,18 @@ class Obz {
     return UnmodifiableListView(sounds);
   }
 
+  void removedUnrefrencedImageData() {
+    for (Obf board in boards) {
+      board.removeUnrefrencedSoundData();
+    }
+  }
+
+  void removedUnrefrencedSoundData() {
+    for (Obf board in boards) {
+      board.removeUnrefrencedImageData();
+    }
+  }
+
   UnmodifiableListView<ButtonData> get buttons {
     Set<ButtonData> buttons = {};
     for (Obf board in boards) {

@@ -178,6 +178,20 @@ class Obf extends HasIdAndPath with Searlizable {
     return this;
   }
 
+  void removeUnrefrencedSoundData() {
+    Set<SoundData> referenced =
+        buttons.map((btn) => btn.sound).nonNulls.toSet();
+    bool isNotReferenced(SoundData sound) => !referenced.contains(sound);
+    _sounds.removeWhere(isNotReferenced);
+  }
+
+  void removeUnrefrencedImageData() {
+    Set<ImageData> referenced =
+        buttons.map((btn) => btn.image).nonNulls.toSet();
+    bool isNotReferenced(ImageData image) => !referenced.contains(image);
+    _images.removeWhere(isNotReferenced);
+  }
+
   static List<ImageData> getImageDataFromJson(Map<String, dynamic> json) {
     var imageVals = json[imagesKey];
     List? out = [];
