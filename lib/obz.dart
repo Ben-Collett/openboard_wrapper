@@ -46,15 +46,26 @@ class Obz {
     return UnmodifiableListView(sounds);
   }
 
+  ///removes all unrefrensed ImageData objects in the project object, you probably want to remove call [removeUnrefrensedButtons] first though.
+  ///see also: [removedUnrefrencedButtons], [removedUnrefrencedSoundData];
   void removedUnrefrencedImageData() {
     for (Obf board in boards) {
       board.removeUnrefrencedSoundData();
     }
   }
 
+  ///removes all unrefrensed sounddata objects in the project object, you probably want to remove call [removeUnrefrensedButtons] first though.
+  ///see also: [removedUnrefrencedButtons], [removedUnrefrencedImageData];
   void removedUnrefrencedSoundData() {
     for (Obf board in boards) {
       board.removeUnrefrencedImageData();
+    }
+  }
+
+  ///removes all unrefrensed buttons in the current project object, you will likely want to call [removedUnrefrencedImageData] and [removedUnrefrencedSoundData] afterwards.
+  void removedUnrefrencedButtons() {
+    for (Obf board in boards) {
+      board.removeUnrefrencedButtons();
     }
   }
 

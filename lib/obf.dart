@@ -178,6 +178,17 @@ class Obf extends HasIdAndPath with Searlizable {
     return this;
   }
 
+  void removeUnrefrencedButtons() {
+    Set<ButtonData> referenced = grid.getButtons();
+
+    bool isNotReferenced(ButtonData sound) => !referenced.contains(sound);
+
+    buttons.removeWhere(isNotReferenced);
+  }
+
+  ///removes all sound data with no references in it, you probably want to invoke [removeUnrefrencedButtons], as there sound data references can't be removed until they are
+
+  //see also: [removeUnrefrencedButtons], [removeUnrefrencedImageData]
   void removeUnrefrencedSoundData() {
     Set<SoundData> referenced =
         buttons.map((btn) => btn.sound).nonNulls.toSet();
@@ -185,6 +196,8 @@ class Obf extends HasIdAndPath with Searlizable {
     _sounds.removeWhere(isNotReferenced);
   }
 
+  ///removes all image data with no references in it, you probably want to invoke [removeUnrefrencedButtons], as there image data references can't be removed until they are
+  //see also: [removeUnrefrencedButtons], [removeUnrefrencedSoundData]
   void removeUnrefrencedImageData() {
     Set<ImageData> referenced =
         buttons.map((btn) => btn.image).nonNulls.toSet();

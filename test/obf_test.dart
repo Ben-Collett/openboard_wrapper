@@ -107,6 +107,28 @@ void main() {
     Map<String, dynamic> actual = Obf.fromFile(MyFile.fromObf(board)).toJson();
     expect(expected, actual);
   });
+  test('remove unrefrenced image data', () {
+    Obf board = Obf.fromJsonString(dataUrlBoard);
+    expect(board.images.length, 1);
+    board.removeUnrefrencedImageData();
+    expect(board.images, []);
+  });
+  test('remove unrefrenced sound data', () {
+    Obf board = Obf.fromJsonString(dataUrlBoard);
+
+    expect(board.sounds.length, 1);
+    board.removeUnrefrencedSoundData();
+    expect(board.sounds, []);
+  });
+
+  test('remove unrefrenced buttons', () {
+    Obf board = Obf.fromJsonString(urlImage);
+    board.grid.setButtonData(row: 0, col: 0, data: null);
+    expect(board.buttons.length, 2);
+    board.removeUnrefrencedButtons();
+    expect(board.buttons.length, 1);
+  });
+
   test('load board obf', () {
     Obf board = Obf.fromJsonString(linkedBoard2);
     expect(board.toJson(), jsonDecode(linkedBoard2));
