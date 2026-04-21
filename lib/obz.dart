@@ -17,9 +17,9 @@ class Obz {
   static const _defaultRandomLetterIdCount = 3;
   String format;
 
-  ///this function is run on every path, it takes an input path and maps it to a sanatized output path
+  ///this function is run on every path, it takes an input path and maps it to a sanitized output path
   ///the main use case for this function is converting windows paths using \\ to posix ones using /
-  String Function(String)? sanatizeFilePathForManifest;
+  String Function(String)? sanitizeFilePathForManifest;
   final Set<Obf> _boards;
   UnmodifiableSetView<Obf> get boards {
     Set<Obf> out = Set.from(_boards);
@@ -117,15 +117,15 @@ class Obz {
       throw NoRootPathException(root: rootBoard, boardPaths: boardPaths);
     }
 
-    String sanatizePath(String s) {
-      if (sanatizeFilePathForManifest != null) {
-        return sanatizeFilePathForManifest!(s);
+    String sanitizePath(String s) {
+      if (sanitizeFilePathForManifest != null) {
+        return sanitizeFilePathForManifest!(s);
       }
       return s;
     }
 
     Map<String, dynamic> json = {
-      'root': sanatizePath(root!.path!),
+      'root': sanitizePath(root!.path!),
       'format': format
     };
     for (MapEntry<String, dynamic> entry
@@ -136,7 +136,7 @@ class Obz {
 
     idToPath(HasId hasId, String path) => MapEntry(
           hasId.id,
-          sanatizePath(path),
+          sanitizePath(path),
         );
     Map<ImageData, String> imagePaths = _imagePaths;
     Map<SoundData, String> soundPaths = _soundPaths;
