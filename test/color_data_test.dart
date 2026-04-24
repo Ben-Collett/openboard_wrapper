@@ -14,12 +14,12 @@ void main() {
   });
   test('RGB to string', () {
     String expected = 'rgb(2, 11, 30)';
-    ColorData data = ColorData(red: 2, green: 11, blue: 30);
+    MutableColorData data = MutableColorData(red: 2, green: 11, blue: 30);
     expect(data.toString(), expected);
   });
   test('RGBA to string', () {
     String expected = 'rgba(234, 111, 30, 0.3)';
-    ColorData data = ColorData(red: 234, green: 111, blue: 30, alpha: .3);
+    MutableColorData data = MutableColorData(red: 234, green: 111, blue: 30, alpha: .3);
     expect(data.toString(), expected);
   });
 }
