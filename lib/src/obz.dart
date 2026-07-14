@@ -237,6 +237,25 @@ class EagarObz implements HasIds {
       parseManifestString(m.readAsStringSync());
     }
   }
+  static Future<EagarObz> fromDirectoryAsync(Directory dir) async {
+    List<Future<Obf>> boardFutures = [];
+    Future<String?> manifestFuture = Future(() => null);
+    _listBoardFiles(dir, (File f) {
+      if (f.path.endsWith('.obf')) {
+        boardFutures.add(Obf.fromFileAsync(f));
+      } else if (f.path.endsWith('manifest.json')) {
+        manifestFuture = f.readAsString();
+      }
+    });
+    List<Obf> boards = await Future.wait(boardFutures);
+    final obz = EagarObz(boards: boards);
+
+    final manifestString = await manifestFuture;
+    if (manifestString != null) {
+      obz.parseManifestString(manifestString);
+    }
+    return obz;
+  }
 
   static void _listBoardFiles(Directory dir, void Function(File) callback) {
     for (FileSystemEntity entry in dir.listSync(recursive: false)) {
@@ -252,6 +271,7 @@ class EagarObz implements HasIds {
       }
     }
   }
+
   EagarObz updateLinkedBoardsFromLoadData() {
     Map<String, Obf> paths = {};
     for (var board in _boards) {
