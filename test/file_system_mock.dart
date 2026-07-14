@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
-import 'package:openboard_wrapper/obf.dart';
+import 'package:openboard_wrapper/src/obf.dart';
 
 class MyDirectory extends _MyDirectory {
   List<FileSystemEntity> entities = [];

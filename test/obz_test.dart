@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:openboard_wrapper/_utils.dart';
-import 'package:openboard_wrapper/obz.dart';
-import 'package:openboard_wrapper/obf.dart';
+import 'package:openboard_wrapper/src/_utils.dart';
+import 'package:openboard_wrapper/src/obz.dart';
+import 'package:openboard_wrapper/src/obf.dart';
 import 'package:test/test.dart';
 import './test_boards/board_strings.dart';
 import './test_boards/manifest_stings.dart';

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   fill="#000000"
+   viewBox="0 0 100 100"
+   x="0px"
+   y="0px"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   width="100%"
+   height="100%"
+   sodipodi:docname="purple.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1216"
+     inkscape:window-height="830"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="2.36"
+     inkscape:cx="50"
+     inkscape:cy="50"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <path
+     d="m10 79.48c4.881 6.329 14.422-12.996 21.812-9.954 4.399 1.811.31 12.942 5.05 13.349 6.082.522 3.218-16.232 9.306-15.775 9.971.748 1.366 29.529 11.219 27.823 10.01-1.732-7.912-26.03 1.233-30.443 6.828-3.296 12.174 17.789 18.368 13.417 5.54-3.911-10.04-14.203-5.806-19.5 4.883-6.109 20.3 8.763 23.405 1.584 4.04-9.343-22.946-10.629-22.36-20.789.461-8.02 16.798-6.676 19.408-14.271 1.59-4.628.579-12.36-3.983-14.13-9.633-3.741-16.828 20.371-26.345 16.342-6.949-2.942 2.697-21.452-4.82-22.12-7.559-.671-1.426 18.849-8.691 21.04-4.351 1.312-7.331-9.828-11.303-7.622-3.472 1.928 3.743 9.709.435 11.907-7.382 4.905-18.835-18.305-24.12-11.19-5.518 7.427 20.719 11.762 18.455 20.733-2.278 9.03-27.12.284-26.24 9.551.828 8.761 22.939-4 26.06 4.225 3.941 10.386-27.866 17.02-21.08 25.812"
+     id="path4"
+     style="fill:#e900aa;fill-opacity:1" />
+</svg>

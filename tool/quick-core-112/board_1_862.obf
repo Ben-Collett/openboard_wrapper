@@ -1,0 +1,1815 @@
+{
+  "format": "open-board-0.1",
+  "license": {
+    "type": "CC By",
+    "copyright_notice_url": "https://creativecommons.org/licenses/by/4.0/",
+    "author_name": "OpenAAC",
+    "author_url": "https://www.openaac.org"
+  },
+  "buttons": [
+    {
+      "id": 27,
+      "label": "pollution",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546453_e125dfac7176b08ab5900c55"
+    },
+    {
+      "id": 28,
+      "label": "disaster",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546443_41c1fc9ae2f9c2538843b9fd"
+    },
+    {
+      "id": 5,
+      "label": "tornado",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12804_337976963087e8c504ac6b04"
+    },
+    {
+      "id": 6,
+      "label": "hurricane",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12799_e17345d8570ac0049bfb9660"
+    },
+    {
+      "id": 7,
+      "label": "tsunami",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12805_a3c56044e571dd86f2eabd27"
+    },
+    {
+      "id": 8,
+      "label": "blizzard",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12803_c83c949f7061ea8585055024"
+    },
+    {
+      "id": 9,
+      "label": "earthquake",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12801_27bf2c423133b76edeb44bb0"
+    },
+    {
+      "id": 10,
+      "label": "volcano",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12802_ee9f2a9ecf3ad87900313f88"
+    },
+    {
+      "id": 24,
+      "label": "flood",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_13327_5eda60a152681682ca0e3080"
+    },
+    {
+      "id": 29,
+      "label": "climate change",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546449_571bf2f8940f0ba4bc4e21f1"
+    },
+    {
+      "id": 30,
+      "label": "hazard",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546450_db14fdb81e02c4fb014bb494"
+    },
+    {
+      "id": 25,
+      "label": "weather",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_48156_67dae09c28187c247cfbc747"
+    },
+    {
+      "id": 11,
+      "label": "storm",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_12806_dc50fb40718804b17549693f"
+    },
+    {
+      "id": 12,
+      "label": "rain",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12794_2564c18fdb0389f38f7f22e9"
+    },
+    {
+      "id": 13,
+      "label": "snow",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12795_4237995efb8f9c0116af2e79"
+    },
+    {
+      "id": 14,
+      "label": "hail",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12796_051c060945fa4e2299004b83"
+    },
+    {
+      "id": 15,
+      "label": "wind",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12797_a17c77a37c8be469f908ad4d"
+    },
+    {
+      "id": 16,
+      "label": "lightning",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12807_b594310800dd80f72bd9b376"
+    },
+    {
+      "id": 17,
+      "label": "thunder",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_12808_ba785a53d375f09da0d45144"
+    },
+    {
+      "id": 31,
+      "label": "drizzle",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_546444_d80edf801c19ada83e7e1eda"
+    },
+    {
+      "id": 32,
+      "label": "thunderstorm",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546459_7217a9bcbad6b5475175c32e"
+    },
+    {
+      "id": 33,
+      "label": "global warming",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546448_10b393e02bb53f5612c7f17c"
+    },
+    {
+      "id": 34,
+      "label": "forecast",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546489_59019b758cb9639e8eb538a3"
+    },
+    {
+      "id": 1,
+      "label": "come",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_12215_6c6c64255c696f3eb7c82199"
+    },
+    {
+      "id": 2,
+      "label": "comes",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_12219_0488031fab2e56505a297ea2"
+    },
+    {
+      "id": 3,
+      "label": "came",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_12220_1208be6468f82b27554c6144"
+    },
+    {
+      "id": 4,
+      "label": "coming",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_12221_c5877ddee36eea6ee4248028"
+    },
+    {
+      "id": 35,
+      "label": "shelter",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546455_67b1d6b1d0578737014dee56"
+    },
+    {
+      "id": 36,
+      "label": "sky",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546456_f465b2abe7a7f96f9403745d"
+    },
+    {
+      "id": 18,
+      "label": "sun",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_13275_e1503d6fbfa0d3d5ddddffbb"
+    },
+    {
+      "id": 19,
+      "label": "sunny",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_13276_a395040ac04f1c02d7ab9643"
+    },
+    {
+      "id": 20,
+      "label": "cloudy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_13277_4d90e1a6500dd0a2afb9e557"
+    },
+    {
+      "id": 21,
+      "label": "foggy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_13278_a4400d6108d0906bde26f363"
+    },
+    {
+      "id": 22,
+      "label": "freezing",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_13280_88ec94f2fb3d45d75a232572"
+    },
+    {
+      "id": 23,
+      "label": "stormy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_13279_e31ca382d6a73733805b30b6"
+    },
+    {
+      "id": 26,
+      "label": "windy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_48458_5dd1c4cf4cbb746e81f1ba56"
+    },
+    {
+      "id": 37,
+      "label": "snowy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_546458_1454a36f88c0f9defaa7ada9"
+    },
+    {
+      "id": 38,
+      "label": "chilly",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_546441_e1c69aca2054f8c2b1432622"
+    },
+    {
+      "id": 39,
+      "label": "rainy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_546454_a891cebd7519e6829ef0ce0a"
+    },
+    {
+      "id": 40,
+      "label": "erupt",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_546446_c6fc776738bd432c6d0a3ace"
+    },
+    {
+      "id": 41,
+      "label": "eruption",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546467_5f8ad1e2c6a222e239638c72"
+    },
+    {
+      "id": 42,
+      "label": "lava",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546477_b2cf10372304e8362408a7a6"
+    },
+    {
+      "id": 43,
+      "label": "magma",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546481_a800311967fc3cd6d2be3bab"
+    },
+    {
+      "id": 44,
+      "label": "pyroclastic flow",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546482_d723754f4614a9cef9549c81"
+    },
+    {
+      "id": 45,
+      "label": "slush",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546490_42fbd338126582c6f5bb15fb"
+    },
+    {
+      "id": 46,
+      "label": "freezing rain",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546469_7ee7f4a2fb52d34fec1a06e3"
+    },
+    {
+      "id": 47,
+      "label": "avalanche",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546486_62d5bc436dd025d8ddfee406"
+    },
+    {
+      "id": 48,
+      "label": "mud slide",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546452_bf00bc96f8ef45f6cc414875"
+    },
+    {
+      "id": 49,
+      "label": "rock slide",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546485_7c6184a522bd9eadf177a2d7"
+    },
+    {
+      "id": 50,
+      "label": "wildfire",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546484_8deade500fcbea9ebe9dfcd9"
+    },
+    {
+      "id": 51,
+      "label": "flash flood",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546483_d7ef4d28bd66220ea0f079c7"
+    },
+    {
+      "id": 52,
+      "label": "frost",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546447_799c651a5c11cdb204703777"
+    },
+    {
+      "id": 53,
+      "label": "sleet",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546493_41572ae53076cf9728da5ed7"
+    },
+    {
+      "id": 54,
+      "label": "icicle",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546492_587a010ab3e9f6fc7024ab46"
+    },
+    {
+      "id": 55,
+      "label": "hailstone",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546491_ea0558fdbf9ca52306c8a778"
+    },
+    {
+      "id": 56,
+      "label": "snowflake",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546457_8206fd111ee611bdc6981024"
+    },
+    {
+      "id": 57,
+      "label": "tropical storm",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546460_e25b83aff539b31721d7b226"
+    },
+    {
+      "id": 58,
+      "label": "el nino",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546488_6999df915ee4de2a5b1dad5c"
+    },
+    {
+      "id": 59,
+      "label": "la nina",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546487_6f5a9075bbf77dbc6bf9b16f"
+    },
+    {
+      "id": 65,
+      "label": "oil spill",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550450_848df4e7b2de903703631d82"
+    },
+    {
+      "id": 60,
+      "label": "cloud",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546442_1dac694d0fb8f4fa739dffa7"
+    },
+    {
+      "id": 61,
+      "label": "cumulus",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546496_7d7df4f14d2c2bee18a07a0e"
+    },
+    {
+      "id": 62,
+      "label": "stratus",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546495_0f54b775f925cb675efce1cb"
+    },
+    {
+      "id": 63,
+      "label": "nimbus",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546497_2824a8883c4d45ac5ddd7537"
+    },
+    {
+      "id": 64,
+      "label": "cirrus",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_546498_cef79ec7253e0daf40c24b7f"
+    }
+  ],
+  "grid": {
+    "rows": 8,
+    "columns": 14,
+    "order": [
+      [
+        27,
+        28,
+        null,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        24,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        29,
+        30,
+        25,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        31,
+        32,
+        null,
+        null
+      ],
+      [
+        33,
+        null,
+        34,
+        1,
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        35,
+        null,
+        36,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        26,
+        37,
+        38,
+        39,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        40,
+        41,
+        42,
+        43,
+        44,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        45,
+        46
+      ],
+      [
+        47,
+        48,
+        49,
+        50,
+        51,
+        null,
+        null,
+        null,
+        null,
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      [
+        57,
+        58,
+        59,
+        65,
+        null,
+        null,
+        null,
+        null,
+        null,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    ]
+  },
+  "images": [
+    {
+      "id": "1_546453_e125dfac7176b08ab5900c55",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pollution.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546453_e125dfac7176b08ab5900c55",
+      "content_type": "image/png",
+      "path": "images/image_1_546453_e125dfac7176b08ab5900c55.png"
+    },
+    {
+      "id": "1_546443_41c1fc9ae2f9c2538843b9fd",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/disaster.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546443_41c1fc9ae2f9c2538843b9fd",
+      "content_type": "image/png",
+      "path": "images/image_1_546443_41c1fc9ae2f9c2538843b9fd.png"
+    },
+    {
+      "id": "1_12804_337976963087e8c504ac6b04",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "source_url": "http://thenounproject.com/term/tornado/",
+        "author_name": "david lopez",
+        "author_url": "http://thenounproject.com/davidlopez.fr",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tornado-999069b6a4.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12804_337976963087e8c504ac6b04",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12804_337976963087e8c504ac6b04.svg"
+    },
+    {
+      "id": "1_12799_e17345d8570ac0049bfb9660",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/hurricane/",
+        "author_name": "Gilad Fried",
+        "author_url": "http://thenounproject.com/gilad1",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Hurricane-12e3441d47.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12799_e17345d8570ac0049bfb9660",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12799_e17345d8570ac0049bfb9660.svg"
+    },
+    {
+      "id": "1_12805_a3c56044e571dd86f2eabd27",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://en.wikipedia.org/wiki/Public_domain",
+        "source_url": "http://thenounproject.com/term/tsunami/",
+        "author_name": "Manuela Ribas",
+        "author_url": "http://thenounproject.com/manuribas",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tsunami-56203db773.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12805_a3c56044e571dd86f2eabd27",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12805_a3c56044e571dd86f2eabd27.svg"
+    },
+    {
+      "id": "1_12803_c83c949f7061ea8585055024",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow storm.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12803_c83c949f7061ea8585055024",
+      "content_type": "image/png",
+      "path": "images/image_1_12803_c83c949f7061ea8585055024.png"
+    },
+    {
+      "id": "1_12801_27bf2c423133b76edeb44bb0",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/earthquake.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12801_27bf2c423133b76edeb44bb0",
+      "content_type": "image/png",
+      "path": "images/image_1_12801_27bf2c423133b76edeb44bb0.png"
+    },
+    {
+      "id": "1_12802_ee9f2a9ecf3ad87900313f88",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/volcano/",
+        "author_name": "Silvia Lovera",
+        "author_url": "http://thenounproject.com/loverita",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volcano-fd066c5dcb.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12802_ee9f2a9ecf3ad87900313f88",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12802_ee9f2a9ecf3ad87900313f88.svg"
+    },
+    {
+      "id": "1_13327_5eda60a152681682ca0e3080",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flood.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13327_5eda60a152681682ca0e3080",
+      "content_type": "image/png",
+      "path": "images/image_1_13327_5eda60a152681682ca0e3080.png"
+    },
+    {
+      "id": "1_546449_571bf2f8940f0ba4bc4e21f1",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "ProSymbols",
+        "author_url": "http://thenounproject.com/prosymbols",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Night-Climate_32_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546449_571bf2f8940f0ba4bc4e21f1",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546449_571bf2f8940f0ba4bc4e21f1.svg"
+    },
+    {
+      "id": "1_546450_db14fdb81e02c4fb014bb494",
+      "width": 158,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Gan Khoon Lay",
+        "author_url": "http://thenounproject.com/leremy",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Hazard_766_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546450_db14fdb81e02c4fb014bb494",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546450_db14fdb81e02c4fb014bb494.svg"
+    },
+    {
+      "id": "1_48156_67dae09c28187c247cfbc747",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/how is the weather.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_48156_67dae09c28187c247cfbc747",
+      "content_type": "image/png",
+      "path": "images/image_1_48156_67dae09c28187c247cfbc747.png"
+    },
+    {
+      "id": "1_12806_dc50fb40718804b17549693f",
+      "width": 851,
+      "height": 851,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/thunder storm.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12806_dc50fb40718804b17549693f",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12806_dc50fb40718804b17549693f.svg"
+    },
+    {
+      "id": "1_12794_2564c18fdb0389f38f7f22e9",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rain.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12794_2564c18fdb0389f38f7f22e9",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12794_2564c18fdb0389f38f7f22e9.svg"
+    },
+    {
+      "id": "1_12795_4237995efb8f9c0116af2e79",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/snow.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12795_4237995efb8f9c0116af2e79",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12795_4237995efb8f9c0116af2e79.svg"
+    },
+    {
+      "id": "1_12796_051c060945fa4e2299004b83",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/hail/",
+        "author_name": "Dmitry Baranovskiy",
+        "author_url": "http://thenounproject.com/DmitryBaranovskiy",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Hail-129d6dccb0.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12796_051c060945fa4e2299004b83",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12796_051c060945fa4e2299004b83.svg"
+    },
+    {
+      "id": "1_12797_a17c77a37c8be469f908ad4d",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/wind/",
+        "author_name": "Piotrek Chuchla",
+        "author_url": "http://thenounproject.com/pchuchla",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Wind-e7331f078a.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12797_a17c77a37c8be469f908ad4d",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12797_a17c77a37c8be469f908ad4d.svg"
+    },
+    {
+      "id": "1_12807_b594310800dd80f72bd9b376",
+      "width": 32,
+      "height": 32,
+      "license": {
+        "type": "CC By 3.0",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "source_url": "https://icomoon.io",
+        "author_name": "Keyamoon",
+        "author_url": "http://keyamoon.com/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/lightning.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12807_b594310800dd80f72bd9b376",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12807_b594310800dd80f72bd9b376.svg"
+    },
+    {
+      "id": "1_12808_ba785a53d375f09da0d45144",
+      "width": 20,
+      "height": 20,
+      "license": {
+        "type": "CC By-SA 3.0",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/3.0/us/",
+        "source_url": "http://www.entypo.com/",
+        "author_name": "Daniel Bruce",
+        "author_url": "http://danielbruce.se/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/thunder.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12808_ba785a53d375f09da0d45144",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_12808_ba785a53d375f09da0d45144.svg"
+    },
+    {
+      "id": "1_546444_d80edf801c19ada83e7e1eda",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/f5d5d092-73e3-4d40-8fcd-05227aa77ad9.svg",
+        "author_name": "Dmitry Baranovskiy",
+        "author_url": "http://thenounproject.com/DmitryBaranovskiy",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Drizzle-9941d73bfa.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546444_d80edf801c19ada83e7e1eda",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546444_d80edf801c19ada83e7e1eda.svg"
+    },
+    {
+      "id": "1_546459_7217a9bcbad6b5475175c32e",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/noun_project_13559-01.svg",
+        "author_name": "Jory Raphael",
+        "author_url": "http://thenounproject.com/sensibleworld",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Thunderstorm-6ebeddf66d.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546459_7217a9bcbad6b5475175c32e",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546459_7217a9bcbad6b5475175c32e.svg"
+    },
+    {
+      "id": "1_546448_10b393e02bb53f5612c7f17c",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Creative Mania",
+        "author_url": "http://thenounproject.com/CreativeMania",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Flood_661_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546448_10b393e02bb53f5612c7f17c",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546448_10b393e02bb53f5612c7f17c.svg"
+    },
+    {
+      "id": "1_546489_59019b758cb9639e8eb538a3",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Krish",
+        "author_url": "http://thenounproject.com/uillusion",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Thermometer_625_118934.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546489_59019b758cb9639e8eb538a3",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546489_59019b758cb9639e8eb538a3.svg"
+    },
+    {
+      "id": "1_12215_6c6c64255c696f3eb7c82199",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to come near_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12215_6c6c64255c696f3eb7c82199",
+      "content_type": "image/png",
+      "path": "images/image_1_12215_6c6c64255c696f3eb7c82199.png"
+    },
+    {
+      "id": "1_12219_0488031fab2e56505a297ea2",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to come near_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12219_0488031fab2e56505a297ea2",
+      "content_type": "image/png",
+      "path": "images/image_1_12219_0488031fab2e56505a297ea2.png"
+    },
+    {
+      "id": "1_12220_1208be6468f82b27554c6144",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to come near_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12220_1208be6468f82b27554c6144",
+      "content_type": "image/png",
+      "path": "images/image_1_12220_1208be6468f82b27554c6144.png"
+    },
+    {
+      "id": "1_12221_c5877ddee36eea6ee4248028",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to come near_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_12221_c5877ddee36eea6ee4248028",
+      "content_type": "image/png",
+      "path": "images/image_1_12221_c5877ddee36eea6ee4248028.png"
+    },
+    {
+      "id": "1_546455_67b1d6b1d0578737014dee56",
+      "width": 100,
+      "height": 89,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/a40966be-eaf4-4ee1-8328-b8523c10ddb7.svg",
+        "author_name": "OCHA Visual Information Unit",
+        "author_url": "http://thenounproject.com/ochaavmu",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Shelter-2d48ac2ab1.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546455_67b1d6b1d0578737014dee56",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546455_67b1d6b1d0578737014dee56.svg"
+    },
+    {
+      "id": "1_546456_f465b2abe7a7f96f9403745d",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sky.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546456_f465b2abe7a7f96f9403745d",
+      "content_type": "image/png",
+      "path": "images/image_1_546456_f465b2abe7a7f96f9403745d.png"
+    },
+    {
+      "id": "1_13275_e1503d6fbfa0d3d5ddddffbb",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/sun.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13275_e1503d6fbfa0d3d5ddddffbb",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_13275_e1503d6fbfa0d3d5ddddffbb.svg"
+    },
+    {
+      "id": "1_13276_a395040ac04f1c02d7ab9643",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/sunny.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13276_a395040ac04f1c02d7ab9643",
+      "content_type": "image/png",
+      "path": "images/image_1_13276_a395040ac04f1c02d7ab9643.png"
+    },
+    {
+      "id": "1_13277_4d90e1a6500dd0a2afb9e557",
+      "width": 283,
+      "height": 283,
+      "license": {
+        "type": "CC BY-NC",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "author_name": "Sclera",
+        "author_url": "http://www.sclera.be/en/picto/copyright",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/cloudy.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13277_4d90e1a6500dd0a2afb9e557",
+      "content_type": "image/png",
+      "path": "images/image_1_13277_4d90e1a6500dd0a2afb9e557.png"
+    },
+    {
+      "id": "1_13278_a4400d6108d0906bde26f363",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/foggy.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13278_a4400d6108d0906bde26f363",
+      "content_type": "image/png",
+      "path": "images/image_1_13278_a4400d6108d0906bde26f363.png"
+    },
+    {
+      "id": "1_13280_88ec94f2fb3d45d75a232572",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to freeze.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13280_88ec94f2fb3d45d75a232572",
+      "content_type": "image/png",
+      "path": "images/image_1_13280_88ec94f2fb3d45d75a232572.png"
+    },
+    {
+      "id": "1_13279_e31ca382d6a73733805b30b6",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/stormy.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13279_e31ca382d6a73733805b30b6",
+      "content_type": "image/png",
+      "path": "images/image_1_13279_e31ca382d6a73733805b30b6.png"
+    },
+    {
+      "id": "1_48458_5dd1c4cf4cbb746e81f1ba56",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/windy.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_48458_5dd1c4cf4cbb746e81f1ba56",
+      "content_type": "image/png",
+      "path": "images/image_1_48458_5dd1c4cf4cbb746e81f1ba56.png"
+    },
+    {
+      "id": "1_546458_1454a36f88c0f9defaa7ada9",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546458_1454a36f88c0f9defaa7ada9",
+      "content_type": "image/png",
+      "path": "images/image_1_546458_1454a36f88c0f9defaa7ada9.png"
+    },
+    {
+      "id": "1_546441_e1c69aca2054f8c2b1432622",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cold.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546441_e1c69aca2054f8c2b1432622",
+      "content_type": "image/png",
+      "path": "images/image_1_546441_e1c69aca2054f8c2b1432622.png"
+    },
+    {
+      "id": "1_546454_a891cebd7519e6829ef0ce0a",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rainy.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546454_a891cebd7519e6829ef0ce0a",
+      "content_type": "image/png",
+      "path": "images/image_1_546454_a891cebd7519e6829ef0ce0a.png"
+    },
+    {
+      "id": "1_546446_c6fc776738bd432c6d0a3ace",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/volcano.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546446_c6fc776738bd432c6d0a3ace",
+      "content_type": "image/png",
+      "path": "images/image_1_546446_c6fc776738bd432c6d0a3ace.png"
+    },
+    {
+      "id": "1_546467_5f8ad1e2c6a222e239638c72",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/6d533109-5b2e-45e9-8a0a-0c537fe0516a.svg",
+        "author_name": "Silvia Lovera",
+        "author_url": "http://thenounproject.com/loverita",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volcano-fd066c5dcb.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546467_5f8ad1e2c6a222e239638c72",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546467_5f8ad1e2c6a222e239638c72.svg"
+    },
+    {
+      "id": "1_546477_b2cf10372304e8362408a7a6",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/lava lamp.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546477_b2cf10372304e8362408a7a6",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546477_b2cf10372304e8362408a7a6.svg"
+    },
+    {
+      "id": "1_546481_a800311967fc3cd6d2be3bab",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Anton Gajdosik",
+        "author_url": "http://thenounproject.com/WSD",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volcano_718_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546481_a800311967fc3cd6d2be3bab",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546481_a800311967fc3cd6d2be3bab.svg"
+    },
+    {
+      "id": "1_546482_d723754f4614a9cef9549c81",
+      "width": 99,
+      "height": 58,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/cloud/",
+        "author_name": "Ana María Lora Macias",
+        "author_url": "http://thenounproject.com/analalora",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Cloud-c87b2c52e2.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546482_d723754f4614a9cef9549c81",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546482_d723754f4614a9cef9549c81.svg"
+    },
+    {
+      "id": "1_546490_42fbd338126582c6f5bb15fb",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/wet 1.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546490_42fbd338126582c6f5bb15fb",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546490_42fbd338126582c6f5bb15fb.svg"
+    },
+    {
+      "id": "1_546469_7ee7f4a2fb52d34fec1a06e3",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "KEN MURRAY",
+        "author_url": "http://thenounproject.com/Bigroarcreative",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Freezing-Thermometer_142_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546469_7ee7f4a2fb52d34fec1a06e3",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546469_7ee7f4a2fb52d34fec1a06e3.svg"
+    },
+    {
+      "id": "1_546486_62d5bc436dd025d8ddfee406",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/snow ball.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546486_62d5bc436dd025d8ddfee406",
+      "content_type": "image/png",
+      "path": "images/image_1_546486_62d5bc436dd025d8ddfee406.png"
+    },
+    {
+      "id": "1_546452_bf00bc96f8ef45f6cc414875",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/mud.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546452_bf00bc96f8ef45f6cc414875",
+      "content_type": "image/png",
+      "path": "images/image_1_546452_bf00bc96f8ef45f6cc414875.png"
+    },
+    {
+      "id": "1_546485_7c6184a522bd9eadf177a2d7",
+      "width": 94,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/516_1.svg",
+        "author_name": "Unknown Designer",
+        "author_url": "http://thenounproject.com/http://thenounproject.com",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Falling Rocks-4d58f0cdd7.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546485_7c6184a522bd9eadf177a2d7",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546485_7c6184a522bd9eadf177a2d7.svg"
+    },
+    {
+      "id": "1_546484_8deade500fcbea9ebe9dfcd9",
+      "width": 500,
+      "height": 500,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author_name": "Mada, HMC and University of Southampton",
+        "author_url": "http://www.tawasolsymbols.org/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/fire_2.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546484_8deade500fcbea9ebe9dfcd9",
+      "content_type": "image/png",
+      "path": "images/image_1_546484_8deade500fcbea9ebe9dfcd9.png"
+    },
+    {
+      "id": "1_546483_d7ef4d28bd66220ea0f079c7",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Valley.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546483_d7ef4d28bd66220ea0f079c7",
+      "content_type": "image/png",
+      "path": "images/image_1_546483_d7ef4d28bd66220ea0f079c7.png"
+    },
+    {
+      "id": "1_546447_799c651a5c11cdb204703777",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/frost.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546447_799c651a5c11cdb204703777",
+      "content_type": "image/png",
+      "path": "images/image_1_546447_799c651a5c11cdb204703777.png"
+    },
+    {
+      "id": "1_546493_41572ae53076cf9728da5ed7",
+      "width": 87,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/noun_project_2609.svg",
+        "author_name": "Adam Whitcroft",
+        "author_url": "http://thenounproject.com/adamwhitcroft",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Day Hail-b0612ff5a0.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546493_41572ae53076cf9728da5ed7",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546493_41572ae53076cf9728da5ed7.svg"
+    },
+    {
+      "id": "1_546492_587a010ab3e9f6fc7024ab46",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/ice.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546492_587a010ab3e9f6fc7024ab46",
+      "content_type": "image/png",
+      "path": "images/image_1_546492_587a010ab3e9f6fc7024ab46.png"
+    },
+    {
+      "id": "1_546491_ea0558fdbf9ca52306c8a778",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/noun_project_2611.svg",
+        "author_name": "Adam Whitcroft",
+        "author_url": "http://thenounproject.com/adamwhitcroft",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Hail-627a63d9b3.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546491_ea0558fdbf9ca52306c8a778",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546491_ea0558fdbf9ca52306c8a778.svg"
+    },
+    {
+      "id": "1_546457_8206fd111ee611bdc6981024",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/9fea1da7-5d0e-436b-8cec-ecd7fa6489d2.svg",
+        "author_name": "Danielle Garbouchian",
+        "author_url": "http://thenounproject.com/dmgarbou",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Snowflake-cbc766db3e.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546457_8206fd111ee611bdc6981024",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546457_8206fd111ee611bdc6981024.svg"
+    },
+    {
+      "id": "1_546460_e25b83aff539b31721d7b226",
+      "width": 59,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/373_1.svg",
+        "author_name": "Edward Boatman",
+        "author_url": "http://thenounproject.com/edward",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Tropical Storm-229dc5915b.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546460_e25b83aff539b31721d7b226",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546460_e25b83aff539b31721d7b226.svg"
+    },
+    {
+      "id": "1_546488_6999df915ee4de2a5b1dad5c",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/big.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546488_6999df915ee4de2a5b1dad5c",
+      "content_type": "image/png",
+      "path": "images/image_1_546488_6999df915ee4de2a5b1dad5c.png"
+    },
+    {
+      "id": "1_546487_6f5a9075bbf77dbc6bf9b16f",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/small.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546487_6f5a9075bbf77dbc6bf9b16f",
+      "content_type": "image/png",
+      "path": "images/image_1_546487_6f5a9075bbf77dbc6bf9b16f.png"
+    },
+    {
+      "id": "1_550450_848df4e7b2de903703631d82",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "author_name": "Gabriele Malaspina",
+        "author_url": "http://thenounproject.com/gabrielemalaspina",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/oil-rig_884_17482.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550450_848df4e7b2de903703631d82",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550450_848df4e7b2de903703631d82.svg"
+    },
+    {
+      "id": "1_546442_1dac694d0fb8f4fa739dffa7",
+      "width": 100,
+      "height": 55,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/cloud/",
+        "author_name": "Edward Boatman",
+        "author_url": "http://thenounproject.com/edward",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Cloud-2de521cba6.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546442_1dac694d0fb8f4fa739dffa7",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546442_1dac694d0fb8f4fa739dffa7.svg"
+    },
+    {
+      "id": "1_546496_7d7df4f14d2c2bee18a07a0e",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/cloud/",
+        "author_name": "Piotrek Chuchla",
+        "author_url": "http://thenounproject.com/pchuchla",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Cloud-2beb0006cc.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546496_7d7df4f14d2c2bee18a07a0e",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546496_7d7df4f14d2c2bee18a07a0e.svg"
+    },
+    {
+      "id": "1_546495_0f54b775f925cb675efce1cb",
+      "width": 100,
+      "height": 55,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/cloud/",
+        "author_name": "Edward Boatman",
+        "author_url": "http://thenounproject.com/edward",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Cloud-2de521cba6.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546495_0f54b775f925cb675efce1cb",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546495_0f54b775f925cb675efce1cb.svg"
+    },
+    {
+      "id": "1_546497_2824a8883c4d45ac5ddd7537",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/rain.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546497_2824a8883c4d45ac5ddd7537",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_546497_2824a8883c4d45ac5ddd7537.svg"
+    },
+    {
+      "id": "1_546498_cef79ec7253e0daf40c24b7f",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cloud.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_546498_cef79ec7253e0daf40c24b7f",
+      "content_type": "image/png",
+      "path": "images/image_1_546498_cef79ec7253e0daf40c24b7f.png"
+    }
+  ],
+  "sounds": [
+
+  ],
+  "id": "1_862",
+  "locale": "en",
+  "name": "Core 112 - Come",
+  "default_layout": "landscape",
+  "background": null,
+  "url": "https://app.mycoughdrop.com/example/core-112-come",
+  "data_url": "https://app.mycoughdrop.com/api/v1/boards/example/core-112-come",
+  "description_html": "built with CoughDrop",
+  "ext_coughdrop_image_url": "https://s3.amazonaws.com/opensymbols/libraries/arasaac/board_3.png",
+  "ext_coughdrop_settings": {
+    "private": false,
+    "key": "example/core-112-come",
+    "word_suggestions": false,
+    "protected": false,
+    "home_board": null,
+    "categories": null,
+    "text_only": null,
+    "hide_empty": null
+  }
+}

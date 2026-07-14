@@ -1,4 +1,4 @@
-import 'package:openboard_wrapper/color_data.dart';
+import 'package:openboard_wrapper/src/color_data.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -19,7 +19,8 @@ void main() {
   });
   test('RGBA to string', () {
     String expected = 'rgba(234, 111, 30, 0.3)';
-    MutableColorData data = MutableColorData(red: 234, green: 111, blue: 30, alpha: .3);
+    MutableColorData data =
+        MutableColorData(red: 234, green: 111, blue: 30, alpha: .3);
     expect(data.toString(), expected);
   });
 }

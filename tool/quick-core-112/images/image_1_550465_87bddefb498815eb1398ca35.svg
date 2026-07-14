@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="100px" height="100px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 100 100">
+ <defs>
+  <style type="text/css">
+   
+    .fil0 {fill:black}
+   
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <polygon class="fil0" points="49.3398,25.8545 49.3398,75.8439 41.9602,75.8439 41.9602,25.8545 32.7097,25.8545 32.7097,20.5395 40.2121,20.5395 40.2121,9.44417 43.8665,9.44417 43.8665,5.71776 34.6656,5.71776 34.6656,2.07639 56.7583,2.07639 56.7583,5.71776 47.5575,5.71776 47.5575,9.44417 51.2343,9.44417 51.2343,20.5395 58.4922,20.5395 58.4922,25.8545 "/>
+  <polygon class="fil0" points="64.1391,11.2276 86.2802,11.2276 86.2802,18.658 64.1391,18.658 64.1391,16.7883 56.7099,16.7883 56.7099,13.147 64.1391,13.147 "/>
+  <rect class="fil0" x="42.0473" y="79.5707" width="7.38078" height="5.41226"/>
+  <rect class="fil0" x="43.8683" y="90.5428" width="3.6407" height="7.38078"/>
+  <polygon class="fil0" points="32.764,29.242 36.5353,29.2337 36.5353,45.3972 29.2939,62.4903 20.1025,58.5973 "/>
+  <rect class="fil0" transform="matrix(0.549965 0.234654 -0.234654 0.549965 19.0362 61.562)" width="16.4068" height="11.5229"/>
+  <rect class="fil0" transform="matrix(0.461877 0.201284 -0.201284 0.461877 17.6904 71.9042)" width="8.39889" height="19.7269"/>
+  <polygon class="fil0" points="58.1072,29.242 54.3347,29.2337 54.3347,45.3972 61.5773,62.4903 70.7687,58.5973 "/>
+  <rect class="fil0" transform="matrix(-0.549965 0.234654 0.234654 0.549965 71.8347 61.562)" width="16.4068" height="11.5229"/>
+  <rect class="fil0" transform="matrix(-0.461877 0.201284 0.201284 0.461877 73.1805 71.9042)" width="8.39889" height="19.7269"/>
+ </g>
+</svg>

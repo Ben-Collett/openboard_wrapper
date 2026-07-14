@@ -1,9 +1,7 @@
 import 'dart:convert';
 
-import 'package:openboard_wrapper/button_data.dart';
-import 'package:openboard_wrapper/image_data.dart';
+import 'package:openboard_wrapper/openboard_wrapper.dart';
 import 'package:test/test.dart';
-import 'package:openboard_wrapper/obf.dart';
 import './test_boards/board_strings.dart';
 import 'file_system_mock.dart';
 

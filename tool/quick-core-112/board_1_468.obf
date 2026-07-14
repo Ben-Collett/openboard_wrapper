@@ -1,0 +1,2408 @@
+{
+  "format": "open-board-0.1",
+  "license": {
+    "type": "CC By",
+    "copyright_notice_url": "https://creativecommons.org/licenses/by/4.0/",
+    "author_name": "OpenAAC",
+    "author_url": "https://www.openaac.org"
+  },
+  "buttons": [
+    {
+      "id": 11,
+      "label": "health",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7008_df072f50465b72aacca1027f"
+    },
+    {
+      "id": 9,
+      "label": "effort",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9725_1a3fd0295b1db1964aedcc8d"
+    },
+    {
+      "id": 20,
+      "label": "service",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7016_b878098c048b2b54db002442"
+    },
+    {
+      "id": 50,
+      "label": "aide",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550208_9d63b3864f48f835d77ef665"
+    },
+    {
+      "id": 52,
+      "label": "OT",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550210_6aa6d3c4b67f6be2df0f9df4"
+    },
+    {
+      "id": 53,
+      "label": "PT",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550211_b88d3b7a311da02cadb8e3f9"
+    },
+    {
+      "id": 54,
+      "label": "speech therapist",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550212_bd2b3f0f62e069963b21b53f"
+    },
+    {
+      "id": 55,
+      "label": "therapist",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550213_ae07516bdc3fe7e199dc2e16"
+    },
+    {
+      "id": 56,
+      "label": "group home",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550206_384350ac92086da3b93d85f4"
+    },
+    {
+      "id": 75,
+      "label": "helper",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550930_396c155e98f47e7c6c600093"
+    },
+    {
+      "id": 91,
+      "label": "safety",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550977_ee5c85afb5e6c35af47f275d"
+    },
+    {
+      "id": 57,
+      "label": "disability",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550203_ee351c1454ac85aae4b558c0"
+    },
+    {
+      "id": 76,
+      "label": "unhealthy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550951_6e9d6b93c29da921da382620"
+    },
+    {
+      "id": 77,
+      "label": "healthy",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550941_f259b712cd6a696b8fcea97d"
+    },
+    {
+      "id": 39,
+      "label": "help",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_9702_fa12754639e133e0bceed7ce"
+    },
+    {
+      "id": 40,
+      "label": "helps",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_9711_2edc73661cafe741d8dbce3e"
+    },
+    {
+      "id": 41,
+      "label": "helped",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_9712_b0149eb3f513a2baa97f180c"
+    },
+    {
+      "id": 42,
+      "label": "helping",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_9713_001903006588d0617448c7f8"
+    },
+    {
+      "id": 92,
+      "label": "emergency",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550978_a95a8c8aac54e89daec817fe"
+    },
+    {
+      "id": 93,
+      "label": "emergency exit",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550975_46d2871e3a3da658511eb600"
+    },
+    {
+      "id": 58,
+      "label": "blind",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550197_bb0062bc76edc1cbf9587036"
+    },
+    {
+      "id": 59,
+      "label": "allergic",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550226_7b0b1c7a97933257ec69e362"
+    },
+    {
+      "id": 60,
+      "label": "constipated",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550199_15edf9116e9179983ce1a2e2"
+    },
+    {
+      "id": 13,
+      "label": "medical",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_7009_dc1da79a358d9000932848cd"
+    },
+    {
+      "id": 10,
+      "label": "handicapped",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_7007_76295a544e5a4d78bbd7c572"
+    },
+    {
+      "id": 61,
+      "label": "disabled",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550204_ef9b40c921ea8fb3974e057b"
+    },
+    {
+      "id": 65,
+      "label": "accessible",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550202_a10c545bc20d6abf28af27ed"
+    },
+    {
+      "id": 78,
+      "label": "first aid",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550942_ca0c131e1ea49f77e266cde7"
+    },
+    {
+      "id": 79,
+      "label": "x-ray",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550933_71bf39c64d62efbbf5dc28aa"
+    },
+    {
+      "id": 96,
+      "label": "cane",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_551041_060babcf6e7daba034c6e56d"
+    },
+    {
+      "id": 80,
+      "label": "eye drops",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550934_215d939b541b502713c8910b"
+    },
+    {
+      "id": 81,
+      "label": "bedpan",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550948_f054d81c1e24a03e71d4bf2e"
+    },
+    {
+      "id": 62,
+      "label": "contagious",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550227_20e88673f44c131e92066bca"
+    },
+    {
+      "id": 63,
+      "label": "deaf",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550201_9798bf43fef3fb4e7b1a9dcc"
+    },
+    {
+      "id": 36,
+      "label": "sore",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_9714_0f0f52f57f255b930e5234ca"
+    },
+    {
+      "id": 74,
+      "label": "volunteer",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_550538_65492a9c31a17542d0b10489"
+    },
+    {
+      "id": 19,
+      "label": "serve",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_7015_f06d6c56b3a5e91d3dd55d62"
+    },
+    {
+      "id": 4,
+      "label": "care",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9715_4a6339c3ca320e62059c3c4e"
+    },
+    {
+      "id": 18,
+      "label": "save",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "preposition",
+      "image_id": "1_9716_962d4cd67da146d5f980e093"
+    },
+    {
+      "id": 22,
+      "label": "support",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_7018_8f41a978cb9f73ea7e91c79c"
+    },
+    {
+      "id": 17,
+      "label": "protect",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_7013_2e18e2a777404b3e5668acfa"
+    },
+    {
+      "id": 43,
+      "label": "rescue",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_9717_5154fb0e6802a9760a3ee38d"
+    },
+    {
+      "id": 14,
+      "label": "medicine",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7010_efc0016d7ca8744bd90d0c6d"
+    },
+    {
+      "id": 38,
+      "label": "pills",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9729_1f25d692e3ae79fcdfd483ae"
+    },
+    {
+      "id": 8,
+      "label": "drug",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7006_618bc3ae9c800c3878958bd7"
+    },
+    {
+      "id": 66,
+      "label": "depressed",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550228_dcdf253994a91303eaa8a023"
+    },
+    {
+      "id": 67,
+      "label": "anxious",
+      "border_color": "rgb(17, 112, 255)",
+      "background_color": "rgb(170, 204, 255)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_550219_486451abeafbb054f7af7ad4"
+    },
+    {
+      "id": 82,
+      "label": "infect",
+      "border_color": "rgb(102, 221, 0)",
+      "background_color": "rgb(204, 255, 170)",
+      "ext_coughdrop_part_of_speech": "verb",
+      "image_id": "1_550943_1946c131d7f09e040239e786"
+    },
+    {
+      "id": 85,
+      "label": "doctor",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550936_7a38823a683ca76f1c76bb4f"
+    },
+    {
+      "id": 86,
+      "label": "dentist",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550935_11a85d5c2fcedfe0451f6d1d"
+    },
+    {
+      "id": 87,
+      "label": "nurse",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550938_e878b87587a32ee19016256b"
+    },
+    {
+      "id": 88,
+      "label": "orthodontist",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550950_cc9b07cdda71858de00e7da0"
+    },
+    {
+      "id": 89,
+      "label": "patient",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550939_484daaef3ad79cd238baa39a"
+    },
+    {
+      "id": 90,
+      "label": "audiologist",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550949_5c3e2e8f68a215f8dff397fc"
+    },
+    {
+      "id": 23,
+      "label": "surgery",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7019_68e7e1ba95ba57ed57126de8"
+    },
+    {
+      "id": 26,
+      "label": "tracheotomy",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9726_9bdd524300ab8c87c27691d9"
+    },
+    {
+      "id": 3,
+      "label": "button",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9728_fc8cc2801cdc3d426bba153c"
+    },
+    {
+      "id": 68,
+      "label": "angelman",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550225_582cc47ba6e739a212e4bb44"
+    },
+    {
+      "id": 69,
+      "label": "down syndrome",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550221_b97b54d4368d0ff84b5a5938"
+    },
+    {
+      "id": 70,
+      "label": "autism",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550220_3d1574e089576e20fca02e3e"
+    },
+    {
+      "id": 32,
+      "label": "cold",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "adjective",
+      "image_id": "1_7368_2fa813f5ccd1c0db7ebe1596"
+    },
+    {
+      "id": 33,
+      "label": "flu",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7369_15a1b95ac6bf43df6704e4d5"
+    },
+    {
+      "id": 30,
+      "label": "headache",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9718_a39ff75c83f94a5d57c38c93"
+    },
+    {
+      "id": 31,
+      "label": "earache",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7367_f294decfc1aeae54b6cf1bd5"
+    },
+    {
+      "id": 48,
+      "label": "stomach ache",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_13120_93b2f0c2b480ee1b15228bb7"
+    },
+    {
+      "id": 83,
+      "label": "sore throat",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550932_a88248b6e34ddb3d34b19012"
+    },
+    {
+      "id": 5,
+      "label": "catheter",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9735_d0172e0b40245e8dd7b53bc1"
+    },
+    {
+      "id": 21,
+      "label": "suction",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7017_4cdb47a11fe3f423177af9f2"
+    },
+    {
+      "id": 64,
+      "label": "hearing aid",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550207_6ce38d2d3f4e5ae48dfc5b57"
+    },
+    {
+      "id": 71,
+      "label": "rett syndrome",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550223_525a7a6b69e1573eac4e8647"
+    },
+    {
+      "id": 72,
+      "label": "ALS",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550224_f032ceeaf88c06790b0bf397"
+    },
+    {
+      "id": 73,
+      "label": "cerebral palsy",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550222_1ae7a17e478590012189c8cf"
+    },
+    {
+      "id": 16,
+      "label": "period",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7012_06aad681bf25548f92e82677"
+    },
+    {
+      "id": 35,
+      "label": "cramp",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7371_4669c3434d376451af7bd2ec"
+    },
+    {
+      "id": 37,
+      "label": "toothache",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7373_405681ce10a7b78e7ee07d85"
+    },
+    {
+      "id": 49,
+      "label": "chest pain",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_13121_a9eee8013e6fb531aa76d845"
+    },
+    {
+      "id": 84,
+      "label": "smoking",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550931_e0c9a1e322dc1aff4682e002"
+    },
+    {
+      "id": 27,
+      "label": "treatment",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7022_e8774bc19f91fb6c22b9c221"
+    },
+    {
+      "id": 2,
+      "label": "brace",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7001_06a93313453b80b33e339ab5"
+    },
+    {
+      "id": 15,
+      "label": "operation",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9736_b416a9d47e54e7852821ba14"
+    },
+    {
+      "id": 34,
+      "label": "itch",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9720_1bc1f1ed4ab5d4e12f5c1909"
+    },
+    {
+      "id": 6,
+      "label": "coma",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9723_23e00788015f1a84f8af8ed1"
+    },
+    {
+      "id": 7,
+      "label": "disease",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7005_48405179265a4632e1fd4eae"
+    },
+    {
+      "id": 1,
+      "label": "accident",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7000_b3d2618868e548840ef4d47f"
+    },
+    {
+      "id": 94,
+      "label": "incident",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550979_13a3db89112b9b2901d107a1"
+    },
+    {
+      "id": 95,
+      "label": "injury",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_550976_78719ea9cd13ec039fc8dffb"
+    },
+    {
+      "id": 25,
+      "label": "therapy",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9737_b4f5de2757ef6f9a96476fba"
+    },
+    {
+      "id": 24,
+      "label": "therapies",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_7020_14b9cbba41be82ed2ee9c0de"
+    },
+    {
+      "id": 28,
+      "label": "tube",
+      "border_color": "rgb(255, 112, 17)",
+      "background_color": "rgb(255, 204, 170)",
+      "ext_coughdrop_part_of_speech": "noun",
+      "image_id": "1_9738_657271341cbbc1c9009ec56d"
+    }
+  ],
+  "grid": {
+    "rows": 8,
+    "columns": 14,
+    "order": [
+      [
+        11,
+        9,
+        20,
+        null,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        75,
+        null,
+        null,
+        91
+      ],
+      [
+        57,
+        null,
+        76,
+        77,
+        39,
+        40,
+        41,
+        42,
+        null,
+        92,
+        93,
+        null,
+        null,
+        null
+      ],
+      [
+        58,
+        59,
+        60,
+        null,
+        13,
+        10,
+        61,
+        65,
+        78,
+        79,
+        null,
+        96,
+        80,
+        81
+      ],
+      [
+        62,
+        63,
+        36,
+        74,
+        19,
+        4,
+        18,
+        22,
+        17,
+        43,
+        null,
+        14,
+        38,
+        8
+      ],
+      [
+        null,
+        66,
+        67,
+        82,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        null,
+        23,
+        26,
+        3
+      ],
+      [
+        68,
+        69,
+        70,
+        null,
+        32,
+        33,
+        30,
+        31,
+        48,
+        83,
+        null,
+        5,
+        21,
+        64
+      ],
+      [
+        71,
+        72,
+        73,
+        null,
+        16,
+        35,
+        37,
+        49,
+        84,
+        null,
+        null,
+        27,
+        2,
+        15
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        34,
+        6,
+        7,
+        1,
+        94,
+        95,
+        null,
+        25,
+        24,
+        28
+      ]
+    ]
+  },
+  "images": [
+    {
+      "id": "1_7008_df072f50465b72aacca1027f",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/health.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7008_df072f50465b72aacca1027f",
+      "content_type": "image/png",
+      "path": "images/image_1_7008_df072f50465b72aacca1027f.png"
+    },
+    {
+      "id": "1_9725_1a3fd0295b1db1964aedcc8d",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/can I play.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9725_1a3fd0295b1db1964aedcc8d",
+      "content_type": "image/png",
+      "path": "images/image_1_9725_1a3fd0295b1db1964aedcc8d.png"
+    },
+    {
+      "id": "1_7016_b878098c048b2b54db002442",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/service.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7016_b878098c048b2b54db002442",
+      "content_type": "image/png",
+      "path": "images/image_1_7016_b878098c048b2b54db002442.png"
+    },
+    {
+      "id": "1_550208_9d63b3864f48f835d77ef665",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/care assistant 2b.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550208_9d63b3864f48f835d77ef665",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550208_9d63b3864f48f835d77ef665.svg"
+    },
+    {
+      "id": "1_550210_6aa6d3c4b67f6be2df0f9df4",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/occupational therapy services_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550210_6aa6d3c4b67f6be2df0f9df4",
+      "content_type": "image/png",
+      "path": "images/image_1_550210_6aa6d3c4b67f6be2df0f9df4.png"
+    },
+    {
+      "id": "1_550211_b88d3b7a311da02cadb8e3f9",
+      "width": 851,
+      "height": 851,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/physio therapist 2a.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550211_b88d3b7a311da02cadb8e3f9",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550211_b88d3b7a311da02cadb8e3f9.svg"
+    },
+    {
+      "id": "1_550212_bd2b3f0f62e069963b21b53f",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/speech therapist.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550212_bd2b3f0f62e069963b21b53f",
+      "content_type": "image/png",
+      "path": "images/image_1_550212_bd2b3f0f62e069963b21b53f.png"
+    },
+    {
+      "id": "1_550213_ae07516bdc3fe7e199dc2e16",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/occupational therapist 1a.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550213_ae07516bdc3fe7e199dc2e16",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550213_ae07516bdc3fe7e199dc2e16.svg"
+    },
+    {
+      "id": "1_550206_384350ac92086da3b93d85f4",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/group of people_1.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550206_384350ac92086da3b93d85f4",
+      "content_type": "image/png",
+      "path": "images/image_1_550206_384350ac92086da3b93d85f4.png"
+    },
+    {
+      "id": "1_550930_396c155e98f47e7c6c600093",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/I need help.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550930_396c155e98f47e7c6c600093",
+      "content_type": "image/png",
+      "path": "images/image_1_550930_396c155e98f47e7c6c600093.png"
+    },
+    {
+      "id": "1_550977_ee5c85afb5e6c35af47f275d",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Becris",
+        "author_url": "http://thenounproject.com/Becris",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Safety_533_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550977_ee5c85afb5e6c35af47f275d",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550977_ee5c85afb5e6c35af47f275d.svg"
+    },
+    {
+      "id": "1_550203_ee351c1454ac85aae4b558c0",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/movement disability.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550203_ee351c1454ac85aae4b558c0",
+      "content_type": "image/png",
+      "path": "images/image_1_550203_ee351c1454ac85aae4b558c0.png"
+    },
+    {
+      "id": "1_550951_6e9d6b93c29da921da382620",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Oliviu Stoian",
+        "author_url": "http://thenounproject.com/smashicons",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sick_973_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550951_6e9d6b93c29da921da382620",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550951_6e9d6b93c29da921da382620.svg"
+    },
+    {
+      "id": "1_550941_f259b712cd6a696b8fcea97d",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/healthy.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550941_f259b712cd6a696b8fcea97d",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550941_f259b712cd6a696b8fcea97d.svg"
+    },
+    {
+      "id": "1_9702_fa12754639e133e0bceed7ce",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/help.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9702_fa12754639e133e0bceed7ce",
+      "content_type": "image/png",
+      "path": "images/image_1_9702_fa12754639e133e0bceed7ce.png"
+    },
+    {
+      "id": "1_9711_2edc73661cafe741d8dbce3e",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/help.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9711_2edc73661cafe741d8dbce3e",
+      "content_type": "image/png",
+      "path": "images/image_1_9711_2edc73661cafe741d8dbce3e.png"
+    },
+    {
+      "id": "1_9712_b0149eb3f513a2baa97f180c",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/help.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9712_b0149eb3f513a2baa97f180c",
+      "content_type": "image/png",
+      "path": "images/image_1_9712_b0149eb3f513a2baa97f180c.png"
+    },
+    {
+      "id": "1_9713_001903006588d0617448c7f8",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/help.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9713_001903006588d0617448c7f8",
+      "content_type": "image/png",
+      "path": "images/image_1_9713_001903006588d0617448c7f8.png"
+    },
+    {
+      "id": "1_550978_a95a8c8aac54e89daec817fe",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Lero Keller",
+        "author_url": "http://thenounproject.com/lero.keller",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Siren_114_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550978_a95a8c8aac54e89daec817fe",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550978_a95a8c8aac54e89daec817fe.svg"
+    },
+    {
+      "id": "1_550975_46d2871e3a3da658511eb600",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/emergency exit.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550975_46d2871e3a3da658511eb600",
+      "content_type": "image/png",
+      "path": "images/image_1_550975_46d2871e3a3da658511eb600.png"
+    },
+    {
+      "id": "1_550197_bb0062bc76edc1cbf9587036",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/blind.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550197_bb0062bc76edc1cbf9587036",
+      "content_type": "image/png",
+      "path": "images/image_1_550197_bb0062bc76edc1cbf9587036.png"
+    },
+    {
+      "id": "1_550226_7b0b1c7a97933257ec69e362",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rash.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550226_7b0b1c7a97933257ec69e362",
+      "content_type": "image/png",
+      "path": "images/image_1_550226_7b0b1c7a97933257ec69e362.png"
+    },
+    {
+      "id": "1_550199_15edf9116e9179983ce1a2e2",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/constipated.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550199_15edf9116e9179983ce1a2e2",
+      "content_type": "image/png",
+      "path": "images/image_1_550199_15edf9116e9179983ce1a2e2.png"
+    },
+    {
+      "id": "1_7009_dc1da79a358d9000932848cd",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/medical-clipboard/",
+        "author_name": "Jamie Dickinson",
+        "author_url": "http://thenounproject.com/jamieissuperawesome",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Medical Clipboard-63fc88eb5b.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7009_dc1da79a358d9000932848cd",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7009_dc1da79a358d9000932848cd.svg"
+    },
+    {
+      "id": "1_7007_76295a544e5a4d78bbd7c572",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/handicapped.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7007_76295a544e5a4d78bbd7c572",
+      "content_type": "image/png",
+      "path": "images/image_1_7007_76295a544e5a4d78bbd7c572.png"
+    },
+    {
+      "id": "1_550204_ef9b40c921ea8fb3974e057b",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/disabled.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550204_ef9b40c921ea8fb3974e057b",
+      "content_type": "image/png",
+      "path": "images/image_1_550204_ef9b40c921ea8fb3974e057b.png"
+    },
+    {
+      "id": "1_550202_a10c545bc20d6abf28af27ed",
+      "width": 87,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/4ef5bd03-65d3-48ed-89c0-61c030a257ec.svg",
+        "author_name": "Aynne Valencia",
+        "author_url": "http://thenounproject.com/aynne",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Wheelchair Accessible-dccfb1ebf1.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550202_a10c545bc20d6abf28af27ed",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550202_a10c545bc20d6abf28af27ed.svg"
+    },
+    {
+      "id": "1_550942_ca0c131e1ea49f77e266cde7",
+      "width": 100,
+      "height": 90,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/17b07a0f-8f89-4571-89e1-2de1268de12f.svg",
+        "author_name": "Wilson Joseph",
+        "author_url": "http://thenounproject.com/wilsonjoseph",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/First Aid-fb057ed919.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550942_ca0c131e1ea49f77e266cde7",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550942_ca0c131e1ea49f77e266cde7.svg"
+    },
+    {
+      "id": "1_550933_71bf39c64d62efbbf5dc28aa",
+      "width": 70,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/637.svg",
+        "author_name": "Unknown Designer",
+        "author_url": "http://thenounproject.com/http://thenounproject.com",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/X-Ray-fca0c4375d.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550933_71bf39c64d62efbbf5dc28aa",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550933_71bf39c64d62efbbf5dc28aa.svg"
+    },
+    {
+      "id": "1_551041_060babcf6e7daba034c6e56d",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/b60c364a-288a-4961-8b30-a54e23d967ae.svg",
+        "author_name": "Olivier Guin",
+        "author_url": "http://thenounproject.com/Olivier Guin",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Cane-22f7a1af6d.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_551041_060babcf6e7daba034c6e56d",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_551041_060babcf6e7daba034c6e56d.svg"
+    },
+    {
+      "id": "1_550934_215d939b541b502713c8910b",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/eye drops.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550934_215d939b541b502713c8910b",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550934_215d939b541b502713c8910b.svg"
+    },
+    {
+      "id": "1_550948_f054d81c1e24a03e71d4bf2e",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/bed.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550948_f054d81c1e24a03e71d4bf2e",
+      "content_type": "image/png",
+      "path": "images/image_1_550948_f054d81c1e24a03e71d4bf2e.png"
+    },
+    {
+      "id": "1_550227_20e88673f44c131e92066bca",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "Miki Shoji",
+        "author_url": "http://thenounproject.com/2ku2ku9",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/sick_35_161101.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550227_20e88673f44c131e92066bca",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550227_20e88673f44c131e92066bca.svg"
+    },
+    {
+      "id": "1_550201_9798bf43fef3fb4e7b1a9dcc",
+      "width": 80,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/435_1.svg",
+        "author_name": "Unknown Designer",
+        "author_url": "http://thenounproject.com/http://thenounproject.com",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Deaf-96e6f3c07d.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550201_9798bf43fef3fb4e7b1a9dcc",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550201_9798bf43fef3fb4e7b1a9dcc.svg"
+    },
+    {
+      "id": "1_9714_0f0f52f57f255b930e5234ca",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throat ache.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9714_0f0f52f57f255b930e5234ca",
+      "content_type": "image/png",
+      "path": "images/image_1_9714_0f0f52f57f255b930e5234ca.png"
+    },
+    {
+      "id": "1_550538_65492a9c31a17542d0b10489",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/e8f73cae-51a0-4d79-8ba4-49f5b8f15e08.svg",
+        "author_name": "Amanda Clifford",
+        "author_url": "http://thenounproject.com/LearnToLive",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Volunteer-76db5e7233.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550538_65492a9c31a17542d0b10489",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550538_65492a9c31a17542d0b10489.svg"
+    },
+    {
+      "id": "1_7015_f06d6c56b3a5e91d3dd55d62",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/serve.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7015_f06d6c56b3a5e91d3dd55d62",
+      "content_type": "image/png",
+      "path": "images/image_1_7015_f06d6c56b3a5e91d3dd55d62.png"
+    },
+    {
+      "id": "1_9715_4a6339c3ca320e62059c3c4e",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/care for.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9715_4a6339c3ca320e62059c3c4e",
+      "content_type": "image/png",
+      "path": "images/image_1_9715_4a6339c3ca320e62059c3c4e.png"
+    },
+    {
+      "id": "1_9716_962d4cd67da146d5f980e093",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rescue_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9716_962d4cd67da146d5f980e093",
+      "content_type": "image/png",
+      "path": "images/image_1_9716_962d4cd67da146d5f980e093.png"
+    },
+    {
+      "id": "1_7018_8f41a978cb9f73ea7e91c79c",
+      "width": 32,
+      "height": 32,
+      "license": {
+        "type": "CC By 3.0",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "source_url": "https://icomoon.io",
+        "author_name": "Keyamoon",
+        "author_url": "http://keyamoon.com/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/icomoon/support.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7018_8f41a978cb9f73ea7e91c79c",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7018_8f41a978cb9f73ea7e91c79c.svg"
+    },
+    {
+      "id": "1_7013_2e18e2a777404b3e5668acfa",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/protect.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7013_2e18e2a777404b3e5668acfa",
+      "content_type": "image/png",
+      "path": "images/image_1_7013_2e18e2a777404b3e5668acfa.png"
+    },
+    {
+      "id": "1_9717_5154fb0e6802a9760a3ee38d",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/rescue.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9717_5154fb0e6802a9760a3ee38d",
+      "content_type": "image/png",
+      "path": "images/image_1_9717_5154fb0e6802a9760a3ee38d.png"
+    },
+    {
+      "id": "1_7010_efc0016d7ca8744bd90d0c6d",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/medicine.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7010_efc0016d7ca8744bd90d0c6d",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7010_efc0016d7ca8744bd90d0c6d.svg"
+    },
+    {
+      "id": "1_9729_1f25d692e3ae79fcdfd483ae",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pills_1.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9729_1f25d692e3ae79fcdfd483ae",
+      "content_type": "image/png",
+      "path": "images/image_1_9729_1f25d692e3ae79fcdfd483ae.png"
+    },
+    {
+      "id": "1_7006_618bc3ae9c800c3878958bd7",
+      "width": 500,
+      "height": 500,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/(drug) addiction.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7006_618bc3ae9c800c3878958bd7",
+      "content_type": "image/png",
+      "path": "images/image_1_7006_618bc3ae9c800c3878958bd7.png"
+    },
+    {
+      "id": "1_550228_dcdf253994a91303eaa8a023",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/depressed.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550228_dcdf253994a91303eaa8a023",
+      "content_type": "image/png",
+      "path": "images/image_1_550228_dcdf253994a91303eaa8a023.png"
+    },
+    {
+      "id": "1_550219_486451abeafbb054f7af7ad4",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "lastspark",
+        "author_url": "http://thenounproject.com/lastspark",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/nervous_665_311847.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550219_486451abeafbb054f7af7ad4",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550219_486451abeafbb054f7af7ad4.svg"
+    },
+    {
+      "id": "1_550943_1946c131d7f09e040239e786",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/vomit , to.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550943_1946c131d7f09e040239e786",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550943_1946c131d7f09e040239e786.svg"
+    },
+    {
+      "id": "1_550936_7a38823a683ca76f1c76bb4f",
+      "width": 94,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://en.wikipedia.org/wiki/Public_domain",
+        "source_url": "http://thenounproject.com/term/doctor/",
+        "author_url": "http://thenounproject.com/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Doctor-55659b4c9c.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550936_7a38823a683ca76f1c76bb4f",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550936_7a38823a683ca76f1c76bb4f.svg"
+    },
+    {
+      "id": "1_550935_11a85d5c2fcedfe0451f6d1d",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/dentist.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550935_11a85d5c2fcedfe0451f6d1d",
+      "content_type": "image/png",
+      "path": "images/image_1_550935_11a85d5c2fcedfe0451f6d1d.png"
+    },
+    {
+      "id": "1_550938_e878b87587a32ee19016256b",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/site_media/svg/2fc4b627-8b4c-4390-9757-015033b87bd0.svg",
+        "author_name": "Jardson Araújo",
+        "author_url": "http://thenounproject.com/jardsonaraujo",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Nurse-8169964372.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550938_e878b87587a32ee19016256b",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550938_e878b87587a32ee19016256b.svg"
+    },
+    {
+      "id": "1_550950_cc9b07cdda71858de00e7da0",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/braces.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550950_cc9b07cdda71858de00e7da0",
+      "content_type": "image/png",
+      "path": "images/image_1_550950_cc9b07cdda71858de00e7da0.png"
+    },
+    {
+      "id": "1_550939_484daaef3ad79cd238baa39a",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/patient_4.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550939_484daaef3ad79cd238baa39a",
+      "content_type": "image/png",
+      "path": "images/image_1_550939_484daaef3ad79cd238baa39a.png"
+    },
+    {
+      "id": "1_550949_5c3e2e8f68a215f8dff397fc",
+      "width": 150,
+      "height": 150,
+      "license": {
+        "type": "CC By",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/us/",
+        "author_name": "IconfactoryTeam",
+        "author_url": "http://thenounproject.com/iconfactoryteam",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/more-sound_938_g.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550949_5c3e2e8f68a215f8dff397fc",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550949_5c3e2e8f68a215f8dff397fc.svg"
+    },
+    {
+      "id": "1_7019_68e7e1ba95ba57ed57126de8",
+      "width": 100,
+      "height": 99,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "source_url": "http://thenounproject.com/term/surgery/",
+        "author_name": "Unknown Designer",
+        "author_url": "http://thenounproject.com",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Surgery-9a8464730f.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7019_68e7e1ba95ba57ed57126de8",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7019_68e7e1ba95ba57ed57126de8.svg"
+    },
+    {
+      "id": "1_9726_9bdd524300ab8c87c27691d9",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throat.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9726_9bdd524300ab8c87c27691d9",
+      "content_type": "image/png",
+      "path": "images/image_1_9726_9bdd524300ab8c87c27691d9.png"
+    },
+    {
+      "id": "1_9728_fc8cc2801cdc3d426bba153c",
+      "width": 76,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/button/",
+        "author_name": "Jakob Vogel",
+        "author_url": "http://thenounproject.com/Jakob Vogel",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Button-08044f74bf.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9728_fc8cc2801cdc3d426bba153c",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_9728_fc8cc2801cdc3d426bba153c.svg"
+    },
+    {
+      "id": "1_550225_582cc47ba6e739a212e4bb44",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/smile.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550225_582cc47ba6e739a212e4bb44",
+      "content_type": "image/png",
+      "path": "images/image_1_550225_582cc47ba6e739a212e4bb44.png"
+    },
+    {
+      "id": "1_550221_b97b54d4368d0ff84b5a5938",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/Down's Syndrome.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550221_b97b54d4368d0ff84b5a5938",
+      "content_type": "image/png",
+      "path": "images/image_1_550221_b97b54d4368d0ff84b5a5938.png"
+    },
+    {
+      "id": "1_550220_3d1574e089576e20fca02e3e",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/autism.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550220_3d1574e089576e20fca02e3e",
+      "content_type": "image/png",
+      "path": "images/image_1_550220_3d1574e089576e20fca02e3e.png"
+    },
+    {
+      "id": "1_7368_2fa813f5ccd1c0db7ebe1596",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/cold.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7368_2fa813f5ccd1c0db7ebe1596",
+      "content_type": "image/png",
+      "path": "images/image_1_7368_2fa813f5ccd1c0db7ebe1596.png"
+    },
+    {
+      "id": "1_7369_15a1b95ac6bf43df6704e4d5",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/flu.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7369_15a1b95ac6bf43df6704e4d5",
+      "content_type": "image/png",
+      "path": "images/image_1_7369_15a1b95ac6bf43df6704e4d5.png"
+    },
+    {
+      "id": "1_9718_a39ff75c83f94a5d57c38c93",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/headache_3.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9718_a39ff75c83f94a5d57c38c93",
+      "content_type": "image/png",
+      "path": "images/image_1_9718_a39ff75c83f94a5d57c38c93.png"
+    },
+    {
+      "id": "1_7367_f294decfc1aeae54b6cf1bd5",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by/3.0/",
+        "source_url": "http://thenounproject.com/term/ear/",
+        "author_name": "Rémy Médard",
+        "author_url": "http://thenounproject.com/catalarem",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Ear-0217630c26.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7367_f294decfc1aeae54b6cf1bd5",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7367_f294decfc1aeae54b6cf1bd5.svg"
+    },
+    {
+      "id": "1_13120_93b2f0c2b480ee1b15228bb7",
+      "width": 850,
+      "height": 850,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/stomach 1.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13120_93b2f0c2b480ee1b15228bb7",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_13120_93b2f0c2b480ee1b15228bb7.svg"
+    },
+    {
+      "id": "1_550932_a88248b6e34ddb3d34b19012",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/throat ache.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550932_a88248b6e34ddb3d34b19012",
+      "content_type": "image/png",
+      "path": "images/image_1_550932_a88248b6e34ddb3d34b19012.png"
+    },
+    {
+      "id": "1_9735_d0172e0b40245e8dd7b53bc1",
+      "width": 300,
+      "height": 300,
+      "license": {
+        "type": "CC BY-NC",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "author_name": "Sclera",
+        "author_url": "http://www.sclera.be/en/picto/copyright",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://dc5pvf6xvgi7y.cloudfront.net/images/9/7/3/5/1_9735_d0172e0b40245e8dd7b53bc1-ad2d65b580d9ccd5deb5ddf6df8f59dd85226dcca1d9f49bdc3b3f9dfc7e893fd677773b8575899dab4dcac4ed1f110891052b6f496db48e6316bb813bd05d2c.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9735_d0172e0b40245e8dd7b53bc1",
+      "content_type": "image/png",
+      "path": "images/image_1_9735_d0172e0b40245e8dd7b53bc1.png"
+    },
+    {
+      "id": "1_7017_4cdb47a11fe3f423177af9f2",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to suction.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7017_4cdb47a11fe3f423177af9f2",
+      "content_type": "image/png",
+      "path": "images/image_1_7017_4cdb47a11fe3f423177af9f2.png"
+    },
+    {
+      "id": "1_550207_6ce38d2d3f4e5ae48dfc5b57",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/hearing aid.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550207_6ce38d2d3f4e5ae48dfc5b57",
+      "content_type": "image/png",
+      "path": "images/image_1_550207_6ce38d2d3f4e5ae48dfc5b57.png"
+    },
+    {
+      "id": "1_550223_525a7a6b69e1573eac4e8647",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/paper.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550223_525a7a6b69e1573eac4e8647",
+      "content_type": "image/png",
+      "path": "images/image_1_550223_525a7a6b69e1573eac4e8647.png"
+    },
+    {
+      "id": "1_550224_f032ceeaf88c06790b0bf397",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/as.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550224_f032ceeaf88c06790b0bf397",
+      "content_type": "image/png",
+      "path": "images/image_1_550224_f032ceeaf88c06790b0bf397.png"
+    },
+    {
+      "id": "1_550222_1ae7a17e478590012189c8cf",
+      "width": 100,
+      "height": 100,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://en.wikipedia.org/wiki/Public_domain",
+        "source_url": "http://thenounproject.com/site_media/svg/388b8bf6-6ab7-4f8f-b94f-18bfdfe8cd64.svg",
+        "author_name": "Reuben",
+        "author_url": "http://thenounproject.com/reuben",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Wheelchair Accessible-75d70309fe.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550222_1ae7a17e478590012189c8cf",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_550222_1ae7a17e478590012189c8cf.svg"
+    },
+    {
+      "id": "1_7012_06aad681bf25548f92e82677",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/period.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7012_06aad681bf25548f92e82677",
+      "content_type": "image/png",
+      "path": "images/image_1_7012_06aad681bf25548f92e82677.png"
+    },
+    {
+      "id": "1_7371_4669c3434d376451af7bd2ec",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to walk on one leg_1.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7371_4669c3434d376451af7bd2ec",
+      "content_type": "image/png",
+      "path": "images/image_1_7371_4669c3434d376451af7bd2ec.png"
+    },
+    {
+      "id": "1_7373_405681ce10a7b78e7ee07d85",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/toothache.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7373_405681ce10a7b78e7ee07d85",
+      "content_type": "image/png",
+      "path": "images/image_1_7373_405681ce10a7b78e7ee07d85.png"
+    },
+    {
+      "id": "1_13121_a9eee8013e6fb531aa76d845",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/pain in the chest_1.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_13121_a9eee8013e6fb531aa76d845",
+      "content_type": "image/png",
+      "path": "images/image_1_13121_a9eee8013e6fb531aa76d845.png"
+    },
+    {
+      "id": "1_550931_e0c9a1e322dc1aff4682e002",
+      "width": 283,
+      "height": 283,
+      "license": {
+        "type": "CC BY-NC",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "author_name": "Sclera",
+        "author_url": "http://www.sclera.be/en/picto/copyright",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/sclera/smoking.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550931_e0c9a1e322dc1aff4682e002",
+      "content_type": "image/png",
+      "path": "images/image_1_550931_e0c9a1e322dc1aff4682e002.png"
+    },
+    {
+      "id": "1_7022_e8774bc19f91fb6c22b9c221",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/treatment.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7022_e8774bc19f91fb6c22b9c221",
+      "content_type": "image/png",
+      "path": "images/image_1_7022_e8774bc19f91fb6c22b9c221.png"
+    },
+    {
+      "id": "1_7001_06a93313453b80b33e339ab5",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/brace.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7001_06a93313453b80b33e339ab5",
+      "content_type": "image/png",
+      "path": "images/image_1_7001_06a93313453b80b33e339ab5.png"
+    },
+    {
+      "id": "1_9736_b416a9d47e54e7852821ba14",
+      "width": 851,
+      "height": 851,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/2.0/uk",
+        "author_name": "Paxtoncrafts Charitable Trust ",
+        "author_url": "http://straight-street.org/lic.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/mulberry/operation.svg.varianted-skin.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9736_b416a9d47e54e7852821ba14",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_9736_b416a9d47e54e7852821ba14.svg"
+    },
+    {
+      "id": "1_9720_1bc1f1ed4ab5d4e12f5c1909",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to itch .png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9720_1bc1f1ed4ab5d4e12f5c1909",
+      "content_type": "image/png",
+      "path": "images/image_1_9720_1bc1f1ed4ab5d4e12f5c1909.png"
+    },
+    {
+      "id": "1_9723_23e00788015f1a84f8af8ed1",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/to sleep.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9723_23e00788015f1a84f8af8ed1",
+      "content_type": "image/png",
+      "path": "images/image_1_9723_23e00788015f1a84f8af8ed1.png"
+    },
+    {
+      "id": "1_7005_48405179265a4632e1fd4eae",
+      "width": 100,
+      "height": 99,
+      "license": {
+        "type": "public domain",
+        "copyright_notice_url": "http://creativecommons.org/publicdomain/mark/1.0/",
+        "source_url": "http://thenounproject.com/term/infectious-disease/",
+        "author_name": "Unknown Designer",
+        "author_url": "http://thenounproject.com",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/noun-project/Infectious Disease-ad22a95560.svg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7005_48405179265a4632e1fd4eae",
+      "content_type": "image/svg+xml",
+      "path": "images/image_1_7005_48405179265a4632e1fd4eae.svg"
+    },
+    {
+      "id": "1_7000_b3d2618868e548840ef4d47f",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/accident.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7000_b3d2618868e548840ef4d47f",
+      "content_type": "image/png",
+      "path": "images/image_1_7000_b3d2618868e548840ef4d47f.png"
+    },
+    {
+      "id": "1_550979_13a3db89112b9b2901d107a1",
+      "width": 500,
+      "height": 500,
+      "license": {
+        "type": "CC BY-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-sa/4.0/",
+        "author_name": "Mada, HMC and University of Southampton",
+        "author_url": "http://www.tawasolsymbols.org/",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/tawasol/problem.jpg",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550979_13a3db89112b9b2901d107a1",
+      "content_type": "image/jpeg",
+      "path": "images/image_1_550979_13a3db89112b9b2901d107a1.jpeg"
+    },
+    {
+      "id": "1_550976_78719ea9cd13ec039fc8dffb",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/injury.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_550976_78719ea9cd13ec039fc8dffb",
+      "content_type": "image/png",
+      "path": "images/image_1_550976_78719ea9cd13ec039fc8dffb.png"
+    },
+    {
+      "id": "1_9737_b4f5de2757ef6f9a96476fba",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/occupational therapy.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9737_b4f5de2757ef6f9a96476fba",
+      "content_type": "image/png",
+      "path": "images/image_1_9737_b4f5de2757ef6f9a96476fba.png"
+    },
+    {
+      "id": "1_7020_14b9cbba41be82ed2ee9c0de",
+      "width": 250,
+      "height": 250,
+      "license": {
+        "type": "CC BY-NC-SA",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc-sa/3.0/",
+        "author_name": "Sergio Palao",
+        "author_url": "http://www.catedu.es/arasaac/condiciones_uso.php",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://d18vdu4p71yql0.cloudfront.net/libraries/arasaac/group therapies.png.varianted-skin.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_7020_14b9cbba41be82ed2ee9c0de",
+      "content_type": "image/png",
+      "path": "images/image_1_7020_14b9cbba41be82ed2ee9c0de.png"
+    },
+    {
+      "id": "1_9738_657271341cbbc1c9009ec56d",
+      "width": 300,
+      "height": 300,
+      "license": {
+        "type": "CC BY-NC",
+        "copyright_notice_url": "http://creativecommons.org/licenses/by-nc/2.0/",
+        "author_name": "Sclera",
+        "author_url": "http://www.sclera.be/en/picto/copyright",
+        "uneditable": true
+      },
+      "protected": false,
+      "url": "https://dc5pvf6xvgi7y.cloudfront.net/images/9/7/3/8/1_9738_657271341cbbc1c9009ec56d-7b62d924d6b002b4c1617760de6044dfd9f5ae97c7a23b56b44a6764a2d36aa4e6ce19c6e558a7aa71308a5ba273046062a3b3345d60911add7e112f895fcdf0.png",
+      "data_url": "https://app.mycoughdrop.com/api/v1/images/1_9738_657271341cbbc1c9009ec56d",
+      "content_type": "image/png",
+      "path": "images/image_1_9738_657271341cbbc1c9009ec56d.png"
+    }
+  ],
+  "sounds": [
+
+  ],
+  "id": "1_468",
+  "locale": "en",
+  "name": "Core 112 - help",
+  "default_layout": "landscape",
+  "background": null,
+  "url": "https://app.mycoughdrop.com/example/core-112-help",
+  "data_url": "https://app.mycoughdrop.com/api/v1/boards/example/core-112-help",
+  "description_html": "assistance-related and medical-related words",
+  "ext_coughdrop_image_url": "https://s3.amazonaws.com/opensymbols/libraries/arasaac/board_3.png",
+  "ext_coughdrop_settings": {
+    "private": false,
+    "key": "example/core-112-help",
+    "word_suggestions": false,
+    "protected": false,
+    "home_board": null,
+    "categories": null,
+    "text_only": null,
+    "hide_empty": null
+  }
+}
