@@ -1,4 +1,4 @@
-import 'package:openboard_wrapper/src/color_data.dart';
+import 'package:openboard_wrapper/openboard_wrapper.dart';
 import 'package:test/test.dart';
 
 void main() {

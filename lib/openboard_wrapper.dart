@@ -2,6 +2,7 @@ library;
 
 // export 'src/lazy_obz.dart';
 export 'src/obz.dart';
+export 'src/color_data.dart';
 export 'src/obf.dart';
 export 'src/grid_data.dart';
 export 'src/image_data.dart';
