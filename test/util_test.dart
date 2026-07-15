@@ -1,4 +1,4 @@
-import 'package:openboard_wrapper/src/_utils.dart';
+import 'package:openboard_wrapper/openboard_wrapper.dart';
 import 'package:test/test.dart';
 
 void main() {

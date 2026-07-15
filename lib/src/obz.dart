@@ -8,8 +8,8 @@ import 'button_data.dart';
 import 'package:openboard_wrapper/src/obf.dart';
 import 'image_data.dart';
 import 'sound_data.dart';
-import '_utils.dart';
 import 'obz_exceptions.dart';
+import 'util_classes.dart';
 
 typedef Obz = EagarObz;
 

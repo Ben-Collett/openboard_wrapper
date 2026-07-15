@@ -1,6 +1,7 @@
 import 'searlizable.dart';
 
 import '_utils.dart';
+import 'util_classes.dart';
 
 class ImageData extends HasIdAndPath with Searlizable {
   static const String idKey = 'id';

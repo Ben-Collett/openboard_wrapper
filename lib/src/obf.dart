@@ -9,6 +9,7 @@ import 'license_data.dart';
 import 'obz.dart';
 import 'searlizable.dart';
 import 'sound_data.dart';
+import 'util_classes.dart';
 
 class Obf extends HasIdAndPath with Searlizable {
   static const defaultFormat = "open-board-0.1";

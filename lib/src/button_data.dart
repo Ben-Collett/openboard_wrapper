@@ -4,6 +4,7 @@ import 'image_data.dart';
 import 'searlizable.dart';
 import 'sound_data.dart';
 import 'obf.dart';
+import 'util_classes.dart';
 
 class ButtonData with Searlizable implements HasId {
   static const String idKey = "id";
@@ -105,7 +106,8 @@ class ButtonData with Searlizable implements HasId {
     LinkedBoard? linkedBoard;
     var loadBoardVal = json['load_board'];
     if (loadBoardVal is Map) {
-      linkedBoard = LinkedBoard.fromJson(Map<String, dynamic>.from(loadBoardVal));
+      linkedBoard =
+          LinkedBoard.fromJson(Map<String, dynamic>.from(loadBoardVal));
     }
 
     SoundData? sound;

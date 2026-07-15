@@ -1,6 +1,8 @@
-import '_utils.dart';
+import 'package:openboard_wrapper/src/_utils.dart';
+
 import 'obf.dart';
 import 'searlizable.dart';
+import 'util_classes.dart';
 
 class SoundData extends HasIdAndPath with Searlizable {
   static const String durationKey = 'duration';
